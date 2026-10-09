@@ -1,0 +1,671 @@
+/*==============================
+        CTA
+==============================*/
+
+.cta-section{
+
+    padding:120px 0;
+
+    background:var(--dark);
+
+}
+
+.cta-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:32px;
+
+    padding:90px 70px;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#1d4ed8,#2563eb,#1e3a8a);
+
+    box-shadow:0 40px 80px rgba(37,99,235,.25);
+
+}
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-220px;
+
+    right:-150px;
+
+}
+
+.cta-box::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    bottom:-180px;
+
+    left:-120px;
+
+}
+
+.cta-box h2{
+
+    color:white;
+
+    font-size:56px;
+
+    font-weight:800;
+
+    margin:25px 0;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.cta-box p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#dbeafe;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.btn-primary{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+border-radius:14px;
+
+font-weight:700;
+
+background:linear-gradient(135deg,#3b82f6,#2563eb);
+
+color:white;
+
+text-decoration:none;
+
+transition:.35s;
+
+box-shadow:0 15px 40px rgba(37,99,235,.35);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 25px 60px rgba(37,99,235,.45);
+
+}
+
+.btn-secondary{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+border-radius:14px;
+
+font-weight:700;
+
+text-decoration:none;
+
+border:1px solid rgba(255,255,255,.25);
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+color:white;
+
+transition:.35s;
+
+}
+
+.btn-secondary:hover{
+
+background:rgba(255,255,255,.15);
+
+transform:translateY(-5px);
+
+}
+
+@media(max-width:768px){
+
+.cta-box{
+
+padding:60px 30px;
+
+}
+
+.cta-box h2{
+
+font-size:38px;
+
+}
+
+.cta-box p{
+
+font-size:17px;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}
+
+/*==============================
+    Glow Animation
+==============================*/
+
+.cta-glow{
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        circle,
+        rgba(255,255,255,.18) 0%,
+        rgba(255,255,255,.05) 35%,
+        transparent 70%
+    );
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    animation:glowMove 8s ease-in-out infinite;
+
+}
+
+@keyframes glowMove{
+
+0%{
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+50%{
+
+transform:translate(-50%,-50%) scale(1.15);
+
+}
+
+100%{
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+}
+
+/* =========================================================
+   NEXORA — CTA MODERNO
+   ========================================================= */
+
+.nx-cta-section {
+    padding: 110px 0;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.16), transparent 45%),
+        #050914;
+}
+
+.nx-cta-card {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 50px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    text-align: center;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.96),
+            rgba(8, 15, 30, 0.98)
+        );
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.nx-cta-card::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    top: -240px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(37, 99, 235, 0.18);
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+.nx-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nx-cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.10);
+    color: #60a5fa;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.nx-cta-card h2 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+}
+
+.nx-cta-card h2 span {
+    color: #60a5fa;
+}
+
+.nx-cta-card p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.nx-cta-buttons {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    margin-top: 32px;
+}
+
+.nx-cta-buttons a {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-height: 50px;
+    padding: 0 24px;
+
+    border-radius: 12px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none !important;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.nx-cta-primary {
+    background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+    border: 1px solid #3b82f6 !important;
+    color: #ffffff !important;
+
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, 0.28);
+}
+
+.nx-cta-primary:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 16px 35px rgba(37, 99, 235, 0.38);
+}
+
+.nx-cta-secondary {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #e2e8f0 !important;
+}
+
+.nx-cta-secondary:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(96, 165, 250, 0.35) !important;
+
+    transform: translateY(-2px);
+}
+
+/* Iconos */
+.nx-cta-buttons i {
+    font-size: 1rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .nx-cta-section {
+        padding: 55px 0;
+    }
+
+    .nx-cta-card {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .nx-cta-content {
+        max-width: 100%;
+    }
+
+    .nx-cta-badge {
+        margin-bottom: 11px;
+        font-size: .66rem;
+    }
+
+    .nx-cta-card h2 {
+        margin-bottom: 10px;
+        font-size: 1.65rem;
+        line-height: 1.05;
+    }
+
+    .nx-cta-card p {
+        max-width: 310px;
+        margin: 0 auto;
+        font-size: .70rem;
+        line-height: 1.45;
+    }
+
+    .nx-cta-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        margin-top: 17px;
+    }
+
+    .nx-cta-buttons a {
+        width: auto;
+        max-width: none;
+        min-height: 38px;
+        padding: 0 13px;
+        font-size: .68rem;
+        white-space: nowrap;
+    }
+
+    .nx-cta-buttons i {
+        font-size: .72rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nx-cta-card {
+        padding: 42px 18px;
+    }
+
+    .nx-cta-card h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* =========================================================
+   LYVARYN — CTA / TEMA CLARO
+========================================================= */
+
+html.light-theme .nx-cta-section,
+body.light-theme .nx-cta-section {
+    background:
+        linear-gradient(
+            180deg,
+            #eef3f9 0%,
+            #f5f7fb 100%
+        );
+}
+
+
+/* =========================================================
+   TARJETA CTA
+========================================================= */
+
+html.light-theme .nx-cta-card,
+body.light-theme .nx-cta-card {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(37, 99, 235, .12),
+            transparent 55%
+        ),
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f3f6fb
+        );
+
+    border-color:
+        rgba(37, 99, 235, .16);
+
+    box-shadow:
+        0 25px 70px rgba(15, 23, 42, .10);
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+html.light-theme .nx-cta-badge,
+body.light-theme .nx-cta-badge {
+    color: #2563eb;
+
+    background:
+        rgba(37, 99, 235, .07);
+
+    border-color:
+        rgba(37, 99, 235, .18);
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+html.light-theme .nx-cta-content h2,
+body.light-theme .nx-cta-content h2 {
+    color: #111827;
+}
+
+html.light-theme .nx-cta-content h2 span,
+body.light-theme .nx-cta-content h2 span {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+========================================================= */
+
+html.light-theme .nx-cta-content p,
+body.light-theme .nx-cta-content p {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   BOTÓN PRINCIPAL
+========================================================= */
+
+html.light-theme .nx-cta-primary,
+body.light-theme .nx-cta-primary {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, .22);
+}
+
+html.light-theme .nx-cta-primary:hover,
+body.light-theme .nx-cta-primary:hover {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #2563eb
+        );
+}
+
+
+/* =========================================================
+   BOTÓN SECUNDARIO
+========================================================= */
+
+html.light-theme .nx-cta-secondary,
+body.light-theme .nx-cta-secondary {
+    color: #334155;
+
+    background:
+        rgba(255, 255, 255, .80);
+
+    border-color:
+        rgba(15, 23, 42, .12);
+}
+
+html.light-theme .nx-cta-secondary:hover,
+body.light-theme .nx-cta-secondary:hover {
+    color: #2563eb;
+
+    background: #ffffff;
+
+    border-color:
+        rgba(37, 99, 235, .25);
+}
+
+
+/* =========================================================
+   DECORACIONES
+========================================================= */
+
+html.light-theme .nx-cta-decoration-one,
+body.light-theme .nx-cta-decoration-one {
+    background:
+        rgba(37, 99, 235, .08);
+}
+
+html.light-theme .nx-cta-decoration-two,
+body.light-theme .nx-cta-decoration-two {
+    background:
+        rgba(59, 130, 246, .05);
+}
+
+/* =========================================================
+   CTA — VER PLANES EN TEMA CLARO
+========================================================= */
+
+html.light-theme .nx-cta-buttons a:last-child,
+body.light-theme .nx-cta-buttons a:last-child {
+    color: #334155 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    text-shadow: none !important;
+}
+
+html.light-theme .nx-cta-buttons a:last-child i,
+body.light-theme .nx-cta-buttons a:last-child i {
+    color: #64748b !important;
+    opacity: 1 !important;
+}
+
+html.light-theme .nx-cta-buttons a:last-child:hover,
+body.light-theme .nx-cta-buttons a:last-child:hover {
+    color: #1d4ed8 !important;
+}
+
+html.light-theme .nx-cta-buttons a:last-child:hover i,
+body.light-theme .nx-cta-buttons a:last-child:hover i {
+    color: #2563eb !important;
+}

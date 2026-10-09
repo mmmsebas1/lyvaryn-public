@@ -1,0 +1,338 @@
+/*==============================
+    FAQ
+==============================*/
+
+.faq-section{
+
+    padding:120px 0;
+
+    background:
+    radial-gradient(circle at top,#172554 0%,transparent 35%),
+    var(--dark);
+
+}
+
+.faq-container{
+
+    max-width:900px;
+
+    margin:70px auto 0;
+
+}
+
+.faq-item{
+
+    background:var(--card);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    margin-bottom:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    border-color:rgba(59,130,246,.35);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    padding:28px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+.faq-icon{
+
+    font-size:32px;
+
+    color:#3b82f6;
+
+    transition:.3s;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+}
+
+.faq-answer p{
+
+    padding:0 30px 28px;
+
+    color:#94a3b8;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:200px;
+
+}
+
+.faq-item.active .faq-icon{
+
+    transform:rotate(45deg);
+
+}
+
+@media (max-width: 768px) {
+
+    .faq-section {
+        padding: 58px 0 65px;
+    }
+
+    .faq-container {
+        width: 100%;
+        max-width: 520px;
+        margin: 28px auto 0;
+        padding: 0 16px;
+    }
+
+    /* ENCABEZADO */
+    .faq-section .section-badge {
+        display: table;
+        margin: -30px auto 7px;
+        padding: 12px 15px;
+        font-size: .70rem;
+        line-height: 1;
+    }
+
+    .faq-section h2 {
+        margin: 0 0 6px;
+        text-align: left;
+        font-size: 1.45rem;
+        line-height: 1.15;
+        font-weight: 750;
+        letter-spacing: -.02em;
+    }
+
+    .faq-section > .container > p,
+    .faq-section .section-subtitle {
+        max-width: 300px !important;
+        margin: 0 !important;
+        text-align: left !important;
+        font-size: 0.62rem !important;
+        line-height: 1.45 !important;
+        color: #94a3b8 !important;
+    }
+
+    .faq-section p {
+        font-size: 0.65rem !important;
+        line-height: 1.45 !important;
+    }
+
+    /* PREGUNTAS */
+    .faq-question {
+        padding: 14px 16px;
+        min-height: 52px;
+        font-size: 12.5px;
+        line-height: 1.3;
+        font-weight: 600;
+    }
+
+    .faq-icon {
+        font-size: 20px;
+        flex-shrink: 0;
+        margin-left: 10px;
+    }
+
+    /* RESPUESTA */
+    .faq-answer p {
+        padding: 0 16px 15px;
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .faq-item {
+        border-radius: 13px;
+        margin-bottom: 9px;
+    }
+
+}
+
+/* =========================================================
+   LYVARYN — FAQ / TEMA CLARO
+========================================================= */
+
+html.light-theme .faq-section,
+body.light-theme .faq-section {
+    background:
+        linear-gradient(
+            180deg,
+            #f5f7fb 0%,
+            #eef3f9 100%
+        );
+}
+
+
+/* =========================================================
+   ENCABEZADO FAQ
+========================================================= */
+
+html.light-theme .faq-section .section-header .section-badge,
+body.light-theme .faq-section .section-header .section-badge {
+    color: #ffffff;
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    border-color:
+        rgba(37, 99, 235, .20);
+}
+
+html.light-theme .faq-section .section-header h2,
+body.light-theme .faq-section .section-header h2 {
+    color: #111827;
+}
+
+html.light-theme .faq-section .section-header p,
+body.light-theme .faq-section .section-header p {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   PREGUNTAS
+========================================================= */
+
+html.light-theme .faq-section .faq-item,
+body.light-theme .faq-section .faq-item {
+    background: #ffffff;
+
+    border-color:
+        rgba(15, 23, 42, .10);
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, .05);
+}
+
+html.light-theme .faq-section .faq-item:hover,
+body.light-theme .faq-section .faq-item:hover {
+    border-color:
+        rgba(37, 99, 235, .22);
+
+    box-shadow:
+        0 14px 35px rgba(37, 99, 235, .08);
+}
+
+
+/* =========================================================
+   TEXTO DE LAS PREGUNTAS
+========================================================= */
+
+html.light-theme .faq-section .faq-question,
+body.light-theme .faq-section .faq-question {
+    color: #111827;
+}
+
+html.light-theme .faq-section .faq-question span:first-child,
+body.light-theme .faq-section .faq-question span:first-child {
+    color: #111827;
+}
+
+
+/* =========================================================
+   ICONO +
+========================================================= */
+
+html.light-theme .faq-section .faq-icon,
+body.light-theme .faq-section .faq-icon {
+    color: #2563eb;
+
+    background:
+        rgba(37, 99, 235, .08);
+
+    border-color:
+        rgba(37, 99, 235, .15);
+}
+
+
+/* =========================================================
+   RESPUESTAS
+========================================================= */
+
+html.light-theme .faq-section .faq-answer,
+body.light-theme .faq-section .faq-answer {
+    color: #64748b;
+}
+
+html.light-theme .faq-section .faq-answer p,
+body.light-theme .faq-section .faq-answer p {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   CENTRAR FAQ — SOLO COMPUTADORA
+   NO AFECTA CELULAR
+========================================================= */
+
+@media (min-width: 992px) {
+
+    .faq-section .section-header {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* =========================================================
+   LYVARYN — FAQ / ESPACIADO DEL BADGE
+========================================================= */
+
+.faq-section .section-header .section-badge {
+    margin-bottom: 20px !important;
+}
+
+/* =========================================================
+   LYVARYN — FAQ / REDUCIR ESPACIO SUPERIOR EN ESCRITORIO
+========================================================= */
+
+@media (min-width: 576px) {
+
+    .faq-section {
+        padding-top: 60px !important;
+    }
+
+}

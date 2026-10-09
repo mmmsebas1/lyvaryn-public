@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="IjQ4ZWUwN2M2MThiZjM1MWQwM2JmNTUyOTY5OWExYWE1OGU0ZGUwYjYi.aslMDw.KAkhLNTNdIGK_Fvme-4rn_3m0dc">
+
+    <script>
+(function () {
+    try {
+
+        const theme =
+            localStorage.getItem("lyvaryn-theme");
+
+        if (theme === "light") {
+
+            document.documentElement.classList.add(
+                "light-theme"
+            );
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "LYVARYN: no se pudo recuperar el tema.",
+            error
+        );
+
+    }
+})();
+</script>
+
+    <title>AI Business CR</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fuente -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="assets/css/variables.css">
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link rel="stylesheet"
+        href="assets/css/navbar.css">
+
+    <link rel="stylesheet"
+        href="assets/css/hero.css">
+
+    <link rel="stylesheet"
+        href="assets/css/dashboard-preview.css">
+
+    <link rel="stylesheet"
+        href="assets/css/buttons.css">
+
+    <link rel="stylesheet"
+        href="assets/css/animations.css">
+
+    <link rel="stylesheet"
+        href="assets/css/responsive.css">
+
+    <link rel="stylesheet"
+        href="assets/css/widgets.css">
+
+    <link rel="stylesheet"
+        href="assets/css/features.css">
+
+    <link rel="stylesheet"
+        href="assets/css/showcase.css">
+
+    <link rel="stylesheet"
+        href="assets/css/how.css">
+    
+    <link rel="stylesheet"
+        href="assets/css/pricing.css">
+
+    <link rel="stylesheet"
+        href="assets/css/integrations.css">
+
+    <link rel="stylesheet"
+        href="assets/css/pricing-page.css">
+
+    <link rel="stylesheet"
+        href="assets/css/como-empezar.css">
+
+    <link rel="stylesheet"
+        href="assets/css/contacto.css">
+
+    <link rel="stylesheet"
+        href="assets/css/legal.css">
+
+    <link rel="stylesheet"
+        href="assets/css/stats.css">
+        
+    <link rel="stylesheet"
+        href="assets/css/faq.css">
+
+    <link rel="stylesheet"
+        href="assets/css/cta.css">
+
+    <link rel="stylesheet"
+        href="assets/css/auth.css">
+
+    <link rel="stylesheet"
+        href="assets/css/platform-showcase.css">
+
+    <link rel="stylesheet"
+        href="assets/css/demo.css">
+
+    <link rel="stylesheet"
+        href="assets/css/solicitar-demo.css">
+
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/landing-upgrade.css">
+
+
+    <style>
+/* =========================================================
+   LYVARYN COOKIE CONSENT
+========================================================= */
+
+.nx-cookie-banner {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9998;
+    display: block;
+}
+
+.nx-cookie-banner[hidden],
+.nx-cookie-modal[hidden] {
+    display: none !important;
+}
+
+.nx-cookie-banner-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 22px;
+    padding: 20px 22px;
+
+    border: 1px solid rgba(148,163,184,.14);
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15,23,42,.97),
+            rgba(3,7,18,.97)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.45),
+        0 8px 30px rgba(0,0,0,.20);
+
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+
+.nx-cookie-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    border-radius: 13px;
+
+    background: rgba(37,99,235,.12);
+    border: 1px solid rgba(96,165,250,.16);
+
+    color: #60a5fa;
+    font-size: 1.15rem;
+}
+
+.nx-cookie-content {
+    min-width: 0;
+}
+
+.nx-cookie-content h2 {
+    margin: 0 0 6px;
+
+    color: #f8fafc;
+    font-size: .98rem;
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.nx-cookie-content p {
+    margin: 0;
+
+    max-width: 690px;
+
+    color: #94a3b8;
+    font-size: .76rem;
+    line-height: 1.6;
+}
+
+.nx-cookie-policy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 8px;
+
+    color: #60a5fa;
+    font-size: .7rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nx-cookie-policy-link:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+.nx-cookie-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nx-cookie-btn {
+    min-height: 40px;
+    padding: 0 15px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: .72rem;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.nx-cookie-btn:hover {
+    transform: translateY(-1px);
+}
+
+.nx-cookie-btn-primary {
+    border: 1px solid rgba(96,165,250,.20);
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+
+    color: #fff;
+
+    box-shadow:
+        0 8px 22px rgba(37,99,235,.20);
+}
+
+.nx-cookie-btn-primary:hover {
+    box-shadow:
+        0 11px 27px rgba(37,99,235,.30);
+}
+
+.nx-cookie-btn-secondary {
+    border: 1px solid rgba(148,163,184,.14);
+    background: rgba(148,163,184,.06);
+    color: #cbd5e1;
+}
+
+.nx-cookie-btn-secondary:hover {
+    background: rgba(148,163,184,.11);
+}
+
+.nx-cookie-btn-outline {
+    border: 1px solid rgba(96,165,250,.18);
+    background: rgba(37,99,235,.05);
+    color: #93c5fd;
+}
+
+.nx-cookie-btn-outline:hover {
+    background: rgba(37,99,235,.10);
+}
+
+
+/* =========================================================
+   COOKIE MODAL
+========================================================= */
+
+.nx-cookie-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+}
+
+.nx-cookie-modal-backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.70);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.nx-cookie-modal-card {
+    position: relative;
+    width: min(680px, 100%);
+    max-height: min(760px, calc(100vh - 48px));
+
+    overflow-y: auto;
+
+    padding: 28px;
+
+    border: 1px solid rgba(148,163,184,.13);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15,23,42,.99),
+            rgba(3,7,18,.99)
+        );
+
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.55);
+}
+
+.nx-cookie-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nx-cookie-modal-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #60a5fa;
+    font-size: .68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.nx-cookie-modal-header h2 {
+    margin: 8px 0 0;
+
+    color: #f8fafc;
+    font-size: 1.45rem;
+    font-weight: 850;
+    letter-spacing: -.035em;
+}
+
+.nx-cookie-close {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(148,163,184,.12);
+    border-radius: 10px;
+
+    background: rgba(148,163,184,.05);
+    color: #94a3b8;
+
+    cursor: pointer;
+}
+
+.nx-cookie-close:hover {
+    background: rgba(148,163,184,.10);
+    color: #f8fafc;
+}
+
+.nx-cookie-modal-description {
+    margin: 16px 0 22px;
+
+    color: #94a3b8;
+    font-size: .78rem;
+    line-height: 1.7;
+}
+
+.nx-cookie-options {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.nx-cookie-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 15px 16px;
+
+    border: 1px solid rgba(148,163,184,.09);
+    border-radius: 13px;
+
+    background: rgba(15,23,42,.48);
+}
+
+.nx-cookie-option-info {
+    min-width: 0;
+}
+
+.nx-cookie-option-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #e2e8f0;
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+.nx-cookie-option-title i {
+    color: #60a5fa;
+}
+
+.nx-cookie-option-info p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+    font-size: .68rem;
+    line-height: 1.55;
+}
+
+.nx-cookie-switch {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.nx-cookie-switch input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nx-cookie-switch label {
+    width: 43px;
+    height: 24px;
+
+    display: block;
+
+    border-radius: 999px;
+
+    background: #1e293b;
+
+    border: 1px solid rgba(148,163,184,.14);
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.nx-cookie-switch label span {
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #94a3b8;
+
+    transition: .2s ease;
+}
+
+.nx-cookie-switch input:checked + label {
+    background: #2563eb;
+    border-color: #3b82f6;
+}
+
+.nx-cookie-switch input:checked + label span {
+    transform: translateX(19px);
+    background: #fff;
+}
+
+.nx-cookie-switch-disabled label {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.nx-cookie-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-top: 22px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(148,163,184,.08);
+}
+
+.nx-cookie-modal-policy {
+    color: #60a5fa;
+    font-size: .72rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nx-cookie-modal-policy:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .nx-cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .nx-cookie-banner-inner {
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+
+        padding: 16px;
+
+        border-radius: 16px;
+    }
+
+    .nx-cookie-icon {
+        width: 38px;
+        height: 38px;
+
+        border-radius: 10px;
+
+        font-size: .95rem;
+    }
+
+    .nx-cookie-content h2 {
+        font-size: .84rem;
+    }
+
+    .nx-cookie-content p {
+        font-size: .68rem;
+        line-height: 1.55;
+    }
+
+    .nx-cookie-policy-link {
+        font-size: .64rem;
+    }
+
+    .nx-cookie-actions {
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        width: 100%;
+    }
+
+    .nx-cookie-btn {
+        width: 100%;
+        min-height: 37px;
+
+        padding: 0 7px;
+
+        font-size: .64rem;
+    }
+
+    .nx-cookie-modal {
+        padding: 12px;
+    }
+
+    .nx-cookie-modal-card {
+        max-height: calc(100vh - 24px);
+
+        padding: 21px 17px;
+
+        border-radius: 17px;
+    }
+
+    .nx-cookie-modal-header h2 {
+        font-size: 1.18rem;
+    }
+
+    .nx-cookie-modal-description {
+        font-size: .7rem;
+    }
+
+    .nx-cookie-option {
+        align-items: flex-start;
+        padding: 13px;
+    }
+
+    .nx-cookie-option-title {
+        font-size: .72rem;
+    }
+
+    .nx-cookie-option-info p {
+        font-size: .63rem;
+    }
+
+    .nx-cookie-modal-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .nx-cookie-modal-footer .nx-cookie-btn {
+        min-height: 40px;
+    }
+
+    .nx-cookie-modal-policy {
+        text-align: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- =========================================================
+     LYVARYN COOKIE CONSENT
+========================================================= -->
+
+<div
+    id="lyvarynCookieBanner"
+    class="nx-cookie-banner"
+    role="dialog"
+    aria-labelledby="nxCookieTitle"
+    aria-describedby="nxCookieDescription"
+    aria-modal="false"
+    hidden
+>
+    <div class="nx-cookie-banner-inner">
+
+        <div class="nx-cookie-icon">
+            <i class="bi bi-shield-check"></i>
+        </div>
+
+        <div class="nx-cookie-content">
+
+            <h2 id="nxCookieTitle">
+                Tu privacidad importa
+            </h2>
+
+            <p id="nxCookieDescription">
+                Utilizamos cookies necesarias para el funcionamiento del sitio
+                y, con tu autorización, cookies adicionales para preferencias
+                y medición. Puedes aceptar todas, rechazar las no necesarias
+                o configurar tus preferencias.
+            </p>
+
+            <a
+                href="politica-cookies.html"
+                class="nx-cookie-policy-link"
+            >
+                Leer Política de Cookies
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+
+        <div class="nx-cookie-actions">
+
+            <button
+                type="button"
+                id="nxCookieReject"
+                class="nx-cookie-btn nx-cookie-btn-secondary"
+            >
+                Rechazar
+            </button>
+
+            <button
+                type="button"
+                id="nxCookieConfigure"
+                class="nx-cookie-btn nx-cookie-btn-outline"
+            >
+                Configurar
+            </button>
+
+            <button
+                type="button"
+                id="nxCookieAccept"
+                class="nx-cookie-btn nx-cookie-btn-primary"
+            >
+                Aceptar todas
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- =========================================================
+     LYVARYN COOKIE PREFERENCES
+========================================================= -->
+
+<div
+    id="lyvarynCookieModal"
+    class="nx-cookie-modal"
+    role="dialog"
+    aria-labelledby="nxCookieModalTitle"
+    aria-modal="true"
+    hidden
+>
+    <div class="nx-cookie-modal-backdrop"></div>
+
+    <div class="nx-cookie-modal-card">
+
+        <div class="nx-cookie-modal-header">
+
+            <div>
+                <span class="nx-cookie-modal-eyebrow">
+                    <i class="bi bi-sliders"></i>
+                    Preferencias de privacidad
+                </span>
+
+                <h2 id="nxCookieModalTitle">
+                    Configurar cookies
+                </h2>
+            </div>
+
+            <button
+                type="button"
+                id="nxCookieClose"
+                class="nx-cookie-close"
+                aria-label="Cerrar preferencias"
+            >
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+        <p class="nx-cookie-modal-description">
+            Puedes decidir qué categorías de cookies permites.
+            Las cookies necesarias no pueden desactivarse porque son
+            necesarias para determinadas funciones del sitio.
+        </p>
+
+        <div class="nx-cookie-options">
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-shield-lock"></i>
+                        Necesarias
+                    </div>
+
+                    <p>
+                        Necesarias para funciones técnicas, seguridad y
+                        funcionamiento básico del sitio.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch nx-cookie-switch-disabled">
+                    <input
+                        type="checkbox"
+                        id="nxCookieNecessary"
+                        checked
+                        disabled
+                    >
+
+                    <label for="nxCookieNecessary">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-sliders"></i>
+                        Preferencias
+                    </div>
+
+                    <p>
+                        Permiten recordar determinadas preferencias de
+                        navegación cuando corresponda.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookiePreferences"
+                    >
+
+                    <label for="nxCookiePreferences">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-bar-chart-line"></i>
+                        Analíticas
+                    </div>
+
+                    <p>
+                        Permiten medir el uso del sitio para comprender
+                        su funcionamiento y mejorar la experiencia.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookieAnalytics"
+                    >
+
+                    <label for="nxCookieAnalytics">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-megaphone"></i>
+                        Marketing
+                    </div>
+
+                    <p>
+                        Permiten tecnologías destinadas a determinadas
+                        funciones publicitarias o medición de campañas,
+                        cuando estén disponibles.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookieMarketing"
+                    >
+
+                    <label for="nxCookieMarketing">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="nx-cookie-modal-footer">
+
+            <a
+                href="politica-cookies.html"
+                class="nx-cookie-modal-policy"
+            >
+                Ver Política de Cookies
+            </a>
+
+            <button
+                type="button"
+                id="nxCookieSave"
+                class="nx-cookie-btn nx-cookie-btn-primary"
+            >
+                Guardar preferencias
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+
+LYVARYN
+
+</a>
+
+<button
+    type="button"
+    class="theme-toggle mobile-theme-toggle"
+    id="mobileThemeToggle"
+    aria-label="Cambiar tema"
+    title="Cambiar tema"
+>
+    <i class="bi bi-moon-stars-fill"></i>
+</button>
+
+<button
+class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+    <a class="nav-link" href="caracteristicas.html">
+    Características
+</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="precios.html">
+        Precios
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="como-empezar.html">Cómo empezar</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contacto.html">
+        Contacto
+    </a>
+</li>
+
+<li class="nav-item">
+    <button
+        type="button"
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Cambiar tema"
+        title="Cambiar tema"
+    >
+        <i class="bi bi-moon-stars-fill"></i>
+    </button>
+</li>
+
+</ul>
+
+<a
+    class="btn btn-primary ms-4"
+    href="precios.html"
+>
+    Ver planes
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+    
+
+<!-- =========================================================
+     LYVARYN — DEMO / PRODUCT TOUR
+     ========================================================= -->
+
+<section class="nx-demo-hero">
+    <div class="container">
+
+        <div class="nx-demo-hero-content">
+
+            <span class="nx-demo-badge">
+                <i class="bi bi-grid-1x2-fill"></i>
+                CONOCE LYVARYN
+            </span>
+
+            <h1>
+                Una plataforma.
+                <span>Toda tu empresa.</span>
+            </h1>
+
+            <p>
+                Explora las herramientas que LYVARYN pone a disposición
+                de tu negocio para centralizar operaciones, administrar
+                información y tomar mejores decisiones.
+            </p>
+
+            <div class="nx-demo-hero-actions">
+                <a href="#plataforma" class="nx-demo-btn-primary">
+                    <i class="bi bi-play-circle-fill"></i>
+                    Explorar plataforma
+                </a>
+
+                <a href="contacto.html" class="nx-demo-final-button">
+                    <i class="bi bi-calendar2-check"></i>
+                    Solicitar una demo
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     PLATFORM PREVIEW
+     ========================================================= -->
+
+<section class="nx-demo-platform" id="plataforma">
+
+    <div class="container">
+
+        <div class="nx-demo-section-heading">
+
+            <span class="nx-demo-mini-badge">
+                <i class="bi bi-window-stack"></i>
+                PLATAFORMA LYVARYN
+            </span>
+
+            <h2>
+                Todo lo que necesitas,
+                <span>en un solo lugar.</span>
+            </h2>
+
+            <p>
+                Una vista general de las principales herramientas
+                disponibles dentro de LYVARYN.
+            </p>
+
+        </div>
+
+
+        <!-- APP WINDOW -->
+
+        <div class="nx-demo-app">
+
+            <!-- SIDEBAR -->
+
+            <aside class="nx-demo-sidebar">
+
+                <div class="nx-demo-brand">
+
+                    <div class="nx-demo-logo">
+                        N
+                    </div>
+
+                    <div>
+                        <strong>LYVARYN</strong>
+                        <small>BUSINESS</small>
+                    </div>
+
+                </div>
+
+
+                <div class="nx-demo-menu">
+
+                    <span class="nx-demo-menu-label">
+                        GENERAL
+                    </span>
+
+                    <a href="#modulo-panel" class="active">
+                        <i class="bi bi-speedometer2"></i>
+                        <span>Panel</span>
+                    </a>
+
+
+                    <span class="nx-demo-menu-label">
+                        OPERACIONES
+                    </span>
+
+                    <a href="#modulo-inventario">
+                        <i class="bi bi-box-seam"></i>
+                        <span>Inventario</span>
+                    </a>
+
+                    <a href="#modulo-ventas">
+                        <i class="bi bi-cart3"></i>
+                        <span>Ventas</span>
+                    </a>
+
+                    <a href="#modulo-compras">
+                        <i class="bi bi-bag-check"></i>
+                        <span>Compras</span>
+                    </a>
+
+
+                    <span class="nx-demo-menu-label">
+                        CRM
+                    </span>
+
+                    <a href="#modulo-clientes">
+                        <i class="bi bi-people-fill"></i>
+                        <span>Clientes</span>
+                    </a>
+
+
+                    <span class="nx-demo-menu-label">
+                        REPORTES
+                    </span>
+
+                    <a href="#modulo-informes">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <span>Informes</span>
+                    </a>
+
+
+                    <span class="nx-demo-menu-label">
+                        ADMINISTRACIÓN
+                    </span>
+
+                    <a href="#modulo-personal">
+                        <i class="bi bi-person-badge"></i>
+                        <span>Personal</span>
+                    </a>
+
+                    <a href="#modulo-usuarios">
+                        <i class="bi bi-person-gear"></i>
+                        <span>Usuarios</span>
+                    </a>
+
+                    <a href="#modulo-roles">
+                        <i class="bi bi-shield-lock"></i>
+                        <span>Roles</span>
+                    </a>
+
+                    <a href="#modulo-empresa">
+                        <i class="bi bi-building"></i>
+                        <span>Empresa</span>
+                    </a>
+
+                </div>
+
+
+                <div class="nx-demo-sidebar-user">
+
+                    <div class="nx-demo-user-avatar">
+                        S
+                    </div>
+
+                    <div>
+                        <strong>Administrador</strong>
+                        <small>Cuenta empresarial</small>
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+            <!-- MAIN -->
+
+            <main class="nx-demo-main">
+
+                <div class="nx-demo-topbar">
+
+                    <div>
+                        <span>Panel</span>
+                        <strong>Resumen de tu empresa</strong>
+                    </div>
+
+                    <div class="nx-demo-top-actions">
+
+                        <button type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+
+                        <button type="button">
+                            <i class="bi bi-bell"></i>
+                        </button>
+
+                        <div class="nx-demo-top-avatar">
+                            S
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- KPI -->
+
+                <div class="nx-demo-kpis">
+
+                    <div class="nx-demo-kpi">
+
+                        <div class="nx-demo-kpi-icon blue">
+                            <i class="bi bi-currency-dollar"></i>
+                        </div>
+
+                        <div>
+                            <small>Ventas</small>
+                            <strong>$24,580</strong>
+                            <span>
+                                <i class="bi bi-arrow-up"></i>
+                                12.8%
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="nx-demo-kpi">
+
+                        <div class="nx-demo-kpi-icon cyan">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+
+                        <div>
+                            <small>Clientes</small>
+                            <strong>1,284</strong>
+                            <span>
+                                <i class="bi bi-arrow-up"></i>
+                                8.4%
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="nx-demo-kpi">
+
+                        <div class="nx-demo-kpi-icon purple">
+                            <i class="bi bi-box-seam"></i>
+                        </div>
+
+                        <div>
+                            <small>Productos</small>
+                            <strong>846</strong>
+                            <span>
+                                <i class="bi bi-arrow-up"></i>
+                                5.2%
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="nx-demo-kpi">
+
+                        <div class="nx-demo-kpi-icon green">
+                            <i class="bi bi-cart-check"></i>
+                        </div>
+
+                        <div>
+                            <small>Pedidos</small>
+                            <strong>324</strong>
+                            <span>
+                                <i class="bi bi-arrow-up"></i>
+                                9.7%
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTENT GRID -->
+
+                <div class="nx-demo-content-grid">
+
+                    <div class="nx-demo-chart">
+
+                        <div class="nx-demo-card-heading">
+
+                            <div>
+                                <small>RENDIMIENTO</small>
+                                <strong>Ventas del período</strong>
+                            </div>
+
+                            <span>
+                                Últimos 6 meses
+                                <i class="bi bi-chevron-down"></i>
+                            </span>
+
+                        </div>
+
+
+                        <div class="nx-demo-chart-area">
+
+                            <div class="nx-chart-y">
+                                <span>$30k</span>
+                                <span>$20k</span>
+                                <span>$10k</span>
+                                <span>$0</span>
+                            </div>
+
+                            <div class="nx-chart">
+
+                                <div class="nx-chart-grid"></div>
+
+                                <svg
+                                    viewBox="0 0 700 260"
+                                    preserveAspectRatio="none"
+                                    aria-hidden="true"
+                                >
+
+                                    <defs>
+                                        <linearGradient
+                                            id="demoChartGradient"
+                                            x1="0"
+                                            y1="0"
+                                            x2="0"
+                                            y2="1"
+                                        >
+                                            <stop
+                                                offset="0%"
+                                                stop-color="#3b82f6"
+                                                stop-opacity=".30"
+                                            />
+
+                                            <stop
+                                                offset="100%"
+                                                stop-color="#3b82f6"
+                                                stop-opacity="0"
+                                            />
+                                        </linearGradient>
+                                    </defs>
+
+                                    <path
+                                        d="M0 205
+                                           C70 190 95 175 145 180
+                                           S220 150 270 158
+                                           S340 115 390 130
+                                           S465 95 515 110
+                                           S600 55 700 72
+                                           L700 260
+                                           L0 260 Z"
+                                        fill="url(#demoChartGradient)"
+                                    />
+
+                                    <path
+                                        d="M0 205
+                                           C70 190 95 175 145 180
+                                           S220 150 270 158
+                                           S340 115 390 130
+                                           S465 95 515 110
+                                           S600 55 700 72"
+                                        fill="none"
+                                        stroke="#3b82f6"
+                                        stroke-width="4"
+                                        stroke-linecap="round"
+                                    />
+
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECENT ACTIVITY -->
+
+                    <div class="nx-demo-activity">
+
+                        <div class="nx-demo-card-heading">
+
+                            <div>
+                                <small>ACTIVIDAD</small>
+                                <strong>Movimientos recientes</strong>
+                            </div>
+
+                            <i class="bi bi-three-dots"></i>
+
+                        </div>
+
+
+                        <div class="nx-demo-activity-list">
+
+                            <div>
+                                <span class="activity-icon green">
+                                    <i class="bi bi-cart-check"></i>
+                                </span>
+
+                                <div>
+                                    <strong>Nueva venta</strong>
+                                    <small>Hace 8 minutos</small>
+                                </div>
+
+                                <b>+$480</b>
+                            </div>
+
+
+                            <div>
+                                <span class="activity-icon blue">
+                                    <i class="bi bi-person-plus"></i>
+                                </span>
+
+                                <div>
+                                    <strong>Nuevo cliente</strong>
+                                    <small>Hace 24 minutos</small>
+                                </div>
+
+                                <b>Cliente agregado</b>
+                            </div>
+
+
+                            <div>
+                                <span class="activity-icon purple">
+                                    <i class="bi bi-box-seam"></i>
+                                </span>
+
+                                <div>
+                                    <strong>Inventario actualizado</strong>
+                                    <small>Hace 42 minutos</small>
+                                </div>
+
+                                <b>+32 unidades</b>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AI -->
+
+                <div class="nx-demo-ai">
+
+                    <div class="nx-demo-ai-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+
+                    <div>
+                        <span>ASISTENTE LYVARYN</span>
+                        <strong>
+                            Inteligencia para ayudarte a entender tu negocio.
+                        </strong>
+                    </div>
+
+                    <button type="button">
+                        Explorar IA
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MODULES
+     ========================================================= -->
+
+<section class="nx-demo-modules">
+
+    <div class="container">
+
+        <div class="nx-demo-section-heading">
+
+            <span class="nx-demo-mini-badge">
+                <i class="bi bi-grid-fill"></i>
+                MÓDULOS
+            </span>
+
+            <h2>
+                Conoce cada parte de
+                <span>LYVARYN.</span>
+            </h2>
+
+            <p>
+                Cada módulo está diseñado para cubrir una parte
+                importante de la gestión de tu empresa.
+            </p>
+
+        </div>
+
+
+        <div class="nx-demo-module-grid">
+
+
+            <!-- PANEL -->
+
+            <article class="nx-demo-module" id="modulo-panel">
+
+                <div class="nx-demo-module-icon blue">
+                    <i class="bi bi-speedometer2"></i>
+                </div>
+
+                <span class="nx-demo-module-number">01</span>
+
+                <h3>Panel</h3>
+
+                <p>
+                    Consulta una vista general del estado de tu empresa,
+                    con indicadores y actividad relevante en un solo lugar.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Resumen</span>
+                    <span>Indicadores</span>
+                    <span>Actividad</span>
+                </div>
+
+            </article>
+
+
+            <!-- INVENTARIO -->
+
+            <article class="nx-demo-module" id="modulo-inventario">
+
+                <div class="nx-demo-module-icon purple">
+                    <i class="bi bi-box-seam"></i>
+                </div>
+
+                <span class="nx-demo-module-number">02</span>
+
+                <h3>Inventario</h3>
+
+                <p>
+                    Administra productos, existencias, categorías
+                    y movimientos de inventario desde un mismo módulo.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Productos</span>
+                    <span>Stock</span>
+                    <span>Movimientos</span>
+                </div>
+
+            </article>
+
+
+            <!-- VENTAS -->
+
+            <article class="nx-demo-module" id="modulo-ventas">
+
+                <div class="nx-demo-module-icon green">
+                    <i class="bi bi-cart3"></i>
+                </div>
+
+                <span class="nx-demo-module-number">03</span>
+
+                <h3>Ventas</h3>
+
+                <p>
+                    Registra y administra las ventas de tu negocio
+                    y consulta la información comercial disponible.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Ventas</span>
+                    <span>Clientes</span>
+                    <span>Detalle</span>
+                </div>
+
+            </article>
+
+
+            <!-- COMPRAS -->
+
+            <article class="nx-demo-module" id="modulo-compras">
+
+                <div class="nx-demo-module-icon orange">
+                    <i class="bi bi-bag-check"></i>
+                </div>
+
+                <span class="nx-demo-module-number">04</span>
+
+                <h3>Compras</h3>
+
+                <p>
+                    Mantén organizadas las compras y la información
+                    relacionada con el abastecimiento de tu empresa.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Compras</span>
+                    <span>Proveedores</span>
+                    <span>Control</span>
+                </div>
+
+            </article>
+
+
+            <!-- CLIENTES -->
+
+            <article class="nx-demo-module" id="modulo-clientes">
+
+                <div class="nx-demo-module-icon cyan">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+
+                <span class="nx-demo-module-number">05</span>
+
+                <h3>Clientes</h3>
+
+                <p>
+                    Centraliza la información de tus clientes y
+                    facilita la gestión de tu relación comercial.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>CRM</span>
+                    <span>Contactos</span>
+                    <span>Historial</span>
+                </div>
+
+            </article>
+
+
+            <!-- INFORMES -->
+
+            <article class="nx-demo-module" id="modulo-informes">
+
+                <div class="nx-demo-module-icon pink">
+                    <i class="bi bi-bar-chart-fill"></i>
+                </div>
+
+                <span class="nx-demo-module-number">06</span>
+
+                <h3>Informes</h3>
+
+                <p>
+                    Obtén información de las operaciones de tu empresa
+                    para facilitar el análisis y seguimiento.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Reportes</span>
+                    <span>Análisis</span>
+                    <span>Datos</span>
+                </div>
+
+            </article>
+
+
+            <!-- PERSONAL -->
+
+            <article class="nx-demo-module" id="modulo-personal">
+
+                <div class="nx-demo-module-icon indigo">
+                    <i class="bi bi-person-badge"></i>
+                </div>
+
+                <span class="nx-demo-module-number">07</span>
+
+                <h3>Personal</h3>
+
+                <p>
+                    Administra la información de las personas que
+                    forman parte de tu organización.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Empleados</span>
+                    <span>Información</span>
+                    <span>Gestión</span>
+                </div>
+
+            </article>
+
+
+            <!-- USUARIOS -->
+
+            <article class="nx-demo-module" id="modulo-usuarios">
+
+                <div class="nx-demo-module-icon blue">
+                    <i class="bi bi-person-gear"></i>
+                </div>
+
+                <span class="nx-demo-module-number">08</span>
+
+                <h3>Usuarios</h3>
+
+                <p>
+                    Administra las cuentas que tienen acceso a
+                    LYVARYN dentro de tu empresa.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Accesos</span>
+                    <span>Usuarios</span>
+                    <span>Seguridad</span>
+                </div>
+
+            </article>
+
+
+            <!-- ROLES -->
+
+            <article class="nx-demo-module" id="modulo-roles">
+
+                <div class="nx-demo-module-icon red">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+
+                <span class="nx-demo-module-number">09</span>
+
+                <h3>Roles</h3>
+
+                <p>
+                    Define los permisos y niveles de acceso de los
+                    usuarios según las necesidades de tu empresa.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Permisos</span>
+                    <span>Roles</span>
+                    <span>Control</span>
+                </div>
+
+            </article>
+
+
+            <!-- EMPRESA -->
+
+            <article class="nx-demo-module" id="modulo-empresa">
+
+                <div class="nx-demo-module-icon teal">
+                    <i class="bi bi-building"></i>
+                </div>
+
+                <span class="nx-demo-module-number">10</span>
+
+                <h3>Empresa</h3>
+
+                <p>
+                    Configura y administra la información principal
+                    de tu empresa dentro de LYVARYN.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>Configuración</span>
+                    <span>Empresa</span>
+                    <span>Datos</span>
+                </div>
+
+            </article>
+
+
+            <!-- IA -->
+
+            <article class="nx-demo-module nx-demo-module-ai">
+
+                <div class="nx-demo-module-icon violet">
+                    <i class="bi bi-stars"></i>
+                </div>
+
+                <span class="nx-demo-module-number">11</span>
+
+                <h3>Asistente LYVARYN</h3>
+
+                <p>
+                    Una capa de inteligencia artificial integrada
+                    para ayudarte a consultar y analizar información
+                    de tu negocio.
+                </p>
+
+                <div class="nx-demo-module-tags">
+                    <span>IA</span>
+                    <span>Análisis</span>
+                    <span>Asistente</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+     ========================================================= -->
+
+<section class="nx-demo-final">
+
+    <div class="container">
+
+        <div class="nx-demo-final-card">
+
+            <div class="nx-demo-final-icon">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+            </div>
+
+            <span>
+                CONOCE LYVARYN EN TU EMPRESA
+            </span>
+
+            <h2>
+                ¿Quieres ver cómo puede funcionar
+                <strong>LYVARYN para tu negocio?</strong>
+            </h2>
+
+            <p>
+                Solicita una demostración y conversemos sobre las
+                necesidades de tu empresa.
+            </p>
+
+            <a href="contacto.html" class="nx-demo-final-button">
+                <i class="bi bi-calendar2-check"></i>
+                Solicitar una demo
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <footer class="site-footer" id="contacto">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+
+            <div class="col-lg-4">
+                <h3>LYVARYN</h3>
+                <p>
+                    Gestión empresarial moderna para negocios
+                    que quieren crecer con claridad.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h4>Contacto</h4>
+
+                <a href="https://wa.me/50662027095"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="bi bi-whatsapp"></i>
+                    +506 6202 7095
+                </a>
+
+                <a href="mailto:aiftechnologycr@gmail.com">
+                    <i class="bi bi-envelope"></i>
+                    aiftechnologycr@gmail.com
+                </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+                <h4>Ubicación</h4>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Costa Rica
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h4>Legal</h4>
+
+                <a href="politica-privacidad.html">
+                    Política de Privacidad
+                </a>
+
+                <a href="terminos-condiciones.html">
+                    Términos y Condiciones
+                </a>
+
+                <a href="politica-cookies.html">
+                    Política de Cookies
+                </a>
+
+                <a href="politica-reembolsos.html">
+                    Política de Reembolsos
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 LYVARYN · Todos los derechos reservados
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/csrf.js"></script>
+
+</body>
+
+</html>

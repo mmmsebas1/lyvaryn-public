@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="IjQ4ZWUwN2M2MThiZjM1MWQwM2JmNTUyOTY5OWExYWE1OGU0ZGUwYjYi.aslMDw.KAkhLNTNdIGK_Fvme-4rn_3m0dc">
+
+    <script>
+(function () {
+    try {
+
+        const theme =
+            localStorage.getItem("lyvaryn-theme");
+
+        if (theme === "light") {
+
+            document.documentElement.classList.add(
+                "light-theme"
+            );
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "LYVARYN: no se pudo recuperar el tema.",
+            error
+        );
+
+    }
+})();
+</script>
+
+    <title>Política de Privacidad | LYVARYN</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fuente -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="assets/css/variables.css">
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link rel="stylesheet"
+        href="assets/css/navbar.css">
+
+    <link rel="stylesheet"
+        href="assets/css/hero.css">
+
+    <link rel="stylesheet"
+        href="assets/css/dashboard-preview.css">
+
+    <link rel="stylesheet"
+        href="assets/css/buttons.css">
+
+    <link rel="stylesheet"
+        href="assets/css/animations.css">
+
+    <link rel="stylesheet"
+        href="assets/css/responsive.css">
+
+    <link rel="stylesheet"
+        href="assets/css/widgets.css">
+
+    <link rel="stylesheet"
+        href="assets/css/features.css">
+
+    <link rel="stylesheet"
+        href="assets/css/showcase.css">
+
+    <link rel="stylesheet"
+        href="assets/css/how.css">
+    
+    <link rel="stylesheet"
+        href="assets/css/pricing.css">
+
+    <link rel="stylesheet"
+        href="assets/css/integrations.css">
+
+    <link rel="stylesheet"
+        href="assets/css/pricing-page.css">
+
+    <link rel="stylesheet"
+        href="assets/css/como-empezar.css">
+
+    <link rel="stylesheet"
+        href="assets/css/contacto.css">
+
+    <link rel="stylesheet"
+        href="assets/css/legal.css">
+
+    <link rel="stylesheet"
+        href="assets/css/stats.css">
+        
+    <link rel="stylesheet"
+        href="assets/css/faq.css">
+
+    <link rel="stylesheet"
+        href="assets/css/cta.css">
+
+    <link rel="stylesheet"
+        href="assets/css/auth.css">
+
+    <link rel="stylesheet"
+        href="assets/css/platform-showcase.css">
+
+    <link rel="stylesheet"
+        href="assets/css/demo.css">
+
+    <link rel="stylesheet"
+        href="assets/css/solicitar-demo.css">
+
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/landing-upgrade.css">
+
+
+    <style>
+/* =========================================================
+   LYVARYN COOKIE CONSENT
+========================================================= */
+
+.nx-cookie-banner {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9998;
+    display: block;
+}
+
+.nx-cookie-banner[hidden],
+.nx-cookie-modal[hidden] {
+    display: none !important;
+}
+
+.nx-cookie-banner-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 22px;
+    padding: 20px 22px;
+
+    border: 1px solid rgba(148,163,184,.14);
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15,23,42,.97),
+            rgba(3,7,18,.97)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.45),
+        0 8px 30px rgba(0,0,0,.20);
+
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+
+.nx-cookie-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    border-radius: 13px;
+
+    background: rgba(37,99,235,.12);
+    border: 1px solid rgba(96,165,250,.16);
+
+    color: #60a5fa;
+    font-size: 1.15rem;
+}
+
+.nx-cookie-content {
+    min-width: 0;
+}
+
+.nx-cookie-content h2 {
+    margin: 0 0 6px;
+
+    color: #f8fafc;
+    font-size: .98rem;
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.nx-cookie-content p {
+    margin: 0;
+
+    max-width: 690px;
+
+    color: #94a3b8;
+    font-size: .76rem;
+    line-height: 1.6;
+}
+
+.nx-cookie-policy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 8px;
+
+    color: #60a5fa;
+    font-size: .7rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nx-cookie-policy-link:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+.nx-cookie-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nx-cookie-btn {
+    min-height: 40px;
+    padding: 0 15px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: .72rem;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.nx-cookie-btn:hover {
+    transform: translateY(-1px);
+}
+
+.nx-cookie-btn-primary {
+    border: 1px solid rgba(96,165,250,.20);
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+
+    color: #fff;
+
+    box-shadow:
+        0 8px 22px rgba(37,99,235,.20);
+}
+
+.nx-cookie-btn-primary:hover {
+    box-shadow:
+        0 11px 27px rgba(37,99,235,.30);
+}
+
+.nx-cookie-btn-secondary {
+    border: 1px solid rgba(148,163,184,.14);
+    background: rgba(148,163,184,.06);
+    color: #cbd5e1;
+}
+
+.nx-cookie-btn-secondary:hover {
+    background: rgba(148,163,184,.11);
+}
+
+.nx-cookie-btn-outline {
+    border: 1px solid rgba(96,165,250,.18);
+    background: rgba(37,99,235,.05);
+    color: #93c5fd;
+}
+
+.nx-cookie-btn-outline:hover {
+    background: rgba(37,99,235,.10);
+}
+
+
+/* =========================================================
+   COOKIE MODAL
+========================================================= */
+
+.nx-cookie-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+}
+
+.nx-cookie-modal-backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.70);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.nx-cookie-modal-card {
+    position: relative;
+    width: min(680px, 100%);
+    max-height: min(760px, calc(100vh - 48px));
+
+    overflow-y: auto;
+
+    padding: 28px;
+
+    border: 1px solid rgba(148,163,184,.13);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15,23,42,.99),
+            rgba(3,7,18,.99)
+        );
+
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.55);
+}
+
+.nx-cookie-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nx-cookie-modal-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #60a5fa;
+    font-size: .68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.nx-cookie-modal-header h2 {
+    margin: 8px 0 0;
+
+    color: #f8fafc;
+    font-size: 1.45rem;
+    font-weight: 850;
+    letter-spacing: -.035em;
+}
+
+.nx-cookie-close {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(148,163,184,.12);
+    border-radius: 10px;
+
+    background: rgba(148,163,184,.05);
+    color: #94a3b8;
+
+    cursor: pointer;
+}
+
+.nx-cookie-close:hover {
+    background: rgba(148,163,184,.10);
+    color: #f8fafc;
+}
+
+.nx-cookie-modal-description {
+    margin: 16px 0 22px;
+
+    color: #94a3b8;
+    font-size: .78rem;
+    line-height: 1.7;
+}
+
+.nx-cookie-options {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.nx-cookie-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 15px 16px;
+
+    border: 1px solid rgba(148,163,184,.09);
+    border-radius: 13px;
+
+    background: rgba(15,23,42,.48);
+}
+
+.nx-cookie-option-info {
+    min-width: 0;
+}
+
+.nx-cookie-option-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #e2e8f0;
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+.nx-cookie-option-title i {
+    color: #60a5fa;
+}
+
+.nx-cookie-option-info p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+    font-size: .68rem;
+    line-height: 1.55;
+}
+
+.nx-cookie-switch {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.nx-cookie-switch input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nx-cookie-switch label {
+    width: 43px;
+    height: 24px;
+
+    display: block;
+
+    border-radius: 999px;
+
+    background: #1e293b;
+
+    border: 1px solid rgba(148,163,184,.14);
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.nx-cookie-switch label span {
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #94a3b8;
+
+    transition: .2s ease;
+}
+
+.nx-cookie-switch input:checked + label {
+    background: #2563eb;
+    border-color: #3b82f6;
+}
+
+.nx-cookie-switch input:checked + label span {
+    transform: translateX(19px);
+    background: #fff;
+}
+
+.nx-cookie-switch-disabled label {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.nx-cookie-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-top: 22px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(148,163,184,.08);
+}
+
+.nx-cookie-modal-policy {
+    color: #60a5fa;
+    font-size: .72rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nx-cookie-modal-policy:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .nx-cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .nx-cookie-banner-inner {
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+
+        padding: 16px;
+
+        border-radius: 16px;
+    }
+
+    .nx-cookie-icon {
+        width: 38px;
+        height: 38px;
+
+        border-radius: 10px;
+
+        font-size: .95rem;
+    }
+
+    .nx-cookie-content h2 {
+        font-size: .84rem;
+    }
+
+    .nx-cookie-content p {
+        font-size: .68rem;
+        line-height: 1.55;
+    }
+
+    .nx-cookie-policy-link {
+        font-size: .64rem;
+    }
+
+    .nx-cookie-actions {
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        width: 100%;
+    }
+
+    .nx-cookie-btn {
+        width: 100%;
+        min-height: 37px;
+
+        padding: 0 7px;
+
+        font-size: .64rem;
+    }
+
+    .nx-cookie-modal {
+        padding: 12px;
+    }
+
+    .nx-cookie-modal-card {
+        max-height: calc(100vh - 24px);
+
+        padding: 21px 17px;
+
+        border-radius: 17px;
+    }
+
+    .nx-cookie-modal-header h2 {
+        font-size: 1.18rem;
+    }
+
+    .nx-cookie-modal-description {
+        font-size: .7rem;
+    }
+
+    .nx-cookie-option {
+        align-items: flex-start;
+        padding: 13px;
+    }
+
+    .nx-cookie-option-title {
+        font-size: .72rem;
+    }
+
+    .nx-cookie-option-info p {
+        font-size: .63rem;
+    }
+
+    .nx-cookie-modal-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .nx-cookie-modal-footer .nx-cookie-btn {
+        min-height: 40px;
+    }
+
+    .nx-cookie-modal-policy {
+        text-align: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- =========================================================
+     LYVARYN COOKIE CONSENT
+========================================================= -->
+
+<div
+    id="lyvarynCookieBanner"
+    class="nx-cookie-banner"
+    role="dialog"
+    aria-labelledby="nxCookieTitle"
+    aria-describedby="nxCookieDescription"
+    aria-modal="false"
+    hidden
+>
+    <div class="nx-cookie-banner-inner">
+
+        <div class="nx-cookie-icon">
+            <i class="bi bi-shield-check"></i>
+        </div>
+
+        <div class="nx-cookie-content">
+
+            <h2 id="nxCookieTitle">
+                Tu privacidad importa
+            </h2>
+
+            <p id="nxCookieDescription">
+                Utilizamos cookies necesarias para el funcionamiento del sitio
+                y, con tu autorización, cookies adicionales para preferencias
+                y medición. Puedes aceptar todas, rechazar las no necesarias
+                o configurar tus preferencias.
+            </p>
+
+            <a
+                href="politica-cookies.html"
+                class="nx-cookie-policy-link"
+            >
+                Leer Política de Cookies
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+
+        <div class="nx-cookie-actions">
+
+            <button
+                type="button"
+                id="nxCookieReject"
+                class="nx-cookie-btn nx-cookie-btn-secondary"
+            >
+                Rechazar
+            </button>
+
+            <button
+                type="button"
+                id="nxCookieConfigure"
+                class="nx-cookie-btn nx-cookie-btn-outline"
+            >
+                Configurar
+            </button>
+
+            <button
+                type="button"
+                id="nxCookieAccept"
+                class="nx-cookie-btn nx-cookie-btn-primary"
+            >
+                Aceptar todas
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- =========================================================
+     LYVARYN COOKIE PREFERENCES
+========================================================= -->
+
+<div
+    id="lyvarynCookieModal"
+    class="nx-cookie-modal"
+    role="dialog"
+    aria-labelledby="nxCookieModalTitle"
+    aria-modal="true"
+    hidden
+>
+    <div class="nx-cookie-modal-backdrop"></div>
+
+    <div class="nx-cookie-modal-card">
+
+        <div class="nx-cookie-modal-header">
+
+            <div>
+                <span class="nx-cookie-modal-eyebrow">
+                    <i class="bi bi-sliders"></i>
+                    Preferencias de privacidad
+                </span>
+
+                <h2 id="nxCookieModalTitle">
+                    Configurar cookies
+                </h2>
+            </div>
+
+            <button
+                type="button"
+                id="nxCookieClose"
+                class="nx-cookie-close"
+                aria-label="Cerrar preferencias"
+            >
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+        <p class="nx-cookie-modal-description">
+            Puedes decidir qué categorías de cookies permites.
+            Las cookies necesarias no pueden desactivarse porque son
+            necesarias para determinadas funciones del sitio.
+        </p>
+
+        <div class="nx-cookie-options">
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-shield-lock"></i>
+                        Necesarias
+                    </div>
+
+                    <p>
+                        Necesarias para funciones técnicas, seguridad y
+                        funcionamiento básico del sitio.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch nx-cookie-switch-disabled">
+                    <input
+                        type="checkbox"
+                        id="nxCookieNecessary"
+                        checked
+                        disabled
+                    >
+
+                    <label for="nxCookieNecessary">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-sliders"></i>
+                        Preferencias
+                    </div>
+
+                    <p>
+                        Permiten recordar determinadas preferencias de
+                        navegación cuando corresponda.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookiePreferences"
+                    >
+
+                    <label for="nxCookiePreferences">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-bar-chart-line"></i>
+                        Analíticas
+                    </div>
+
+                    <p>
+                        Permiten medir el uso del sitio para comprender
+                        su funcionamiento y mejorar la experiencia.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookieAnalytics"
+                    >
+
+                    <label for="nxCookieAnalytics">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-megaphone"></i>
+                        Marketing
+                    </div>
+
+                    <p>
+                        Permiten tecnologías destinadas a determinadas
+                        funciones publicitarias o medición de campañas,
+                        cuando estén disponibles.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookieMarketing"
+                    >
+
+                    <label for="nxCookieMarketing">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="nx-cookie-modal-footer">
+
+            <a
+                href="politica-cookies.html"
+                class="nx-cookie-modal-policy"
+            >
+                Ver Política de Cookies
+            </a>
+
+            <button
+                type="button"
+                id="nxCookieSave"
+                class="nx-cookie-btn nx-cookie-btn-primary"
+            >
+                Guardar preferencias
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+
+LYVARYN
+
+</a>
+
+<button
+    type="button"
+    class="theme-toggle mobile-theme-toggle"
+    id="mobileThemeToggle"
+    aria-label="Cambiar tema"
+    title="Cambiar tema"
+>
+    <i class="bi bi-moon-stars-fill"></i>
+</button>
+
+<button
+class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+    <a class="nav-link" href="caracteristicas.html">
+    Características
+</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="precios.html">
+        Precios
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="como-empezar.html">Cómo empezar</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contacto.html">
+        Contacto
+    </a>
+</li>
+
+<li class="nav-item">
+    <button
+        type="button"
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Cambiar tema"
+        title="Cambiar tema"
+    >
+        <i class="bi bi-moon-stars-fill"></i>
+    </button>
+</li>
+
+</ul>
+
+<a
+    class="btn btn-primary ms-4"
+    href="precios.html"
+>
+    Ver planes
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+    
+
+<section class="nx-legal-page">
+    <div class="container">
+
+        <div class="nx-legal-hero">
+            <span class="nx-legal-eyebrow">
+                <i class="bi bi-shield-check"></i>
+                Privacidad y protección de datos
+            </span>
+
+            <h1>Política de Privacidad</h1>
+
+            <p>
+                En LYVARYN nos comprometemos con el tratamiento responsable,
+                transparente y seguro de la información que recibimos a través
+                de nuestro sitio web y nuestros canales de contacto.
+            </p>
+
+            <div class="nx-legal-updated">
+                Última actualización: 25 de septiembre de 2026
+            </div>
+        </div>
+
+        <nav class="nx-legal-doc-nav" aria-label="Centro Legal LYVARYN">
+
+    <a
+        href="politica-privacidad.html"
+        class="active"
+        aria-current="page"
+    >
+        <i class="bi bi-shield-check"></i>
+        Privacidad
+    </a>
+
+    <a href="terminos-condiciones.html">
+        <i class="bi bi-file-earmark-text"></i>
+        Términos
+    </a>
+
+    <a href="politica-cookies.html">
+        <i class="bi bi-cookie"></i>
+        Cookies
+    </a>
+
+    <a href="politica-reembolsos.html">
+        <i class="bi bi-arrow-counterclockwise"></i>
+        Reembolsos
+    </a>
+
+    </nav>
+
+        <div class="nx-legal-layout">
+
+            <aside class="nx-legal-sidebar">
+
+    <details class="nx-legal-sidebar-card" open>
+
+        <summary>
+            <span>
+                <i class="bi bi-list-ul"></i>
+                Contenido
+            </span>
+
+            <i class="bi bi-chevron-down nx-legal-sidebar-chevron"></i>
+        </summary>
+
+        <div class="nx-legal-sidebar-links">
+
+            <a href="#responsable">
+                Responsable
+            </a>
+
+            <a href="#datos">
+                Datos que recopilamos
+            </a>
+
+            <a href="#finalidad">
+                Finalidad
+            </a>
+
+            <a href="#base">
+                Tratamiento y consentimiento
+            </a>
+
+            <a href="#conservacion">
+                Conservación
+            </a>
+
+            <a href="#seguridad">
+                Seguridad
+            </a>
+
+            <a href="#terceros">
+                Terceros
+            </a>
+
+            <a href="#derechos">
+                Derechos
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+        </div>
+
+    </details>
+
+</aside>
+
+            <article class="nx-legal-content">
+
+                <section id="responsable">
+                    <h2>1. Responsable del tratamiento</h2>
+
+                    <p>
+                        El responsable del tratamiento de los datos personales
+                        recopilados mediante este sitio web es LYVARYN,
+                        en adelante “LYVARYN”.
+                    </p>
+
+                    <p>
+                        Esta política explica qué información podemos recopilar,
+                        para qué la utilizamos, cómo la protegemos y cuáles son
+                        las opciones disponibles para las personas que nos
+                        proporcionan sus datos.
+                    </p>
+                </section>
+
+                <section id="datos">
+                    <h2>2. Datos personales que podemos recopilar</h2>
+
+                    <p>
+                        Dependiendo de la interacción que realices con nuestro
+                        sitio web, podemos recopilar información como:
+                    </p>
+
+                    <ul>
+                        <li>Nombre y apellidos.</li>
+                        <li>Nombre de la empresa u organización.</li>
+                        <li>Dirección de correo electrónico.</li>
+                        <li>Número telefónico.</li>
+                        <li>Tipo de negocio.</li>
+                        <li>Información relacionada con la solicitud realizada.</li>
+                        <li>Información que voluntariamente incluyas en los formularios.</li>
+                        <li>Información técnica necesaria para el funcionamiento y seguridad del sitio.</li>
+                    </ul>
+
+                    <p>
+                        No solicitamos información personal que no sea necesaria
+                        para la finalidad correspondiente, salvo que exista una
+                        razón legítima y debidamente informada para hacerlo.
+                    </p>
+                </section>
+
+                <section id="finalidad">
+                    <h2>3. Para qué utilizamos la información</h2>
+
+                    <p>
+                        La información proporcionada mediante nuestros formularios
+                        y canales de contacto puede utilizarse para:
+                    </p>
+
+                    <ul>
+                        <li>Responder solicitudes de información.</li>
+                        <li>Coordinar demostraciones de LYVARYN.</li>
+                        <li>Preparar propuestas comerciales.</li>
+                        <li>Comunicarnos con empresas interesadas en nuestros servicios.</li>
+                        <li>Dar seguimiento a solicitudes comerciales.</li>
+                        <li>Mejorar nuestros servicios y experiencia de usuario.</li>
+                        <li>Proteger el sitio frente a usos fraudulentos o abusivos.</li>
+                        <li>Cumplir obligaciones legales cuando corresponda.</li>
+                    </ul>
+
+                    <p>
+                        Los datos no serán utilizados para finalidades incompatibles
+                        con aquellas para las que fueron recopilados.
+                    </p>
+                </section>
+
+                <section id="base">
+                    <h2>4. Tratamiento y consentimiento</h2>
+
+                    <p>
+                        Cuando la legislación aplicable requiera consentimiento
+                        para el tratamiento de datos personales, LYVARYN solicitará
+                        dicho consentimiento de manera informada y mediante medios
+                        que permitan acreditar su otorgamiento.
+                    </p>
+
+                    <p>
+                        El consentimiento podrá ser retirado cuando corresponda,
+                        sin que ello afecte la licitud del tratamiento realizado
+                        previamente sobre la base del consentimiento otorgado.
+                    </p>
+
+                    <div class="nx-legal-note">
+                        <i class="bi bi-info-circle"></i>
+                        <div>
+                            <strong>Importante</strong>
+                            <p>
+                                El envío de información mediante nuestros formularios
+                                no significa autorización para utilizar los datos
+                                con finalidades distintas a las informadas.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="conservacion">
+                    <h2>5. Conservación de los datos</h2>
+
+                    <p>
+                        Conservaremos los datos personales durante el tiempo
+                        necesario para cumplir con la finalidad para la cual fueron
+                        recopilados, atender solicitudes, mantener registros
+                        comerciales o cumplir obligaciones legales aplicables.
+                    </p>
+
+                    <p>
+                        Cuando los datos ya no sean necesarios para dichas
+                        finalidades, se procederá a eliminarlos, anonimizaros o
+                        conservarlos únicamente cuando exista una obligación o
+                        fundamento legal que lo justifique.
+                    </p>
+                </section>
+
+                <section id="seguridad">
+                    <h2>6. Seguridad de la información</h2>
+
+                    <p>
+                        LYVARYN implementa medidas técnicas y organizativas
+                        razonables destinadas a proteger la información frente a
+                        accesos no autorizados, pérdida, alteración, divulgación
+                        indebida o destrucción.
+                    </p>
+
+                    <p>
+                        Sin embargo, ningún sistema conectado a Internet puede
+                        garantizar seguridad absoluta. Por ello, trabajamos
+                        continuamente para reducir los riesgos asociados al
+                        tratamiento y almacenamiento de información.
+                    </p>
+                </section>
+
+                <section id="terceros">
+                    <h2>7. Servicios e integraciones de terceros</h2>
+
+                    <p>
+                        Nuestro sitio puede utilizar servicios tecnológicos
+                        proporcionados por terceros para determinadas funciones,
+                        como alojamiento, distribución de recursos web, analítica,
+                        comunicaciones o funcionamiento técnico.
+                    </p>
+
+                    <p>
+                        Entre las tecnologías actualmente utilizadas en el sitio
+                        pueden encontrarse recursos proporcionados mediante
+                        Bootstrap, Bootstrap Icons y Google Fonts.
+                    </p>
+
+                    <p>
+                        Cuando un servicio de terceros pueda implicar tratamiento
+                        de información personal o tecnologías de seguimiento,
+                        procuraremos aplicar los controles y configuraciones
+                        correspondientes de acuerdo con la finalidad del servicio
+                        y la normativa aplicable.
+                    </p>
+
+                    <p>
+                        Para obtener información específica sobre cookies y
+                        tecnologías similares, consulta nuestra
+                        <a href="politica-cookies.html">
+                            Política de Cookies
+                        </a>.
+                    </p>
+                </section>
+
+                <section id="derechos">
+                    <h2>8. Derechos de las personas</h2>
+
+                    <p>
+                        Las personas titulares de datos personales pueden ejercer
+                        los derechos que les reconozca la legislación aplicable,
+                        incluyendo, cuando corresponda, solicitar información
+                        sobre el tratamiento de sus datos, acceder a ellos,
+                        solicitar su rectificación o ejercer otros derechos
+                        legalmente reconocidos.
+                    </p>
+
+                    <p>
+                        Las solicitudes serán atendidas conforme a los requisitos,
+                        procedimientos y plazos establecidos por la normativa
+                        aplicable.
+                    </p>
+                </section>
+
+                <section id="contacto">
+                    <h2>9. Contacto sobre privacidad</h2>
+
+                    <p>
+                        Si deseas realizar una consulta relacionada con el
+                        tratamiento de tus datos personales o ejercer un derecho,
+                        puedes comunicarte con LYVARYN mediante nuestros canales
+                        oficiales de contacto.
+                    </p>
+
+                    <div class="nx-legal-contact">
+                        <div>
+                            <i class="bi bi-envelope"></i>
+                            <span>Solicitudes de privacidad</span>
+                        </div>
+
+                        <a href="contacto.html">
+                            Ir a contacto
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>10. Cambios a esta política</h2>
+
+                    <p>
+                        LYVARYN podrá actualizar esta Política de Privacidad cuando
+                        sea necesario para reflejar cambios en nuestros servicios,
+                        tecnologías, procesos o requisitos legales.
+                    </p>
+
+                    <p>
+                        La versión vigente será la publicada en este sitio web,
+                        indicando su fecha de actualización.
+                    </p>
+                </section>
+
+                <div class="nx-legal-disclaimer">
+                    <i class="bi bi-shield-lock"></i>
+                    <p>
+                        Esta política está destinada a informar sobre las prácticas
+                        de privacidad de LYVARYN y no constituye asesoría jurídica.
+                        Para una revisión legal específica de la operación,
+                        contratos o tratamiento de datos de una empresa, se
+                        recomienda consultar con un profesional jurídico en Costa Rica.
+                    </p>
+                </div>
+
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="site-footer" id="contacto">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+
+            <div class="col-lg-4">
+                <h3>LYVARYN</h3>
+                <p>
+                    Gestión empresarial moderna para negocios
+                    que quieren crecer con claridad.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h4>Contacto</h4>
+
+                <a href="https://wa.me/50662027095"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="bi bi-whatsapp"></i>
+                    +506 6202 7095
+                </a>
+
+                <a href="mailto:aiftechnologycr@gmail.com">
+                    <i class="bi bi-envelope"></i>
+                    aiftechnologycr@gmail.com
+                </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+                <h4>Ubicación</h4>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Costa Rica
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h4>Legal</h4>
+
+                <a href="politica-privacidad.html">
+                    Política de Privacidad
+                </a>
+
+                <a href="terminos-condiciones.html">
+                    Términos y Condiciones
+                </a>
+
+                <a href="politica-cookies.html">
+                    Política de Cookies
+                </a>
+
+                <a href="politica-reembolsos.html">
+                    Política de Reembolsos
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 LYVARYN · Todos los derechos reservados
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/csrf.js"></script>
+
+</body>
+
+</html>

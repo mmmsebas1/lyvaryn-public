@@ -1,0 +1,569 @@
+.navbar{
+
+    background:rgba(3,7,18,.75)!important;
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    padding:18px 0;
+
+}
+
+.navbar-brand{
+
+    color:white!important;
+
+    font-size:28px;
+
+    font-weight:800;
+
+}
+
+.nav-link{
+
+    color:#CBD5E1!important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:white!important;
+
+}
+
+.btn-primary{
+
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px 28px;
+
+    font-weight:600;
+
+}
+
+/* =========================================================
+   LYVARYN — NAVBAR MOBILE COMPACTA
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .navbar {
+        min-height: 64px !important;
+        height: 64px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .navbar .container {
+        min-height: 64px !important;
+        height: 64px !important;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .navbar-brand {
+        font-size: 1.45rem !important;
+        line-height: 1 !important;
+    }
+
+    .navbar-toggler {
+        padding: 4px 6px !important;
+        font-size: .9rem !important;
+    }
+}
+
+.hero .badge {
+    display: flex !important;
+    width: fit-content !important;
+    margin-top: -20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 0 !important;
+}
+
+.hero-title {
+    margin-top: 8px !important;
+}
+
+/* =========================================================
+   LYVARYN — MENÚ MÓVIL
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .navbar {
+        position: relative !important;
+        z-index: 3000 !important;
+    }
+
+    .navbar .container {
+        position: relative !important;
+    }
+
+    /* Botón hamburguesa */
+    .navbar-toggler {
+        width: 38px !important;
+        height: 38px !important;
+        padding: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        border: 1px solid rgba(96,165,250,.10) !important;
+        border-radius: 10px !important;
+
+        background: rgba(15,23,42,.45) !important;
+    }
+
+    /* PANEL */
+    .navbar-collapse {
+        position: absolute !important;
+
+        top: calc(100% + 8px) !important;
+        left: 14px !important;
+        right: 14px !important;
+
+        width: auto !important;
+
+        padding: 10px !important;
+
+        background: rgba(6,12,24,.985) !important;
+
+        border: 1px solid rgba(96,165,250,.14) !important;
+        border-radius: 16px !important;
+
+        box-shadow:
+            0 20px 45px rgba(0,0,0,.50),
+            0 0 30px rgba(37,99,235,.08) !important;
+
+        backdrop-filter: blur(18px) !important;
+        -webkit-backdrop-filter: blur(18px) !important;
+
+        z-index: 4000 !important;
+    }
+
+    /* LISTA */
+    .navbar-collapse .navbar-nav {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+
+        gap: 2px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* ENLACES */
+    .navbar-collapse .nav-link {
+        width: 100% !important;
+
+        min-height: 40px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 8px 12px !important;
+
+        border-radius: 9px !important;
+
+        color: #cbd5e1 !important;
+
+        font-size: .80rem !important;
+        font-weight: 600 !important;
+
+        text-align: center !important;
+
+        transition:
+            color .2s ease,
+            background .2s ease !important;
+    }
+
+    .navbar-collapse .nav-link:hover,
+    .navbar-collapse .nav-link:focus {
+        color: #ffffff !important;
+
+        background:
+            rgba(59,130,246,.10) !important;
+    }
+
+    /* BOTÓN PRINCIPAL */
+    .navbar-collapse .btn {
+        width: calc(100% - 12px) !important;
+
+        min-height: 40px !important;
+
+        margin: 7px auto 2px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        border-radius: 9px !important;
+
+        font-size: .80rem !important;
+        font-weight: 700 !important;
+    }
+
+}
+
+.navbar-collapse .navbar-nav .nav-item {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.navbar-collapse .navbar-nav .nav-link {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+/* =========================================================
+   LYVARYN — NAVBAR DESKTOP PREMIUM
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+    .navbar {
+        min-height: 82px !important;
+        height: 82px !important;
+        padding: 0 !important;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(3, 7, 18, .94),
+                rgba(3, 7, 18, .82)
+            ) !important;
+
+        border-bottom: 1px solid rgba(148, 163, 184, .08) !important;
+
+        box-shadow:
+            0 8px 30px rgba(0, 0, 0, .16) !important;
+
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+    }
+
+    .navbar .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* LOGO */
+
+    .navbar-brand {
+        margin: 0 !important;
+
+        color: #f8fafc !important;
+
+        font-size: 1.55rem !important;
+        line-height: 1 !important;
+        font-weight: 850 !important;
+
+        letter-spacing: -.035em !important;
+
+        transition:
+            opacity .2s ease,
+            transform .2s ease !important;
+    }
+
+    .navbar-brand:hover {
+        color: #ffffff !important;
+        opacity: .92;
+        transform: translateY(-1px);
+    }
+
+    /* NAVEGACIÓN */
+
+    .navbar-nav {
+        align-items: center !important;
+        gap: 6px !important;
+    }
+
+    .navbar-nav .nav-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        position: relative;
+
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        min-height: 40px;
+
+        margin: 0 !important;
+        padding: 8px 13px !important;
+
+        color: #aebbd0 !important;
+
+        font-size: .84rem !important;
+        font-weight: 600 !important;
+
+        line-height: 1 !important;
+        white-space: nowrap !important;
+
+        border-radius: 9px;
+
+        transition:
+            color .2s ease,
+            background .2s ease,
+            transform .2s ease !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #f8fafc !important;
+
+        background:
+            rgba(59, 130, 246, .075) !important;
+
+        transform: translateY(-1px);
+    }
+
+    .navbar-nav .nav-link::after {
+        content: "";
+
+        position: absolute;
+
+        left: 50%;
+        bottom: 3px;
+
+        width: 0;
+        height: 2px;
+
+        border-radius: 99px;
+
+        background: #3b82f6;
+
+        transform: translateX(-50%);
+
+        transition: width .2s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        width: 16px;
+    }
+
+    /* BOTÓN VER PLANES */
+
+    .navbar .btn-primary {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        min-width: 130px !important;
+        height: 44px !important;
+
+        margin-left: 14px !important;
+        padding: 0 20px !important;
+
+        border: 1px solid rgba(96, 165, 250, .18) !important;
+        border-radius: 11px !important;
+
+        background:
+            linear-gradient(
+                135deg,
+                #3b82f6,
+                #2563eb
+            ) !important;
+
+        color: #ffffff !important;
+
+        font-size: .82rem !important;
+        font-weight: 750 !important;
+
+        line-height: 1 !important;
+
+        box-shadow:
+            0 10px 25px rgba(37, 99, 235, .22),
+            inset 0 1px 0 rgba(255,255,255,.12) !important;
+
+        transition:
+            transform .2s ease,
+            box-shadow .2s ease,
+            filter .2s ease !important;
+    }
+
+    .navbar .btn-primary:hover {
+        transform: translateY(-2px) !important;
+
+        filter: brightness(1.06);
+
+        box-shadow:
+            0 14px 30px rgba(37, 99, 235, .30),
+            inset 0 1px 0 rgba(255,255,255,.14) !important;
+    }
+}
+
+/* =========================================================
+   LYVARYN — NAVBAR / TEMA CLARO
+========================================================= */
+
+html.light-theme .navbar,
+body.light-theme .navbar {
+    background: rgba(255, 255, 255, .88) !important;
+
+    border-bottom-color:
+        rgba(15, 23, 42, .08) !important;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, .06) !important;
+
+    backdrop-filter: blur(18px);
+}
+
+
+/* Logo */
+html.light-theme .navbar-brand,
+body.light-theme .navbar-brand {
+    color: #111827 !important;
+}
+
+
+/* Enlaces */
+html.light-theme .navbar .nav-link,
+body.light-theme .navbar .nav-link {
+    color: #475569 !important;
+}
+
+
+html.light-theme .navbar .nav-link:hover,
+body.light-theme .navbar .nav-link:hover {
+    color: #2563eb !important;
+}
+
+
+/* Botón hamburguesa */
+html.light-theme .navbar-toggler,
+body.light-theme .navbar-toggler {
+    border-color:
+        rgba(37, 99, 235, .18) !important;
+
+    background: rgba(37, 99, 235, .05);
+}
+
+
+html.light-theme .navbar-toggler-icon,
+body.light-theme .navbar-toggler-icon {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(32%)
+        sepia(93%)
+        saturate(1164%)
+        hue-rotate(201deg)
+        brightness(90%)
+        contrast(91%);
+}
+
+
+/* Menú móvil */
+html.light-theme .navbar-collapse,
+body.light-theme .navbar-collapse {
+    background: rgba(255, 255, 255, .97) !important;
+
+    border-color:
+        rgba(15, 23, 42, .08) !important;
+
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, .08);
+}
+
+
+/* Botón de tema */
+html.light-theme .theme-toggle,
+body.light-theme .theme-toggle {
+    background:
+        rgba(37, 99, 235, .07);
+
+    border-color:
+        rgba(37, 99, 235, .18);
+
+    color: #2563eb;
+}
+
+
+html.light-theme .theme-toggle:hover,
+body.light-theme .theme-toggle:hover {
+    background:
+        rgba(37, 99, 235, .13);
+
+    border-color:
+        rgba(37, 99, 235, .30);
+
+    color: #1d4ed8;
+}
+
+/* =========================================================
+   LYVARYN — BOTÓN DE TEMA EN MÓVIL
+========================================================= */
+
+.mobile-theme-toggle {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+
+    .mobile-theme-toggle {
+        display: inline-flex !important;
+
+        width: 42px;
+        height: 42px;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+        margin-right: -135px;
+
+        padding: 0;
+
+        border: 1px solid rgba(37, 99, 235, .18);
+        border-radius: 12px;
+
+        background: rgba(37, 99, 235, .06);
+        color: #2563eb;
+
+        flex-shrink: 0;
+
+        transform: translateY(-4px);
+    }
+
+    .mobile-theme-toggle:hover {
+        background: rgba(37, 99, 235, .12);
+        border-color: rgba(37, 99, 235, .30);
+        color: #1d4ed8;
+    }
+
+    /* El botón original queda oculto dentro del menú */
+    #menu .theme-toggle {
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .mobile-theme-toggle {
+        display: none !important;
+    }
+}
+

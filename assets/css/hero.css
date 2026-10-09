@@ -1,0 +1,480 @@
+/* =========================================================
+   LYVARYN — HERO
+   ========================================================= */
+
+.hero {
+    position: relative;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 90px 0 80px;
+    background:
+        radial-gradient(
+            circle at 78% 35%,
+            rgba(37, 99, 235, 0.12),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 18% 75%,
+            rgba(59, 130, 246, 0.055),
+            transparent 28%
+        );
+}
+
+/* Glow principal */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    right: -180px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(37, 99, 235, 0.14);
+    filter: blur(150px);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Glow secundario */
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    left: -180px;
+    bottom: -160px;
+    background: rgba(59, 130, 246, 0.07);
+    filter: blur(130px);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================================================
+   BADGE
+   ========================================================= */
+
+.hero .badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 7px 14px !important;
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.10) !important;
+    color: #93c5fd !important;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow:
+        0 8px 25px rgba(37, 99, 235, 0.08),
+        inset 0 0 20px rgba(96, 165, 250, 0.025);
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.hero-title {
+    max-width: 720px;
+    margin: 22px 0 0;
+    color: #f8fafc;
+    font-size: clamp(3.5rem, 5.2vw, 5.15rem);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+.hero-title span {
+    display: block;
+    margin-top: 5px;
+    color: #3b82f6;
+    background: linear-gradient(
+        135deg,
+        #60a5fa 0%,
+        #3b82f6 55%,
+        #2563eb 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.hero-text {
+    max-width: 610px;
+    margin-top: 28px;
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.hero-buttons .btn {
+    min-width: 120px;
+    min-height: 50px;
+    padding: 0 22px;
+    border-radius: 12px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.hero-buttons .btn-primary {
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.25),
+        0 0 0 1px rgba(96, 165, 250, 0.05);
+}
+
+.hero-buttons .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 16px 35px rgba(37, 99, 235, 0.34),
+        0 0 25px rgba(37, 99, 235, 0.12);
+}
+
+.hero-buttons .btn-outline-light {
+    border: 1px solid rgba(96, 165, 250, 0.28);
+    color: #dbeafe;
+    background: rgba(15, 23, 42, 0.58);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.02),
+        0 8px 24px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(12px);
+}
+
+.hero-buttons .btn-outline-light:hover {
+    transform: translateY(-2px);
+    border-color: rgba(96, 165, 250, 0.65);
+    background: rgba(37, 99, 235, 0.12);
+    color: #ffffff;
+    box-shadow:
+        0 10px 28px rgba(37, 99, 235, 0.15),
+        inset 0 0 20px rgba(96, 165, 250, 0.04);
+}
+
+/* =========================================================
+   HERO PREVIEW POSITION
+   ========================================================= */
+
+.hero .col-lg-6:last-child {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .dashboard-preview {
+    margin-left: 18px;
+}
+
+.hero-demo-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: 50px !important;
+    min-height: 50px !important;
+
+    padding: 0 22px !important;
+
+    font-family: inherit !important;
+    font-size: 0.94rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+
+    vertical-align: middle !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1199.98px) {
+    .hero {
+        padding: 80px 0 70px;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 5vw, 4.4rem);
+    }
+
+    .hero .dashboard-preview {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero {
+        min-height: auto;
+        padding: 90px 0 70px;
+    }
+
+    .hero-title {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .hero .badge {
+        display: flex;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero .col-lg-6:last-child {
+        margin-top: 55px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .hero {
+        min-height: auto;
+        padding: 48px 18px 42px;
+        overflow: hidden;
+    }
+
+    .hero .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero .row {
+        margin: 0;
+    }
+
+    .hero .col-lg-6 {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* =========================
+       BADGE
+       ========================= */
+
+    .hero .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 28px;
+        padding: 6px 11px !important;
+
+        font-size: .65rem;
+        line-height: 1.2;
+        white-space: nowrap;
+
+        margin-bottom: 0 !important;
+    }
+
+    /* =========================
+       TITULO
+       ========================= */
+
+    .hero-title {
+        max-width: 340px;
+        margin: 18px auto 0;
+
+        text-align: center;
+
+        font-size: 2.35rem;
+        line-height: 1.02;
+        letter-spacing: -.045em;
+    }
+
+    .hero-title span {
+        display: block;
+        margin-top: 2px;
+    }
+
+    /* =========================
+       DESCRIPCION
+       ========================= */
+
+    .hero-text {
+        max-width: 315px;
+        margin: 16px auto 0;
+
+        text-align: center;
+
+        font-size: .76rem;
+        line-height: 1.5;
+    }
+
+    /* =========================
+       BOTONES
+       ========================= */
+
+    .hero-buttons {
+        width: 100%;
+        max-width: 315px;
+
+        margin: 20px auto 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        flex: 1;
+
+        width: auto;
+        min-width: 0;
+
+        min-height: 42px;
+        height: 42px;
+
+        padding: 0 10px;
+
+        border-radius: 10px;
+
+        font-size: .72rem;
+        line-height: 1;
+    }
+
+    .hero-demo-btn {
+        height: 42px !important;
+        min-height: 42px !important;
+
+        padding: 0 10px !important;
+
+        font-size: .72rem !important;
+        line-height: 1 !important;
+    }
+
+    /* =========================
+       DASHBOARD
+       ========================= */
+
+    .hero .col-lg-6:last-child {
+        margin-top: 32px;
+    }
+
+    .hero .dashboard-preview {
+        width: 100%;
+        max-width: 340px;
+
+        margin: 0 auto;
+
+        padding: 20px;
+        border-radius: 22px;
+    }
+
+    /* =========================
+       BRILLOS
+       ========================= */
+
+    .hero::before {
+        width: 300px;
+        height: 300px;
+
+        right: -150px;
+        top: 42%;
+
+        filter: blur(100px);
+    }
+
+    .hero::after {
+        width: 220px;
+        height: 220px;
+
+        left: -140px;
+        bottom: -80px;
+
+        filter: blur(90px);
+    }
+}
+
+/* =========================================================
+   HERO DESKTOP — AJUSTE DE POSICIÓN
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+    .hero {
+        align-items: flex-start;
+        padding-top: 135px;
+        padding-bottom: 90px;
+    }
+
+    .hero .row {
+        align-items: center;
+        min-height: 650px;
+    }
+
+    .hero .col-lg-6:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero .badge {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .hero-title {
+        margin-top: 18px;
+        text-align: left;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+}
+

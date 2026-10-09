@@ -1,0 +1,759 @@
+/*==========================
+        PRICING
+==========================*/
+
+.pricing-section{
+    padding:120px 0;
+    background:linear-gradient(180deg,#050816 0%,#070b1b 100%);
+    position:relative;
+}
+
+.pricing-section::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#2563eb20;
+    filter:blur(140px);
+    left:-220px;
+    top:100px;
+}
+
+.section-badge{
+
+    display:inline-block;
+    padding:8px 18px;
+
+    border-radius:40px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-weight:600;
+
+    font-size:.85rem;
+
+}
+
+.section-title{
+
+    color:white;
+
+    font-size:3rem;
+
+    font-weight:800;
+
+}
+
+.section-subtitle{
+
+    color:#94a3b8;
+
+    font-size:1.15rem;
+
+}
+
+/*==========================
+        CARD
+==========================*/
+
+.pricing-card{
+
+    position:relative;
+
+    background:#151d2d;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    transition:.4s;
+
+    height:100%;
+
+    overflow:hidden;
+
+}
+
+.pricing-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:#3b82f630;
+
+    border-radius:50%;
+
+    right:-60px;
+
+    top:-60px;
+
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(37,99,235,.18);
+
+}
+
+.pricing-card h3{
+
+    color:white;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.price{
+
+    color:white;
+
+    font-size:3rem;
+
+    font-weight:800;
+
+}
+
+.price-text{
+
+    color:#94a3b8;
+
+    display:block;
+
+    margin-bottom:35px;
+
+}
+
+.pricing-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin-bottom:35px;
+
+}
+
+.pricing-card li{
+
+    color:#d4d4d4;
+
+    margin-bottom:15px;
+
+    font-size:1rem;
+
+}
+
+/*==========================
+        FEATURED
+==========================*/
+
+.featured{
+
+    border:2px solid #2563eb;
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 45px rgba(37,99,235,.35);
+
+}
+
+.featured:hover{
+
+    transform:scale(1.08);
+
+}
+
+.popular{
+
+    position:absolute;
+
+    top:22px;
+
+    right:22px;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:7px 16px;
+
+    border-radius:30px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+/*==========================
+        BUTTONS
+==========================*/
+
+.pricing-card .btn{
+
+    padding:15px;
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:#2563eb;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#3b82f6;
+
+    transform:translateY(-2px);
+
+}
+
+.btn-outline-light:hover{
+
+    background:white;
+
+    color:#111827;
+
+}
+
+/*==========================
+        RESPONSIVE
+==========================*/
+
+@media(max-width:991px){
+
+.featured{
+
+    transform:none;
+
+}
+
+.featured:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.section-title{
+
+    font-size:2.3rem;
+
+}
+
+}
+
+/* =========================================================
+   PRICING — MOBILE COMPACTO
+   Mantiene las 3 tarjetas en una sola fila
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .pricing-section {
+        padding: 55px 0 50px;
+        overflow: hidden;
+    }
+
+    .pricing-section .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pricing-section .section-badge {
+        padding: 6px 13px;
+        font-size: .65rem;
+    }
+
+    .pricing-section .section-title {
+        font-size: 1.65rem;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .pricing-section .section-subtitle {
+        max-width: 330px;
+        margin: 0 auto;
+        font-size: .72rem;
+        line-height: 1.5;
+    }
+
+    /* Las 3 tarjetas en una sola fila */
+    .pricing-section .row {
+        --bs-gutter-x: 6px;
+        --bs-gutter-y: 0;
+
+        flex-wrap: nowrap;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pricing-section .col-lg-4 {
+        width: 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    /* Tarjeta */
+    .pricing-card {
+        min-height: 305px;
+        height: 100%;
+
+        padding: 16px 9px;
+
+        border-radius: 13px;
+    }
+
+    /* Círculo decorativo */
+    .pricing-card::before {
+        width: 85px;
+        height: 85px;
+
+        right: -35px;
+        top: -35px;
+    }
+
+    /* Nombre del plan */
+    .pricing-card h3 {
+        margin-bottom: 8px;
+
+        font-size: .68rem;
+        line-height: 1.15;
+    }
+
+    .pricing-section .col-lg-4:nth-child(3) .price {
+        font-size: 1.10rem;
+        white-space: nowrap;
+        letter-spacing: -0.12em;
+    }
+
+    /* Precio */
+    .pricing-card .price {
+        font-size: 1.55rem;
+        line-height: 1;
+    }
+
+    .pricing-card .price-text {
+        margin-bottom: 14px;
+
+        font-size: .50rem;
+    }
+
+    /* Descripción */
+    .pricing-card p {
+        margin-top: 10px !important;
+        margin-bottom: 12px !important;
+
+        font-size: .54rem;
+        line-height: 1.4;
+    }
+
+    /* Lista */
+    .pricing-card ul {
+        margin-bottom: 14px;
+    }
+
+    .pricing-card li {
+        margin-bottom: 7px;
+
+        font-size: .52rem;
+        line-height: 1.2;
+    }
+
+    /* Botón */
+    .pricing-card .btn {
+        width: 100%;
+
+        min-height: 34px;
+        padding: 7px 3px;
+
+        border-radius: 8px;
+
+        font-size: .48rem;
+        line-height: 1.1;
+    }
+
+    /* Pro destacado */
+    .pricing-card.featured {
+        transform: scale(1.02);
+        z-index: 2;
+    }
+
+    .pricing-card.featured:hover {
+        transform: scale(1.02);
+    }
+
+    /* Más popular */
+    .pricing-card .popular {
+        top: 8px;
+        right: 6px;
+
+        padding: 4px 6px;
+
+        border-radius: 20px;
+
+        font-size: .38rem;
+        line-height: 1;
+    }
+
+    /* Texto debajo de las tarjetas */
+    .pricing-section .text-center.mt-4 {
+        margin-top: 18px !important;
+
+        padding: 0 10px;
+
+        font-size: .58rem;
+        line-height: 1.45;
+    }
+}
+
+/* =========================================================
+   AJUSTES FINALES — SOLO MOBILE
+   NO AFECTA DESKTOP
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    /* =====================================================
+       TARJETAS DE PLANES
+       ===================================================== */
+
+    .pricing-card {
+        min-height: 280px;
+        padding: 13px 8px;
+    }
+
+
+    /* =====================================================
+       ENTERPRISE — PERSONALIZADO
+       ===================================================== */
+
+    .pricing-section .col-lg-4:nth-child(3) .price {
+        font-size: 1.05rem;
+        letter-spacing: -0.10em;
+        padding: 0 2px;
+    }
+
+
+    /* Separación entre Personalizado
+       y "Solución a la medida" */
+
+    .pricing-section .col-lg-4:nth-child(3) .price-text {
+        margin-top: 5px;
+    }
+
+
+    /* =====================================================
+       BOTONES
+       ===================================================== */
+
+    .pricing-card .btn {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        min-height: 32px;
+        height: 32px;
+
+        padding: 0 3px;
+
+        line-height: 1 !important;
+        vertical-align: middle;
+    }
+
+
+    /* =====================================================
+       TEXTO INFERIOR DE LOS PLANES
+       ===================================================== */
+
+    .pricing-section .text-center.mt-5 {
+        margin-top: 13px !important;
+
+        padding: 0 10px;
+    }
+
+    .pricing-section .text-center.mt-5 p {
+        margin-bottom: 0 !important;
+
+        font-size: .68rem !important;
+
+        line-height: 1.4 !important;
+    }
+}
+
+/* =========================================================
+   LYVARYN — PRICING / TEMA CLARO
+   ========================================================= */
+
+html.light-theme .pricing-section,
+body.light-theme .pricing-section {
+    background:
+        linear-gradient(
+            180deg,
+            #f5f7fb 0%,
+            #eef3f9 100%
+        );
+}
+
+html.light-theme .pricing-section::before,
+body.light-theme .pricing-section::before {
+    background: rgba(37, 99, 235, .10);
+}
+
+html.light-theme .pricing-section .section-title,
+body.light-theme .pricing-section .section-title {
+    color: #111827;
+}
+
+html.light-theme .pricing-section .section-subtitle,
+body.light-theme .pricing-section .section-subtitle {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+html.light-theme .pricing-card,
+body.light-theme .pricing-card {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f8fafc 100%
+        );
+
+    border-color:
+        rgba(15, 23, 42, .10);
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, .07);
+}
+
+html.light-theme .pricing-card:hover,
+body.light-theme .pricing-card:hover {
+    box-shadow:
+        0 30px 60px rgba(37, 99, 235, .14);
+}
+
+html.light-theme .pricing-card h3,
+body.light-theme .pricing-card h3 {
+    color: #111827;
+}
+
+html.light-theme .pricing-card .price,
+body.light-theme .pricing-card .price {
+    color: #111827;
+}
+
+html.light-theme .pricing-card .price-text,
+body.light-theme .pricing-card .price-text {
+    color: #64748b;
+}
+
+html.light-theme .pricing-card p,
+body.light-theme .pricing-card p {
+    color: #64748b;
+}
+
+html.light-theme .pricing-card li,
+body.light-theme .pricing-card li {
+    color: #475569;
+}
+
+
+/* =========================================================
+   TARJETA PRO
+   ========================================================= */
+
+html.light-theme .pricing-card.featured,
+body.light-theme .pricing-card.featured {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 40px rgba(37, 99, 235, .16),
+        0 20px 50px rgba(15, 23, 42, .08);
+}
+
+html.light-theme .pricing-card.featured:hover,
+body.light-theme .pricing-card.featured:hover {
+    box-shadow:
+        0 0 50px rgba(37, 99, 235, .20),
+        0 25px 60px rgba(15, 23, 42, .10);
+}
+
+
+/* =========================================================
+   BOTÓN MÁS POPULAR
+   ========================================================= */
+
+html.light-theme .pricing-card .popular,
+body.light-theme .pricing-card .popular {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ENTERPRISE — BOTÓN OUTLINE
+   ========================================================= */
+
+html.light-theme .pricing-card .btn-outline-light,
+body.light-theme .pricing-card .btn-outline-light {
+    color: #1e293b;
+
+    border-color:
+        rgba(15, 23, 42, .18);
+
+    background: transparent;
+}
+
+html.light-theme .pricing-card .btn-outline-light:hover,
+body.light-theme .pricing-card .btn-outline-light:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TEXTO FINAL
+   ========================================================= */
+
+html.light-theme .pricing-section .text-center.mt-5 p,
+body.light-theme .pricing-section .text-center.mt-5 p {
+    color: #64748b;
+}
+
+html.light-theme .pricing-section .text-center.mt-5 strong,
+body.light-theme .pricing-section .text-center.mt-5 strong {
+    color: #111827;
+}
+
+/* =========================================================
+   PRECIOS — TEMA CLARO
+========================================================= */
+
+html.light-theme .pricing-section,
+body.light-theme .pricing-section {
+    background: linear-gradient(
+        180deg,
+        #f5f7fb 0%,
+        #eef3f9 100%
+    );
+}
+
+html.light-theme .pricing-section .section-title,
+body.light-theme .pricing-section .section-title {
+    color: #111827 !important;
+}
+
+html.light-theme .pricing-section .section-subtitle,
+body.light-theme .pricing-section .section-subtitle {
+    color: #64748b !important;
+}
+
+html.light-theme .pricing-card,
+body.light-theme .pricing-card {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, .10);
+    box-shadow: 0 15px 40px rgba(15, 23, 42, .07);
+}
+
+html.light-theme .pricing-card h3,
+body.light-theme .pricing-card h3 {
+    color: #111827 !important;
+}
+
+html.light-theme .pricing-card .price,
+body.light-theme .pricing-card .price {
+    color: #111827 !important;
+}
+
+html.light-theme .pricing-card .price-text,
+body.light-theme .pricing-card .price-text {
+    color: #64748b !important;
+}
+
+html.light-theme .pricing-card p,
+body.light-theme .pricing-card p {
+    color: #64748b !important;
+}
+
+html.light-theme .pricing-card li,
+body.light-theme .pricing-card li {
+    color: #475569 !important;
+}
+
+html.light-theme .pricing-card li::first-letter,
+body.light-theme .pricing-card li::first-letter {
+    color: #2563eb;
+}
+
+html.light-theme .pricing-card.featured,
+body.light-theme .pricing-card.featured {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #f1f6ff
+    );
+
+    border-color: #2563eb;
+    box-shadow: 0 20px 50px rgba(37, 99, 235, .16);
+}
+
+html.light-theme .pricing-card .popular,
+body.light-theme .pricing-card .popular {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+html.light-theme .pricing-section > .container > .text-center:last-child,
+body.light-theme .pricing-section > .container > .text-center:last-child {
+    color: #64748b;
+}
+
+html.light-theme .pricing-section > .container > .text-center:last-child strong,
+body.light-theme .pricing-section > .container > .text-center:last-child strong {
+    color: #111827;
+}
+
+html.light-theme .pricing-card .btn-outline-light,
+body.light-theme .pricing-card .btn-outline-light {
+    color: #334155 !important;
+    border-color: rgba(15, 23, 42, .12) !important;
+    background: #ffffff !important;
+}
+
+html.light-theme .pricing-card .btn-outline-light:hover,
+body.light-theme .pricing-card .btn-outline-light:hover {
+    color: #1d4ed8 !important;
+    border-color: rgba(37, 99, 235, .28) !important;
+    background: #f8fafc !important;
+}

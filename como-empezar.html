@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="IjQ4ZWUwN2M2MThiZjM1MWQwM2JmNTUyOTY5OWExYWE1OGU0ZGUwYjYi.aslMDw.KAkhLNTNdIGK_Fvme-4rn_3m0dc">
+
+    <script>
+(function () {
+    try {
+
+        const theme =
+            localStorage.getItem("lyvaryn-theme");
+
+        if (theme === "light") {
+
+            document.documentElement.classList.add(
+                "light-theme"
+            );
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "LYVARYN: no se pudo recuperar el tema.",
+            error
+        );
+
+    }
+})();
+</script>
+
+    <title>Cómo empezar | LYVARYN</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fuente -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="assets/css/variables.css">
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link rel="stylesheet"
+        href="assets/css/navbar.css">
+
+    <link rel="stylesheet"
+        href="assets/css/hero.css">
+
+    <link rel="stylesheet"
+        href="assets/css/dashboard-preview.css">
+
+    <link rel="stylesheet"
+        href="assets/css/buttons.css">
+
+    <link rel="stylesheet"
+        href="assets/css/animations.css">
+
+    <link rel="stylesheet"
+        href="assets/css/responsive.css">
+
+    <link rel="stylesheet"
+        href="assets/css/widgets.css">
+
+    <link rel="stylesheet"
+        href="assets/css/features.css">
+
+    <link rel="stylesheet"
+        href="assets/css/showcase.css">
+
+    <link rel="stylesheet"
+        href="assets/css/how.css">
+    
+    <link rel="stylesheet"
+        href="assets/css/pricing.css">
+
+    <link rel="stylesheet"
+        href="assets/css/integrations.css">
+
+    <link rel="stylesheet"
+        href="assets/css/pricing-page.css">
+
+    <link rel="stylesheet"
+        href="assets/css/como-empezar.css">
+
+    <link rel="stylesheet"
+        href="assets/css/contacto.css">
+
+    <link rel="stylesheet"
+        href="assets/css/legal.css">
+
+    <link rel="stylesheet"
+        href="assets/css/stats.css">
+        
+    <link rel="stylesheet"
+        href="assets/css/faq.css">
+
+    <link rel="stylesheet"
+        href="assets/css/cta.css">
+
+    <link rel="stylesheet"
+        href="assets/css/auth.css">
+
+    <link rel="stylesheet"
+        href="assets/css/platform-showcase.css">
+
+    <link rel="stylesheet"
+        href="assets/css/demo.css">
+
+    <link rel="stylesheet"
+        href="assets/css/solicitar-demo.css">
+
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/landing-upgrade.css">
+
+
+    <style>
+/* =========================================================
+   LYVARYN COOKIE CONSENT
+========================================================= */
+
+.nx-cookie-banner {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9998;
+    display: block;
+}
+
+.nx-cookie-banner[hidden],
+.nx-cookie-modal[hidden] {
+    display: none !important;
+}
+
+.nx-cookie-banner-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 22px;
+    padding: 20px 22px;
+
+    border: 1px solid rgba(148,163,184,.14);
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15,23,42,.97),
+            rgba(3,7,18,.97)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.45),
+        0 8px 30px rgba(0,0,0,.20);
+
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+
+.nx-cookie-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    border-radius: 13px;
+
+    background: rgba(37,99,235,.12);
+    border: 1px solid rgba(96,165,250,.16);
+
+    color: #60a5fa;
+    font-size: 1.15rem;
+}
+
+.nx-cookie-content {
+    min-width: 0;
+}
+
+.nx-cookie-content h2 {
+    margin: 0 0 6px;
+
+    color: #f8fafc;
+    font-size: .98rem;
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.nx-cookie-content p {
+    margin: 0;
+
+    max-width: 690px;
+
+    color: #94a3b8;
+    font-size: .76rem;
+    line-height: 1.6;
+}
+
+.nx-cookie-policy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 8px;
+
+    color: #60a5fa;
+    font-size: .7rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nx-cookie-policy-link:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+.nx-cookie-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nx-cookie-btn {
+    min-height: 40px;
+    padding: 0 15px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: .72rem;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.nx-cookie-btn:hover {
+    transform: translateY(-1px);
+}
+
+.nx-cookie-btn-primary {
+    border: 1px solid rgba(96,165,250,.20);
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+
+    color: #fff;
+
+    box-shadow:
+        0 8px 22px rgba(37,99,235,.20);
+}
+
+.nx-cookie-btn-primary:hover {
+    box-shadow:
+        0 11px 27px rgba(37,99,235,.30);
+}
+
+.nx-cookie-btn-secondary {
+    border: 1px solid rgba(148,163,184,.14);
+    background: rgba(148,163,184,.06);
+    color: #cbd5e1;
+}
+
+.nx-cookie-btn-secondary:hover {
+    background: rgba(148,163,184,.11);
+}
+
+.nx-cookie-btn-outline {
+    border: 1px solid rgba(96,165,250,.18);
+    background: rgba(37,99,235,.05);
+    color: #93c5fd;
+}
+
+.nx-cookie-btn-outline:hover {
+    background: rgba(37,99,235,.10);
+}
+
+
+/* =========================================================
+   COOKIE MODAL
+========================================================= */
+
+.nx-cookie-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+}
+
+.nx-cookie-modal-backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.70);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.nx-cookie-modal-card {
+    position: relative;
+    width: min(680px, 100%);
+    max-height: min(760px, calc(100vh - 48px));
+
+    overflow-y: auto;
+
+    padding: 28px;
+
+    border: 1px solid rgba(148,163,184,.13);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15,23,42,.99),
+            rgba(3,7,18,.99)
+        );
+
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.55);
+}
+
+.nx-cookie-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nx-cookie-modal-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #60a5fa;
+    font-size: .68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.nx-cookie-modal-header h2 {
+    margin: 8px 0 0;
+
+    color: #f8fafc;
+    font-size: 1.45rem;
+    font-weight: 850;
+    letter-spacing: -.035em;
+}
+
+.nx-cookie-close {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(148,163,184,.12);
+    border-radius: 10px;
+
+    background: rgba(148,163,184,.05);
+    color: #94a3b8;
+
+    cursor: pointer;
+}
+
+.nx-cookie-close:hover {
+    background: rgba(148,163,184,.10);
+    color: #f8fafc;
+}
+
+.nx-cookie-modal-description {
+    margin: 16px 0 22px;
+
+    color: #94a3b8;
+    font-size: .78rem;
+    line-height: 1.7;
+}
+
+.nx-cookie-options {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.nx-cookie-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 15px 16px;
+
+    border: 1px solid rgba(148,163,184,.09);
+    border-radius: 13px;
+
+    background: rgba(15,23,42,.48);
+}
+
+.nx-cookie-option-info {
+    min-width: 0;
+}
+
+.nx-cookie-option-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #e2e8f0;
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+.nx-cookie-option-title i {
+    color: #60a5fa;
+}
+
+.nx-cookie-option-info p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+    font-size: .68rem;
+    line-height: 1.55;
+}
+
+.nx-cookie-switch {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.nx-cookie-switch input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nx-cookie-switch label {
+    width: 43px;
+    height: 24px;
+
+    display: block;
+
+    border-radius: 999px;
+
+    background: #1e293b;
+
+    border: 1px solid rgba(148,163,184,.14);
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.nx-cookie-switch label span {
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #94a3b8;
+
+    transition: .2s ease;
+}
+
+.nx-cookie-switch input:checked + label {
+    background: #2563eb;
+    border-color: #3b82f6;
+}
+
+.nx-cookie-switch input:checked + label span {
+    transform: translateX(19px);
+    background: #fff;
+}
+
+.nx-cookie-switch-disabled label {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.nx-cookie-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-top: 22px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(148,163,184,.08);
+}
+
+.nx-cookie-modal-policy {
+    color: #60a5fa;
+    font-size: .72rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nx-cookie-modal-policy:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .nx-cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .nx-cookie-banner-inner {
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+
+        padding: 16px;
+
+        border-radius: 16px;
+    }
+
+    .nx-cookie-icon {
+        width: 38px;
+        height: 38px;
+
+        border-radius: 10px;
+
+        font-size: .95rem;
+    }
+
+    .nx-cookie-content h2 {
+        font-size: .84rem;
+    }
+
+    .nx-cookie-content p {
+        font-size: .68rem;
+        line-height: 1.55;
+    }
+
+    .nx-cookie-policy-link {
+        font-size: .64rem;
+    }
+
+    .nx-cookie-actions {
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        width: 100%;
+    }
+
+    .nx-cookie-btn {
+        width: 100%;
+        min-height: 37px;
+
+        padding: 0 7px;
+
+        font-size: .64rem;
+    }
+
+    .nx-cookie-modal {
+        padding: 12px;
+    }
+
+    .nx-cookie-modal-card {
+        max-height: calc(100vh - 24px);
+
+        padding: 21px 17px;
+
+        border-radius: 17px;
+    }
+
+    .nx-cookie-modal-header h2 {
+        font-size: 1.18rem;
+    }
+
+    .nx-cookie-modal-description {
+        font-size: .7rem;
+    }
+
+    .nx-cookie-option {
+        align-items: flex-start;
+        padding: 13px;
+    }
+
+    .nx-cookie-option-title {
+        font-size: .72rem;
+    }
+
+    .nx-cookie-option-info p {
+        font-size: .63rem;
+    }
+
+    .nx-cookie-modal-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .nx-cookie-modal-footer .nx-cookie-btn {
+        min-height: 40px;
+    }
+
+    .nx-cookie-modal-policy {
+        text-align: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- =========================================================
+     LYVARYN COOKIE CONSENT
+========================================================= -->
+
+<div
+    id="lyvarynCookieBanner"
+    class="nx-cookie-banner"
+    role="dialog"
+    aria-labelledby="nxCookieTitle"
+    aria-describedby="nxCookieDescription"
+    aria-modal="false"
+    hidden
+>
+    <div class="nx-cookie-banner-inner">
+
+        <div class="nx-cookie-icon">
+            <i class="bi bi-shield-check"></i>
+        </div>
+
+        <div class="nx-cookie-content">
+
+            <h2 id="nxCookieTitle">
+                Tu privacidad importa
+            </h2>
+
+            <p id="nxCookieDescription">
+                Utilizamos cookies necesarias para el funcionamiento del sitio
+                y, con tu autorización, cookies adicionales para preferencias
+                y medición. Puedes aceptar todas, rechazar las no necesarias
+                o configurar tus preferencias.
+            </p>
+
+            <a
+                href="politica-cookies.html"
+                class="nx-cookie-policy-link"
+            >
+                Leer Política de Cookies
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+
+        <div class="nx-cookie-actions">
+
+            <button
+                type="button"
+                id="nxCookieReject"
+                class="nx-cookie-btn nx-cookie-btn-secondary"
+            >
+                Rechazar
+            </button>
+
+            <button
+                type="button"
+                id="nxCookieConfigure"
+                class="nx-cookie-btn nx-cookie-btn-outline"
+            >
+                Configurar
+            </button>
+
+            <button
+                type="button"
+                id="nxCookieAccept"
+                class="nx-cookie-btn nx-cookie-btn-primary"
+            >
+                Aceptar todas
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- =========================================================
+     LYVARYN COOKIE PREFERENCES
+========================================================= -->
+
+<div
+    id="lyvarynCookieModal"
+    class="nx-cookie-modal"
+    role="dialog"
+    aria-labelledby="nxCookieModalTitle"
+    aria-modal="true"
+    hidden
+>
+    <div class="nx-cookie-modal-backdrop"></div>
+
+    <div class="nx-cookie-modal-card">
+
+        <div class="nx-cookie-modal-header">
+
+            <div>
+                <span class="nx-cookie-modal-eyebrow">
+                    <i class="bi bi-sliders"></i>
+                    Preferencias de privacidad
+                </span>
+
+                <h2 id="nxCookieModalTitle">
+                    Configurar cookies
+                </h2>
+            </div>
+
+            <button
+                type="button"
+                id="nxCookieClose"
+                class="nx-cookie-close"
+                aria-label="Cerrar preferencias"
+            >
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+        <p class="nx-cookie-modal-description">
+            Puedes decidir qué categorías de cookies permites.
+            Las cookies necesarias no pueden desactivarse porque son
+            necesarias para determinadas funciones del sitio.
+        </p>
+
+        <div class="nx-cookie-options">
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-shield-lock"></i>
+                        Necesarias
+                    </div>
+
+                    <p>
+                        Necesarias para funciones técnicas, seguridad y
+                        funcionamiento básico del sitio.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch nx-cookie-switch-disabled">
+                    <input
+                        type="checkbox"
+                        id="nxCookieNecessary"
+                        checked
+                        disabled
+                    >
+
+                    <label for="nxCookieNecessary">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-sliders"></i>
+                        Preferencias
+                    </div>
+
+                    <p>
+                        Permiten recordar determinadas preferencias de
+                        navegación cuando corresponda.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookiePreferences"
+                    >
+
+                    <label for="nxCookiePreferences">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-bar-chart-line"></i>
+                        Analíticas
+                    </div>
+
+                    <p>
+                        Permiten medir el uso del sitio para comprender
+                        su funcionamiento y mejorar la experiencia.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookieAnalytics"
+                    >
+
+                    <label for="nxCookieAnalytics">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-megaphone"></i>
+                        Marketing
+                    </div>
+
+                    <p>
+                        Permiten tecnologías destinadas a determinadas
+                        funciones publicitarias o medición de campañas,
+                        cuando estén disponibles.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookieMarketing"
+                    >
+
+                    <label for="nxCookieMarketing">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="nx-cookie-modal-footer">
+
+            <a
+                href="politica-cookies.html"
+                class="nx-cookie-modal-policy"
+            >
+                Ver Política de Cookies
+            </a>
+
+            <button
+                type="button"
+                id="nxCookieSave"
+                class="nx-cookie-btn nx-cookie-btn-primary"
+            >
+                Guardar preferencias
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+
+LYVARYN
+
+</a>
+
+<button
+    type="button"
+    class="theme-toggle mobile-theme-toggle"
+    id="mobileThemeToggle"
+    aria-label="Cambiar tema"
+    title="Cambiar tema"
+>
+    <i class="bi bi-moon-stars-fill"></i>
+</button>
+
+<button
+class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+    <a class="nav-link" href="caracteristicas.html">
+    Características
+</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="precios.html">
+        Precios
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="como-empezar.html">Cómo empezar</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contacto.html">
+        Contacto
+    </a>
+</li>
+
+<li class="nav-item">
+    <button
+        type="button"
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Cambiar tema"
+        title="Cambiar tema"
+    >
+        <i class="bi bi-moon-stars-fill"></i>
+    </button>
+</li>
+
+</ul>
+
+<a
+    class="btn btn-primary ms-4"
+    href="precios.html"
+>
+    Ver planes
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+    
+<section class="nx-start-hero">
+    <div class="nx-start-container">
+        <div class="nx-start-eyebrow">Cómo empezar con LYVARYN</div>
+        <h1>Del primer contacto a tu negocio funcionando con LYVARYN.</h1>
+        <p>
+            No tienes que descubrir el sistema por tu cuenta. Conocemos tu negocio,
+            definimos la solución, configuramos LYVARYN y acompañamos a tu equipo
+            durante la puesta en marcha.
+        </p>
+
+        <div class="nx-start-actions">
+            <a href="contacto.html" class="nx-start-btn nx-start-btn-primary">
+                Solicitar una demostración
+            </a>
+            <a href="precios.html" class="nx-start-btn nx-start-btn-secondary">
+                Ver precios
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="nx-start-process">
+    <div class="nx-start-container">
+        <div class="nx-start-heading">
+            <span>El proceso</span>
+            <h2>Te acompañamos paso a paso</h2>
+            <p>
+                La implementación se adapta a la realidad de cada empresa.
+                Primero entendemos cómo trabajas y después configuramos la plataforma.
+            </p>
+        </div>
+
+        <div class="nx-start-timeline">
+
+            <article class="nx-start-step">
+                <div class="nx-start-step-number">01</div>
+                <div class="nx-start-step-content">
+                    <span class="nx-start-step-tag">Primer contacto</span>
+                    <h3>Conocemos tu negocio</h3>
+                    <p>
+                        Conversamos contigo para entender qué hace tu empresa,
+                        cómo trabaja actualmente y qué procesos quieres mejorar.
+                    </p>
+                    <ul>
+                        <li>Conocemos tu operación</li>
+                        <li>Identificamos necesidades</li>
+                        <li>Revisamos tus objetivos</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="nx-start-step">
+                <div class="nx-start-step-number">02</div>
+                <div class="nx-start-step-content">
+                    <span class="nx-start-step-tag">Demostración</span>
+                    <h3>Te mostramos LYVARYN</h3>
+                    <p>
+                        Realizamos una demostración para que conozcas la plataforma
+                        y veas cómo sus herramientas pueden aplicarse a tu operación.
+                    </p>
+                    <ul>
+                        <li>Recorremos los módulos</li>
+                        <li>Respondemos tus preguntas</li>
+                        <li>Revisamos casos de uso</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="nx-start-step">
+                <div class="nx-start-step-number">03</div>
+                <div class="nx-start-step-content">
+                    <span class="nx-start-step-tag">Propuesta</span>
+                    <h3>Definimos la solución</h3>
+                    <p>
+                        Con la información de tu negocio definimos el alcance,
+                        el plan y las configuraciones necesarias para la implementación.
+                    </p>
+                    <ul>
+                        <li>Definimos el alcance</li>
+                        <li>Seleccionamos las funcionalidades</li>
+                        <li>Preparamos la propuesta</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="nx-start-step">
+                <div class="nx-start-step-number">04</div>
+                <div class="nx-start-step-content">
+                    <span class="nx-start-step-tag">Implementación</span>
+                    <h3>Configuramos e instalamos LYVARYN</h3>
+                    <p>
+                        Nuestro equipo prepara el sistema para tu empresa,
+                        configura los módulos y deja lista la plataforma para comenzar.
+                    </p>
+                    <ul>
+                        <li>Configuramos la empresa</li>
+                        <li>Preparamos usuarios y permisos</li>
+                        <li>Instalamos y ponemos en marcha</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="nx-start-step">
+                <div class="nx-start-step-number">05</div>
+                <div class="nx-start-step-content">
+                    <span class="nx-start-step-tag">Capacitación</span>
+                    <h3>Preparamos a tu equipo</h3>
+                    <p>
+                        Explicamos a tus colaboradores cómo utilizar LYVARYN
+                        y cómo incorporar el sistema a sus actividades diarias.
+                    </p>
+                    <ul>
+                        <li>Capacitación del equipo</li>
+                        <li>Explicación de los módulos</li>
+                        <li>Resolución de dudas</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="nx-start-step">
+                <div class="nx-start-step-number">06</div>
+                <div class="nx-start-step-content">
+                    <span class="nx-start-step-tag">Acompañamiento</span>
+                    <h3>Seguimos contigo</h3>
+                    <p>
+                        Después de la puesta en marcha, puedes contar con acompañamiento
+                        para resolver dudas y continuar aprovechando LYVARYN.
+                    </p>
+                    <ul>
+                        <li>Soporte</li>
+                        <li>Seguimiento</li>
+                        <li>Mejoras y ajustes según necesidad</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="nx-start-benefits">
+    <div class="nx-start-container">
+        <div class="nx-start-heading">
+            <span>Una implementación acompañada</span>
+            <h2>La tecnología es solo una parte.</h2>
+            <p>
+                Queremos que tu equipo entienda la herramienta y que LYVARYN
+                realmente se adapte a la forma en que trabaja tu empresa.
+            </p>
+        </div>
+
+        <div class="nx-start-benefits-grid">
+            <div class="nx-start-benefit-card">
+                <div class="nx-start-icon">01</div>
+                <h3>Adaptado a tu negocio</h3>
+                <p>
+                    Partimos de tus procesos y necesidades para definir
+                    cómo utilizar LYVARYN.
+                </p>
+            </div>
+
+            <div class="nx-start-benefit-card">
+                <div class="nx-start-icon">02</div>
+                <h3>Implementación guiada</h3>
+                <p>
+                    Nuestro equipo te acompaña durante la configuración
+                    y puesta en marcha.
+                </p>
+            </div>
+
+            <div class="nx-start-benefit-card">
+                <div class="nx-start-icon">03</div>
+                <h3>Equipo capacitado</h3>
+                <p>
+                    Tus colaboradores reciben orientación para comenzar
+                    a trabajar con el sistema.
+                </p>
+            </div>
+
+            <div class="nx-start-benefit-card">
+                <div class="nx-start-icon">04</div>
+                <h3>Acompañamiento</h3>
+                <p>
+                    Seguimos disponibles para ayudarte después de que
+                    LYVARYN entre en funcionamiento.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="nx-start-expect">
+    <div class="nx-start-container">
+        <div class="nx-start-expect-grid">
+            <div>
+                <span class="nx-start-eyebrow">Qué puedes esperar</span>
+                <h2>Un proceso claro, sin complicarte.</h2>
+                <p>
+                    Desde la primera conversación hasta la puesta en marcha,
+                    cada etapa tiene un objetivo definido. Tú conoces qué
+                    estamos haciendo y qué sigue después.
+                </p>
+            </div>
+
+            <div class="nx-start-checks">
+                <div><span>✓</span> Atención directa</div>
+                <div><span>✓</span> Proceso paso a paso</div>
+                <div><span>✓</span> Configuración según tu empresa</div>
+                <div><span>✓</span> Capacitación del equipo</div>
+                <div><span>✓</span> Soporte y acompañamiento</div>
+                <div><span>✓</span> Evolución según tus necesidades</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="nx-start-cta">
+    <div class="nx-start-container">
+        <div class="nx-start-cta-box">
+            <span>¿Quieres conocer LYVARYN?</span>
+            <h2>Empecemos por conocer tu negocio.</h2>
+            <p>
+                Solicita una demostración y cuéntanos qué necesitas.
+                Nosotros te orientamos sobre el siguiente paso.
+            </p>
+            <a href="contacto.html" class="nx-start-btn nx-start-btn-primary">
+                Solicitar una demostración
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="site-footer" id="contacto">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+
+            <div class="col-lg-4">
+                <h3>LYVARYN</h3>
+                <p>
+                    Gestión empresarial moderna para negocios
+                    que quieren crecer con claridad.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h4>Contacto</h4>
+
+                <a href="https://wa.me/50662027095"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="bi bi-whatsapp"></i>
+                    +506 6202 7095
+                </a>
+
+                <a href="mailto:aiftechnologycr@gmail.com">
+                    <i class="bi bi-envelope"></i>
+                    aiftechnologycr@gmail.com
+                </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+                <h4>Ubicación</h4>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Costa Rica
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h4>Legal</h4>
+
+                <a href="politica-privacidad.html">
+                    Política de Privacidad
+                </a>
+
+                <a href="terminos-condiciones.html">
+                    Términos y Condiciones
+                </a>
+
+                <a href="politica-cookies.html">
+                    Política de Cookies
+                </a>
+
+                <a href="politica-reembolsos.html">
+                    Política de Reembolsos
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 LYVARYN · Todos los derechos reservados
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/csrf.js"></script>
+
+</body>
+
+</html>

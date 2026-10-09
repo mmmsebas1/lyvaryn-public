@@ -1,0 +1,2279 @@
+:root {
+    --nx-bg: #060b18;
+    --nx-panel: #101827;
+    --nx-panel-2: #141f31;
+    --nx-border: rgba(96, 165, 250, .18);
+    --nx-blue: #2563eb;
+    --nx-blue-light: #60a5fa;
+    --nx-text: #f8fafc;
+    --nx-muted: #94a3b8;
+}
+
+.features-hero,
+.features-overview,
+.feature-showcase,
+.features-benefits,
+.features-cta {
+    background: var(--nx-bg);
+    color: var(--nx-text);
+}
+
+.features-hero {
+    position: relative;
+    padding: 120px 0 95px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 15%, rgba(37, 99, 235, .22), transparent 32%),
+        radial-gradient(circle at 15% 80%, rgba(59, 130, 246, .10), transparent 30%),
+        var(--nx-bg);
+}
+
+.features-hero::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: -220px;
+    top: 80px;
+    border: 1px solid rgba(96, 165, 250, .12);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 80px rgba(96, 165, 250, .025),
+        0 0 0 160px rgba(96, 165, 250, .018);
+}
+
+.features-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.features-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid rgba(96, 165, 250, .25);
+    border-radius: 999px;
+    background: rgba(37, 99, 235, .10);
+    color: var(--nx-blue-light);
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.features-hero h1 {
+    margin: 24px 0 20px;
+    font-size: clamp(2.7rem, 6vw, 5rem);
+    line-height: 1.02;
+    letter-spacing: -.045em;
+    font-weight: 800;
+}
+
+.features-hero h1 span {
+    display: block;
+    color: var(--nx-blue-light);
+}
+
+.features-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--nx-muted);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.features-hero-actions,
+.features-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.features-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .2s ease;
+}
+
+.features-btn-primary {
+    color: #fff;
+    background: var(--nx-blue);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, .25);
+}
+
+.features-btn-primary:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    background: #1d4ed8;
+}
+
+.features-btn-secondary {
+    color: var(--nx-text);
+    border: 1px solid var(--nx-border);
+    background: rgba(255, 255, 255, .03);
+}
+
+.features-btn-secondary:hover {
+    color: #fff;
+    border-color: rgba(96, 165, 250, .4);
+    background: rgba(255, 255, 255, .06);
+}
+
+.features-overview {
+    padding: 90px 0;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.section-heading > span {
+    color: var(--nx-blue-light);
+    font-weight: 700;
+    font-size: .86rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.section-heading h2 {
+    margin: 12px 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -.03em;
+}
+
+.section-heading p {
+    color: var(--nx-muted);
+    line-height: 1.8;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.feature-card {
+    min-height: 255px;
+    padding: 26px;
+    border: 1px solid var(--nx-border);
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(20, 31, 49, .95), rgba(10, 16, 28, .95));
+    transition: .25s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(96, 165, 250, .42);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .22);
+}
+
+.feature-card-highlight {
+    border-color: rgba(37, 99, 235, .4);
+}
+
+.feature-icon {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 24px;
+    border-radius: 15px;
+    background: rgba(37, 99, 235, .13);
+    color: var(--nx-blue-light);
+    font-size: 1.4rem;
+}
+
+.feature-kicker {
+    color: var(--nx-blue-light);
+    font-size: .74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.feature-card h3 {
+    margin: 6px 0 10px;
+    font-size: 1.18rem;
+}
+
+.feature-card p {
+    margin: 0;
+    color: var(--nx-muted);
+    line-height: 1.7;
+    font-size: .93rem;
+}
+
+.feature-showcase {
+    padding: 30px 0 100px;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.showcase-copy h2 {
+    margin: 18px 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.showcase-copy > p {
+    color: var(--nx-muted);
+    line-height: 1.8;
+}
+
+.showcase-list {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0;
+}
+
+.showcase-list li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 14px 0;
+    color: #dbeafe;
+}
+
+.showcase-list i {
+    color: var(--nx-blue-light);
+}
+
+.showcase-panel {
+    padding: 18px;
+    border: 1px solid var(--nx-border);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .025);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .28);
+}
+
+.mock-window {
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+    background: #0a1120;
+}
+
+.mock-topbar {
+    display: flex;
+    gap: 6px;
+    padding: 13px 15px;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.mock-topbar span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #334155;
+}
+
+.mock-body {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    min-height: 330px;
+}
+
+.mock-body aside {
+    padding: 18px 12px;
+    border-right: 1px solid rgba(255,255,255,.06);
+}
+
+.mock-logo {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    background: var(--nx-blue);
+    font-weight: 800;
+}
+
+.mock-line {
+    height: 7px;
+    margin: 18px 4px;
+    border-radius: 99px;
+    background: #1e293b;
+}
+
+.mock-line.active {
+    background: var(--nx-blue);
+}
+
+.mock-body main {
+    padding: 28px;
+}
+
+.mock-heading {
+    width: 45%;
+    height: 13px;
+    border-radius: 99px;
+    background: #334155;
+    margin-bottom: 25px;
+}
+
+.mock-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.mock-stats div {
+    height: 75px;
+    border: 1px solid rgba(96,165,250,.12);
+    border-radius: 13px;
+    background: #111c2e;
+}
+
+.mock-chart {
+    position: relative;
+    height: 150px;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 14px;
+    background:
+        linear-gradient(rgba(96,165,250,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(96,165,250,.06) 1px, transparent 1px),
+        #0e1828;
+    background-size: 28px 28px;
+}
+
+.mock-chart-line {
+    position: absolute;
+    left: 7%;
+    right: 7%;
+    bottom: 30px;
+    height: 65px;
+    border-top: 3px solid var(--nx-blue-light);
+    transform: skewY(-8deg);
+    box-shadow: 0 -20px 35px rgba(96,165,250,.12);
+}
+
+.features-benefits {
+    padding: 80px 0 100px;
+    background: #080f1d;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.benefit-item {
+    padding: 28px;
+    border-top: 1px solid var(--nx-border);
+}
+
+.benefit-item i {
+    color: var(--nx-blue-light);
+    font-size: 1.7rem;
+}
+
+.benefit-item h3 {
+    margin: 18px 0 10px;
+    font-size: 1.05rem;
+}
+
+.benefit-item p {
+    margin: 0;
+    color: var(--nx-muted);
+    line-height: 1.7;
+    font-size: .92rem;
+}
+
+.features-cta {
+    padding: 40px 0 110px;
+}
+
+.features-cta-card {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 30px;
+    border: 1px solid rgba(96,165,250,.22);
+    border-radius: 28px;
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(37,99,235,.28), transparent 55%),
+        linear-gradient(145deg, #111c32, #0b1220);
+}
+
+.features-cta-card h2 {
+    max-width: 800px;
+    margin: 20px auto 14px;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.features-cta-card p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: var(--nx-muted);
+    line-height: 1.8;
+}
+
+@media (max-width: 991px) {
+    .features-grid,
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .features-hero {
+        padding: 70px 0 55px;
+    }
+
+    /* Tarjetas principales: 2 por fila */
+    .features-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+        width: 100%;
+    }
+
+    .features-grid .feature-card {
+        width: auto !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Beneficios siguen en una columna */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-overview,
+    .feature-showcase,
+    .features-benefits {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    /* Tarjetas compactas */
+    .feature-card {
+        min-height: 175px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .feature-icon {
+        width: 38px;
+        height: 38px;
+        margin-bottom: 15px;
+        border-radius: 11px;
+        font-size: 1rem;
+    }
+
+    .feature-kicker {
+        font-size: .62rem;
+    }
+
+    .feature-card h3 {
+        margin: 5px 0 7px;
+        font-size: .88rem;
+        line-height: 1.2;
+    }
+
+    .feature-card p {
+        font-size: .68rem;
+        line-height: 1.45;
+    }
+
+    .mock-body {
+        grid-template-columns: 55px 1fr;
+    }
+
+    .mock-body main {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /* Tarjetas de características: 2 por fila en móvil */
+    .features .row.g-4 {
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+
+    .features .row.g-4 > .col-lg-4 {
+        width: 33.333333%;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .features .feature-card {
+        min-height: 0px;
+        height: 105%;
+        padding: 9px;
+        border-radius: 13px;
+    }
+
+    .features .feature-icon {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 6px;
+        border-radius: 8px;
+        font-size: .72rem;
+    }
+
+    .features .feature-card h3 {
+        font-size: .68rem;
+        line-height: 1.1;
+        margin: 3px 0 4px;
+    }
+
+    .features .feature-card p {
+        font-size: .54rem;
+        line-height: 1.25;
+    }
+
+    .features .section-subtitle {
+        font-size: .78rem;
+        line-height: 1.5;
+        color: #94a3b8;
+    }
+}
+
+/* =========================================================
+   CONFIGURACIÓN Y ADAPTABILIDAD
+   ========================================================= */
+
+.features-config {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 15% 30%,
+            rgba(37, 99, 235, 0.10),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(59, 130, 246, 0.08),
+            transparent 30%
+        );
+}
+
+.features-config-heading {
+    max-width: 820px;
+    margin: 0 auto 65px;
+}
+
+.features-config-heading h2 span {
+    color: #4f91ff;
+}
+
+.features-config-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.85fr) minmax(0, 1.15fr);
+    gap: 45px;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   PREVIEW DE CONFIGURACIÓN
+   ========================================================= */
+
+.config-preview {
+    position: relative;
+
+    padding: 28px;
+
+    border: 1px solid rgba(96, 165, 250, 0.16);
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18, 31, 56, 0.96),
+            rgba(8, 17, 34, 0.98)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+    overflow: hidden;
+}
+
+.config-preview::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -100px;
+    right: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.12);
+
+    filter: blur(45px);
+
+    pointer-events: none;
+}
+
+.config-preview-header {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.config-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.config-logo {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #60a5fa
+    );
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.30);
+}
+
+.config-brand strong {
+    display: block;
+
+    color: #fff;
+    font-size: 15px;
+}
+
+.config-brand small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #7183a2;
+    font-size: 10px;
+}
+
+.config-preview-header > i {
+    color: #5d9cff;
+    font-size: 19px;
+}
+
+.config-preview-title {
+    position: relative;
+    z-index: 1;
+
+    padding: 25px 0 18px;
+}
+
+.config-preview-title span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #4f91ff;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.config-preview-title h3 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   OPCIONES
+   ========================================================= */
+
+.config-settings {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.config-setting {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 13px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.config-setting:hover {
+    transform: translateX(4px);
+
+    border-color: rgba(79, 145, 255, 0.28);
+
+    background: rgba(59, 130, 246, 0.06);
+}
+
+.config-setting-icon {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: rgba(37, 99, 235, 0.12);
+
+    color: #5d9cff;
+
+    font-size: 15px;
+}
+
+.config-setting div:nth-child(2) {
+    flex: 1;
+}
+
+.config-setting span {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #7183a2;
+
+    font-size: 10px;
+}
+
+.config-setting strong {
+    display: block;
+
+    color: #eaf2ff;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.config-setting > i:last-child {
+    color: #4d6080;
+    font-size: 12px;
+}
+
+.config-preview-footer {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 18px;
+    padding-top: 17px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+    color: #7f91ae;
+
+    font-size: 10px;
+}
+
+.config-preview-footer i {
+    color: #22c55e;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TARJETAS DE CAPACIDADES
+   ========================================================= */
+
+.config-features {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.config-feature-card {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 22px;
+
+    border: 1px solid rgba(96, 165, 250, 0.10);
+    border-radius: 17px;
+
+    background: rgba(14, 27, 49, 0.55);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.config-feature-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(79, 145, 255, 0.28);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.20);
+}
+
+.config-feature-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.18),
+            rgba(59, 130, 246, 0.08)
+        );
+
+    border: 1px solid rgba(79, 145, 255, 0.15);
+
+    color: #5d9cff;
+
+    font-size: 17px;
+}
+
+.config-feature-card span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #4f91ff;
+
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.config-feature-card h3 {
+    margin: 0 0 7px;
+
+    color: #fff;
+
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.config-feature-card p {
+    margin: 0;
+
+    color: #8192ad;
+
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MENSAJE FINAL
+   ========================================================= */
+
+.features-config-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 35px;
+    padding: 22px 25px;
+
+    border: 1px solid rgba(79, 145, 255, 0.13);
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(37, 99, 235, 0.08),
+            rgba(14, 27, 49, 0.55)
+        );
+}
+
+.features-config-footer-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: rgba(37, 99, 235, 0.14);
+
+    color: #5d9cff;
+
+    font-size: 18px;
+}
+
+.features-config-footer strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #fff;
+
+    font-size: 14px;
+}
+
+.features-config-footer p {
+    margin: 0;
+
+    color: #8192ad;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .features-config-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .config-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .features-config {
+        padding: 38px 0 42px;
+    }
+
+    .features-config-heading {
+        margin-bottom: 24px;
+    }
+
+    .features-config-heading h2 {
+        font-size: 1.75rem;
+        line-height: 1.15;
+        margin-bottom: 9px;
+    }
+
+    .features-config-heading p {
+        font-size: 0.78rem;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+
+    .config-preview {
+        padding: 15px;
+        border-radius: 16px;
+    }
+
+    .config-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .config-feature-card {
+        padding: 14px;
+        min-height: 145px;
+        border-radius: 15px;
+    }
+
+    .config-feature-card h3 {
+        font-size: 0.92rem;
+        line-height: 1.25;
+        margin-bottom: 6px;
+    }
+
+    .config-feature-card p {
+        font-size: 0.70rem;
+        line-height: 1.45;
+        margin-bottom: 0;
+    }
+
+    .features-config-footer {
+        align-items: center;
+        gap: 12px;
+        margin-top: 18px;
+        padding: 14px 16px;
+        border-radius: 14px;
+    }
+
+    .features-config-footer-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        font-size: 15px;
+    }
+
+    .features-config-footer strong {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .features-config-footer p {
+        font-size: 9px;
+        line-height: 1.4;
+    }
+}
+
+/* =========================================================
+   LYVARYN FEATURES — MOBILE FINAL
+   Adaptación compacta del diseño desktop
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .features-hero {
+        padding: 52px 16px 42px !important;
+    }
+
+    .features-hero-inner {
+        width: 100% !important;
+        max-width: 350px !important;
+        margin: 0 auto !important;
+    }
+
+    .features-hero h1 {
+        margin: 18px 0 14px !important;
+        font-size: 2.05rem !important;
+        line-height: 1.06 !important;
+        letter-spacing: -.04em !important;
+    }
+
+    .features-hero p {
+        max-width: 330px !important;
+        margin: 0 auto !important;
+        font-size: .72rem !important;
+        line-height: 1.55 !important;
+    }
+
+    .features-hero-actions {
+        margin-top: 22px !important;
+        gap: 8px !important;
+    }
+
+    .features-btn {
+        min-height: 40px !important;
+        padding: 0 15px !important;
+        border-radius: 10px !important;
+        font-size: .68rem !important;
+    }
+
+
+    /* =====================================================
+       TITULOS DE SECCIÓN
+       ===================================================== */
+
+    .section-heading {
+        max-width: 340px !important;
+        margin: 0 auto 28px !important;
+    }
+
+    .section-heading > span {
+        font-size: .62rem !important;
+    }
+
+    .section-heading h2 {
+        margin: 8px 0 9px !important;
+        font-size: 1.55rem !important;
+        line-height: 1.10 !important;
+        letter-spacing: -.03em !important;
+    }
+
+    .section-heading p {
+        font-size: .68rem !important;
+        line-height: 1.5 !important;
+    }
+
+
+    /* =====================================================
+       8 MÓDULOS
+       4 COLUMNAS × 2 FILAS
+       ===================================================== */
+
+    .features-overview {
+        padding: 45px 0 !important;
+    }
+
+    .features-grid {
+        display: grid !important;
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        gap: 5px !important;
+        width: 100% !important;
+    }
+
+    .feature-card {
+        min-width: 0 !important;
+        min-height: 138px !important;
+        height: auto !important;
+
+        padding: 8px 6px !important;
+
+        border-radius: 10px !important;
+
+        overflow: visible !important;
+    }
+
+    .feature-icon {
+        width: 22px !important;
+        height: 22px !important;
+
+        margin-bottom: 6px !important;
+
+        border-radius: 6px !important;
+
+        font-size: .58rem !important;
+    }
+
+    .feature-kicker {
+        display: block !important;
+
+        margin-bottom: 2px !important;
+
+        font-size: .43rem !important;
+        line-height: 1.1 !important;
+
+        letter-spacing: .055em !important;
+
+        white-space: normal !important;
+    }
+
+    .feature-card h3 {
+        margin: 3px 0 4px !important;
+
+        font-size: .59rem !important;
+        line-height: 1.08 !important;
+
+        letter-spacing: -.01em !important;
+
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+    }
+
+    .feature-card p {
+        margin: 0 !important;
+
+        font-size: .40rem !important;
+        line-height: 1.25 !important;
+
+        white-space: normal !important;
+        word-break: normal !important;
+    }
+
+
+    /* =====================================================
+       INFORMACIÓN CENTRALIZADA
+       ===================================================== */
+
+    .feature-showcase {
+        padding: 32px 0 48px !important;
+    }
+
+    .showcase-grid {
+        position: relative !important;
+
+        display: grid !important;
+
+        /*
+         * Más espacio para el mockup.
+         */
+        grid-template-columns: 42% 58% !important;
+
+        gap: 8px !important;
+
+        align-items: center !important;
+
+        padding-top: 38px !important;
+    }
+
+    .showcase-copy {
+        min-width: 0 !important;
+    }
+
+    .showcase-copy > .features-badge {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 27px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+
+        padding: 0 10px !important;
+
+        font-size: .55rem !important;
+    }
+
+    .showcase-copy h2 {
+        margin: 0 0 9px !important;
+
+        font-size: 1.18rem !important;
+        line-height: 1.05 !important;
+
+        letter-spacing: -.035em !important;
+    }
+
+    .showcase-copy > p {
+        margin: 0 0 9px !important;
+
+        font-size: .53rem !important;
+        line-height: 1.42 !important;
+    }
+
+    .showcase-list {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .showcase-list li {
+        display: flex !important;
+        align-items: flex-start !important;
+
+        gap: 5px !important;
+
+        margin: 0 0 5px !important;
+
+        font-size: .46rem !important;
+        line-height: 1.25 !important;
+    }
+
+    .showcase-list i {
+        flex-shrink: 0 !important;
+        font-size: .42rem !important;
+        margin-top: 1px !important;
+    }
+
+
+    /* =====================================================
+       MOCKUP / GRÁFICA
+       MISMA GRÁFICA DEL DESKTOP, ESCALADA
+       ===================================================== */
+
+    .showcase-panel {
+        min-width: 0 !important;
+        width: 100% !important;
+
+        padding: 8px !important;
+
+        border-radius: 16px !important;
+    }
+
+    .mock-window {
+        width: 100% !important;
+
+        border-radius: 12px !important;
+
+        overflow: hidden !important;
+    }
+
+    .mock-topbar {
+        gap: 4px !important;
+        padding: 8px 9px !important;
+    }
+
+    .mock-topbar span {
+        width: 5px !important;
+        height: 5px !important;
+    }
+
+    .mock-body {
+        display: grid !important;
+
+        grid-template-columns: 25px 1fr !important;
+
+        min-height: 155px !important;
+        height: 155px !important;
+    }
+
+    .mock-body aside {
+        padding: 10px 5px !important;
+    }
+
+    .mock-logo {
+        width: 20px !important;
+        height: 20px !important;
+
+        margin: 0 auto 16px !important;
+
+        border-radius: 6px !important;
+
+        font-size: .62rem !important;
+    }
+
+    .mock-line {
+        height: 4px !important;
+
+        margin: 10px 2px !important;
+    }
+
+    .mock-body main {
+        min-width: 0 !important;
+        padding: 13px !important;
+    }
+
+    .mock-heading {
+        width: 45% !important;
+        height: 6px !important;
+
+        margin-bottom: 13px !important;
+    }
+
+    .mock-stats {
+        gap: 5px !important;
+    }
+
+    .mock-stats div {
+        height: 34px !important;
+
+        border-radius: 7px !important;
+    }
+
+    .mock-chart {
+        height: 70px !important;
+
+        margin-top: 7px !important;
+
+        border-radius: 8px !important;
+
+        background-size: 14px 14px !important;
+    }
+
+    .mock-chart-line {
+        bottom: 14px !important;
+        height: 30px !important;
+
+        border-top-width: 2px !important;
+    }
+
+
+    /* =====================================================
+       CONFIGURACIÓN
+       ===================================================== */
+
+    .features-config {
+        padding: 48px 14px 46px !important;
+    }
+
+    .features-config-heading {
+        max-width: 340px !important;
+
+        margin: 0 auto 24px !important;
+
+        text-align: center !important;
+    }
+
+    .features-config-heading > span {
+        font-size: .61rem !important;
+    }
+
+    .features-config-heading h2 {
+        margin: 8px 0 9px !important;
+
+        font-size: 1.55rem !important;
+        line-height: 1.08 !important;
+
+        letter-spacing: -.035em !important;
+    }
+
+    .features-config-heading p {
+        margin: 0 !important;
+
+        font-size: .66rem !important;
+        line-height: 1.48 !important;
+    }
+
+
+    /* =====================================================
+       PANEL + 6 TARJETAS
+       MISMA ESTRUCTURA DEL DESKTOP
+       ===================================================== */
+
+    .features-config-layout {
+        display: grid !important;
+
+        grid-template-columns: 40% 60% !important;
+
+        gap: 7px !important;
+
+        align-items: stretch !important;
+
+        width: 100% !important;
+    }
+
+
+    /* =====================================================
+       PANEL IZQUIERDO
+       ===================================================== */
+
+    .config-preview {
+        min-width: 0 !important;
+
+        padding: 10px !important;
+
+        border-radius: 14px !important;
+
+        overflow: hidden !important;
+    }
+
+    .config-preview-header {
+        padding-bottom: 10px !important;
+    }
+
+    .config-brand {
+        gap: 6px !important;
+    }
+
+    .config-logo {
+        width: 25px !important;
+        height: 25px !important;
+
+        border-radius: 7px !important;
+
+        font-size: 11px !important;
+    }
+
+    .config-brand strong {
+        font-size: 10px !important;
+    }
+
+    .config-brand small {
+        font-size: 6px !important;
+    }
+
+    .config-preview-header > i {
+        font-size: 12px !important;
+    }
+
+    .config-preview-title {
+        padding: 12px 0 9px !important;
+    }
+
+    .config-preview-title span {
+        margin-bottom: 3px !important;
+
+        font-size: 6px !important;
+    }
+
+    .config-preview-title h3 {
+        font-size: 11px !important;
+        line-height: 1.15 !important;
+    }
+
+
+    /* =====================================================
+       OPCIONES DEL PANEL
+       ===================================================== */
+
+    .config-settings {
+        gap: 5px !important;
+    }
+
+    .config-setting {
+        gap: 6px !important;
+
+        padding: 7px !important;
+
+        border-radius: 8px !important;
+    }
+
+    .config-setting-icon {
+        width: 22px !important;
+        height: 22px !important;
+
+        border-radius: 6px !important;
+
+        font-size: 9px !important;
+    }
+
+    .config-setting span {
+        margin-bottom: 1px !important;
+
+        font-size: 6px !important;
+    }
+
+    .config-setting strong {
+        font-size: 7px !important;
+        line-height: 1.15 !important;
+    }
+
+    .config-setting > i:last-child {
+        font-size: 7px !important;
+    }
+
+    .config-preview-footer {
+        gap: 5px !important;
+
+        margin-top: 8px !important;
+        padding-top: 8px !important;
+
+        font-size: 6px !important;
+        line-height: 1.25 !important;
+    }
+
+    .config-preview-footer i {
+        font-size: 8px !important;
+    }
+
+
+    /* =====================================================
+       6 CAPACIDADES
+       2 × 3
+       ===================================================== */
+
+    .config-features {
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 7px !important;
+    }
+
+    .config-feature-card {
+        min-width: 0 !important;
+
+        min-height: 105px !important;
+
+        padding: 9px !important;
+
+        gap: 6px !important;
+
+        border-radius: 11px !important;
+
+        overflow: visible !important;
+    }
+
+    .config-feature-icon {
+        width: 22px !important;
+        height: 22px !important;
+
+        border-radius: 6px !important;
+
+        font-size: 9px !important;
+    }
+
+    .config-feature-card span {
+        margin-bottom: 2px !important;
+
+        font-size: 6px !important;
+
+        letter-spacing: .06em !important;
+    }
+
+    .config-feature-card h3 {
+        margin: 0 0 4px !important;
+
+        font-size: 8px !important;
+        line-height: 1.15 !important;
+
+        white-space: normal !important;
+        overflow-wrap: normal !important;
+    }
+
+    .config-feature-card p {
+        margin: 0 !important;
+
+        font-size: 6.5px !important;
+        line-height: 1.35 !important;
+
+        color: #8192ad !important;
+    }
+
+
+    /* =====================================================
+       MENSAJE FINAL
+       ===================================================== */
+
+    .features-config-footer {
+        display: flex !important;
+        align-items: center !important;
+
+        gap: 8px !important;
+
+        margin-top: 10px !important;
+
+        padding: 10px 11px !important;
+
+        border-radius: 11px !important;
+    }
+
+    .features-config-footer-icon {
+        width: 25px !important;
+        height: 25px !important;
+
+        border-radius: 7px !important;
+
+        font-size: 10px !important;
+    }
+
+    .features-config-footer strong {
+        margin-bottom: 2px !important;
+
+        font-size: 8px !important;
+        line-height: 1.2 !important;
+    }
+
+    .features-config-footer p {
+        font-size: 6px !important;
+        line-height: 1.3 !important;
+    }
+
+
+    /* =====================================================
+       MÁS QUE FUNCIONES
+       2 × 2
+       ===================================================== */
+
+    .features-benefits {
+        padding: 48px 14px 52px !important;
+    }
+
+    .benefits-grid {
+        display: grid !important;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 12px !important;
+    }
+
+    .benefit-item {
+        min-width: 0 !important;
+
+        padding: 14px 12px !important;
+
+        border-top: 1px solid var(--nx-border) !important;
+    }
+
+    .benefit-item i {
+        font-size: 1.15rem !important;
+    }
+
+    .benefit-item h3 {
+        margin: 9px 0 6px !important;
+
+        font-size: .68rem !important;
+        line-height: 1.18 !important;
+    }
+
+    .benefit-item p {
+        margin: 0 !important;
+
+        font-size: .53rem !important;
+        line-height: 1.4 !important;
+    }
+
+
+    /* =====================================================
+       CTA FINAL
+       ===================================================== */
+
+    .features-cta {
+        padding: 36px 14px 60px !important;
+    }
+
+    .features-cta-card {
+        padding: 38px 18px !important;
+
+        border-radius: 20px !important;
+    }
+
+    .features-cta-card h2 {
+        max-width: 310px !important;
+
+        margin: 14px auto 10px !important;
+
+        font-size: 1.48rem !important;
+        line-height: 1.10 !important;
+    }
+
+    .features-cta-card p {
+        max-width: 300px !important;
+
+        font-size: .66rem !important;
+        line-height: 1.5 !important;
+    }
+
+    .features-cta-actions {
+        margin-top: 20px !important;
+
+        gap: 7px !important;
+    }
+
+    .features-cta-actions .features-btn {
+        min-height: 39px !important;
+
+        padding: 0 14px !important;
+
+        font-size: .66rem !important;
+    }
+
+    @media (max-width: 575px) {
+
+    .config-setting:nth-child(4) {
+        position: relative !important;
+        padding-right: 5px !important;
+    }
+
+    .config-setting:nth-child(4) > i:last-child {
+        position: absolute !important;
+        right: 5px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+
+        font-size: 6px !important;
+        width: 6px !important;
+        margin: 0 !important;
+    }
+
+    .config-setting:nth-child(4) > div:nth-child(2) {
+        min-width: 0 !important;
+        padding-right: 8px !important;
+    }
+
+    .config-setting:nth-child(4) strong {
+        font-size: 6px !important;
+        white-space: nowrap !important;
+    }
+  }
+  
+}
+
+/* =========================================================
+   LYVARYN — FEATURES / TEMA CLARO
+========================================================= */
+
+html.light-theme .features .feature-card,
+body.light-theme .features .feature-card {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fafc
+        );
+
+    border-color:
+        rgba(15, 23, 42, .10);
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, .06);
+}
+
+html.light-theme .features .feature-card:hover,
+body.light-theme .features .feature-card:hover {
+    border-color:
+        rgba(37, 99, 235, .28);
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, .10);
+}
+
+html.light-theme .features .feature-icon,
+body.light-theme .features .feature-icon {
+    background:
+        rgba(37, 99, 235, .08);
+
+    color:
+        #2563eb;
+}
+
+html.light-theme .features .feature-card h3,
+body.light-theme .features .feature-card h3 {
+    color:
+        #111827;
+}
+
+html.light-theme .features .feature-card p,
+body.light-theme .features .feature-card p {
+    color:
+        #64748b;
+}
+
+/* =========================================================
+   TÍTULOS DE FEATURES — TEMA CLARO
+========================================================= */
+
+html.light-theme .features .section-title,
+body.light-theme .features .section-title {
+    color: #111827;
+}
+
+html.light-theme .features .section-subtitle,
+body.light-theme .features .section-subtitle {
+    color: #64748b;
+}
+
+/* =========================================================
+   LYVARYN — BENEFICIOS / TEMA CLARO
+========================================================= */
+
+html.light-theme .features-benefits,
+body.light-theme .features-benefits {
+    background: #f5f7fb;
+    color: #111827;
+}
+
+
+/* TÍTULO DE LA SECCIÓN */
+
+html.light-theme .features-benefits .section-heading h2,
+body.light-theme .features-benefits .section-heading h2 {
+    color: #111827;
+}
+
+html.light-theme .features-benefits .section-heading p,
+body.light-theme .features-benefits .section-heading p {
+    color: #64748b;
+}
+
+html.light-theme .features-benefits .section-heading > span,
+body.light-theme .features-benefits .section-heading > span {
+    color: #2563eb;
+}
+
+
+/* BENEFICIOS */
+
+html.light-theme .features-benefits .benefit-item,
+body.light-theme .features-benefits .benefit-item {
+    border-top-color:
+        rgba(15, 23, 42, .10);
+}
+
+html.light-theme .features-benefits .benefit-item i,
+body.light-theme .features-benefits .benefit-item i {
+    color: #2563eb;
+}
+
+html.light-theme .features-benefits .benefit-item h3,
+body.light-theme .features-benefits .benefit-item h3 {
+    color: #111827;
+}
+
+html.light-theme .features-benefits .benefit-item p,
+body.light-theme .features-benefits .benefit-item p {
+    color: #64748b;
+}
+
+/* =========================================================
+   CARACTERÍSTICAS — TARJETAS EN TEMA CLARO
+========================================================= */
+
+html.light-theme .feature-card,
+body.light-theme .feature-card {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #f8fafc
+    );
+
+    border-color: rgba(15, 23, 42, .10);
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, .06);
+}
+
+html.light-theme .feature-card:hover,
+body.light-theme .feature-card:hover {
+    border-color: rgba(37, 99, 235, .28);
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, .10);
+}
+
+html.light-theme .feature-card h3,
+body.light-theme .feature-card h3 {
+    color: #111827 !important;
+}
+
+html.light-theme .feature-card p,
+body.light-theme .feature-card p {
+    color: #64748b !important;
+}
+
+html.light-theme .feature-icon,
+body.light-theme .feature-icon {
+    background: rgba(37, 99, 235, .08);
+    color: #2563eb;
+}
+
+/* =========================================================
+   CARACTERÍSTICAS — SHOWCASE EN TEMA CLARO
+========================================================= */
+
+html.light-theme .showcase-copy h2,
+body.light-theme .showcase-copy h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .showcase-copy > p,
+body.light-theme .showcase-copy > p {
+    color: #64748b !important;
+}
+
+html.light-theme .showcase-list li,
+body.light-theme .showcase-list li {
+    color: #475569 !important;
+}
+
+html.light-theme .showcase-list i,
+body.light-theme .showcase-list i {
+    color: #2563eb !important;
+}
+
+html.light-theme .showcase-panel,
+body.light-theme .showcase-panel {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, .10);
+    box-shadow: 0 25px 60px rgba(15, 23, 42, .10);
+}
+
+/* =========================================================
+   CARACTERÍSTICAS — CONFIGURACIÓN EN TEMA CLARO
+========================================================= */
+
+html.light-theme .features-config-heading h2,
+body.light-theme .features-config-heading h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .features-config-heading p,
+body.light-theme .features-config-heading p {
+    color: #64748b !important;
+}
+
+html.light-theme .config-preview,
+body.light-theme .config-preview {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #f8fafc
+    );
+
+    border-color: rgba(15, 23, 42, .10);
+
+    box-shadow:
+        0 25px 60px rgba(15, 23, 42, .10);
+}
+
+html.light-theme .config-brand strong,
+body.light-theme .config-brand strong {
+    color: #111827 !important;
+}
+
+html.light-theme .config-brand small,
+body.light-theme .config-brand small {
+    color: #64748b !important;
+}
+
+html.light-theme .config-preview-title h3,
+body.light-theme .config-preview-title h3 {
+    color: #111827 !important;
+}
+
+html.light-theme .config-setting,
+body.light-theme .config-setting {
+    background: #f8fafc;
+    border-color: rgba(15, 23, 42, .08);
+}
+
+html.light-theme .config-setting span,
+body.light-theme .config-setting span {
+    color: #64748b !important;
+}
+
+html.light-theme .config-setting strong,
+body.light-theme .config-setting strong {
+    color: #1e293b !important;
+}
+
+html.light-theme .config-feature-card,
+body.light-theme .config-feature-card {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, .09);
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, .05);
+}
+
+html.light-theme .config-feature-card h3,
+body.light-theme .config-feature-card h3 {
+    color: #111827 !important;
+}
+
+html.light-theme .config-feature-card p,
+body.light-theme .config-feature-card p {
+    color: #64748b !important;
+}
+
+html.light-theme .features-config-footer,
+body.light-theme .features-config-footer {
+    background: #ffffff;
+    border-color: rgba(37, 99, 235, .15);
+}
+
+html.light-theme .features-config-footer strong,
+body.light-theme .features-config-footer strong {
+    color: #111827 !important;
+}
+
+html.light-theme .features-config-footer p,
+body.light-theme .features-config-footer p {
+    color: #64748b !important;
+}
+
+/* =========================================================
+   CARACTERÍSTICAS — BENEFICIOS EN TEMA CLARO
+========================================================= */
+
+html.light-theme .features-benefits,
+body.light-theme .features-benefits {
+    background: #f5f7fb !important;
+}
+
+html.light-theme .features-benefits .section-heading h2,
+body.light-theme .features-benefits .section-heading h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .features-benefits .section-heading > span,
+body.light-theme .features-benefits .section-heading > span {
+    color: #2563eb !important;
+}
+
+html.light-theme .benefit-item,
+body.light-theme .benefit-item {
+    border-top-color: rgba(15, 23, 42, .10);
+}
+
+html.light-theme .benefit-item i,
+body.light-theme .benefit-item i {
+    color: #2563eb !important;
+}
+
+html.light-theme .benefit-item h3,
+body.light-theme .benefit-item h3 {
+    color: #111827 !important;
+}
+
+html.light-theme .benefit-item p,
+body.light-theme .benefit-item p {
+    color: #64748b !important;
+}
+
+/* =========================================================
+   CARACTERÍSTICAS — CTA EN TEMA CLARO
+========================================================= */
+
+html.light-theme .features-cta,
+body.light-theme .features-cta {
+    background: #f5f7fb !important;
+}
+
+html.light-theme .features-cta-card,
+body.light-theme .features-cta-card {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(37, 99, 235, .12),
+            transparent 55%
+        ),
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fafc
+        ) !important;
+
+    border-color: rgba(37, 99, 235, .16);
+
+    box-shadow:
+        0 20px 55px rgba(15, 23, 42, .08);
+}
+
+html.light-theme .features-cta-card h2,
+body.light-theme .features-cta-card h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .features-cta-card p,
+body.light-theme .features-cta-card p {
+    color: #64748b !important;
+}
+
+html.light-theme .features-cta-card .features-btn-secondary,
+body.light-theme .features-cta-card .features-btn-secondary {
+    color: #334155 !important;
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, .12);
+}
+
+html.light-theme .features-cta-card .features-btn-secondary:hover,
+body.light-theme .features-cta-card .features-btn-secondary:hover {
+    color: #1d4ed8 !important;
+    border-color: rgba(37, 99, 235, .28);
+    background: #f8fafc !important;
+}
+
+/* =========================================================
+   DASHBOARD — TEMA CLARO
+========================================================= */
+
+html.light-theme .mock-window,
+body.light-theme .mock-window {
+    background: #f8fafc;
+    border-color: rgba(15, 23, 42, .08);
+}
+
+html.light-theme .mock-topbar,
+body.light-theme .mock-topbar {
+    border-bottom-color: rgba(15, 23, 42, .08);
+}
+
+html.light-theme .mock-topbar span,
+body.light-theme .mock-topbar span {
+    background: #cbd5e1;
+}
+
+html.light-theme .mock-body aside,
+body.light-theme .mock-body aside {
+    background: #ffffff;
+    border-right-color: rgba(15, 23, 42, .08);
+}
+
+html.light-theme .mock-line,
+body.light-theme .mock-line {
+    background: #e2e8f0;
+}
+
+html.light-theme .mock-line.active,
+body.light-theme .mock-line.active {
+    background: #2563eb;
+}
+
+html.light-theme .mock-heading,
+body.light-theme .mock-heading {
+    background: #cbd5e1;
+}
+
+html.light-theme .mock-stats div,
+body.light-theme .mock-stats div {
+    background: #ffffff;
+    border-color: rgba(37, 99, 235, .10);
+}
+
+html.light-theme .mock-chart,
+body.light-theme .mock-chart {
+    background:
+        linear-gradient(
+            rgba(37, 99, 235, .06) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(37, 99, 235, .06) 1px,
+            transparent 1px
+        ),
+        #f8fafc;
+    background-size: 28px 28px;
+}

@@ -1,0 +1,1292 @@
+/* =========================================================
+   Nexora AI — Cómo empezar
+   ========================================================= */
+
+:root {
+    --nx-start-bg: #07111f;
+    --nx-start-bg-soft: #0b1728;
+    --nx-start-card: #0f1d31;
+    --nx-start-border: rgba(148, 163, 184, .16);
+    --nx-start-text: #f8fafc;
+    --nx-start-muted: #9fb0c4;
+    --nx-start-primary: #3b82f6;
+    --nx-start-primary-dark: #2563eb;
+    --nx-start-accent: #60a5fa;
+}
+
+.nx-start-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.nx-start-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0 100px;
+    color: var(--nx-start-text);
+    background:
+        radial-gradient(circle at 82% 20%, rgba(59, 130, 246, .19), transparent 34%),
+        radial-gradient(circle at 12% 90%, rgba(37, 99, 235, .10), transparent 30%),
+        var(--nx-start-bg);
+}
+
+.nx-start-hero::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    right: -240px;
+    top: 40px;
+    border: 1px solid rgba(96, 165, 250, .10);
+    border-radius: 50%;
+}
+
+.nx-start-hero .nx-start-container {
+    position: relative;
+    z-index: 1;
+}
+
+.nx-start-eyebrow,
+.nx-start-heading > span,
+.nx-start-step-tag {
+    color: var(--nx-start-accent);
+    font-size: .78rem;
+    font-weight: 850;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.nx-start-hero h1 {
+    max-width: 880px;
+    margin: 18px 0;
+    font-size: clamp(2.5rem, 6vw, 4.8rem);
+    line-height: 1.04;
+    letter-spacing: -.05em;
+}
+
+.nx-start-hero p {
+    max-width: 740px;
+    margin: 0;
+    color: var(--nx-start-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.nx-start-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 34px;
+}
+
+.nx-start-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.nx-start-btn:hover {
+    transform: translateY(-2px);
+}
+
+.nx-start-btn-primary {
+    color: #fff;
+    background: linear-gradient(135deg, var(--nx-start-primary), var(--nx-start-primary-dark));
+    box-shadow: 0 12px 30px rgba(37, 99, 235, .25);
+}
+
+.nx-start-btn-secondary {
+    color: var(--nx-start-text);
+    border: 1px solid var(--nx-start-border);
+    background: rgba(255,255,255,.035);
+}
+
+.nx-start-process,
+.nx-start-benefits {
+    padding: 100px 0;
+    color: var(--nx-start-text);
+    background: var(--nx-start-bg);
+}
+
+.nx-start-benefits {
+    background: var(--nx-start-bg-soft);
+}
+
+.nx-start-heading {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.nx-start-heading h2 {
+    margin: 12px 0 15px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -.04em;
+}
+
+.nx-start-heading p {
+    margin: 0;
+    color: var(--nx-start-muted);
+    line-height: 1.75;
+}
+
+.nx-start-timeline {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.nx-start-timeline::before {
+    content: "";
+    position: absolute;
+    left: 39px;
+    top: 45px;
+    bottom: 45px;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        rgba(96,165,250,.05),
+        rgba(96,165,250,.45),
+        rgba(96,165,250,.05)
+    );
+}
+
+.nx-start-step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 28px;
+    padding: 15px 0 38px;
+}
+
+.nx-start-step:last-child {
+    padding-bottom: 0;
+}
+
+.nx-start-step-number {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(96,165,250,.28);
+    border-radius: 22px;
+    color: #dbeafe;
+    background: #0b1a2e;
+    box-shadow: 0 12px 35px rgba(0,0,0,.20);
+    font-size: .85rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+}
+
+.nx-start-step-content {
+    padding: 28px 30px;
+    border: 1px solid var(--nx-start-border);
+    border-radius: 18px;
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,.035),
+        rgba(255,255,255,.015)
+    );
+}
+
+.nx-start-step-content h3 {
+    margin: 9px 0 12px;
+    font-size: 1.5rem;
+}
+
+.nx-start-step-content p {
+    margin: 0;
+    color: var(--nx-start-muted);
+    line-height: 1.75;
+}
+
+.nx-start-step-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 20px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nx-start-step-content li {
+    color: #d8e4f2;
+    font-size: .92rem;
+}
+
+.nx-start-step-content li::before {
+    content: "✓";
+    margin-right: 7px;
+    color: var(--nx-start-accent);
+    font-weight: 900;
+}
+
+.nx-start-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.nx-start-benefit-card {
+    padding: 30px;
+    border: 1px solid var(--nx-start-border);
+    border-radius: 18px;
+    background: rgba(255,255,255,.025);
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+.nx-start-benefit-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(96,165,250,.32);
+}
+
+.nx-start-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    color: #dbeafe;
+    background: rgba(59,130,246,.12);
+    font-size: .76rem;
+    font-weight: 900;
+}
+
+.nx-start-benefit-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+}
+
+.nx-start-benefit-card p {
+    margin: 0;
+    color: var(--nx-start-muted);
+    line-height: 1.7;
+}
+
+.nx-start-expect {
+    padding: 100px 0;
+    color: var(--nx-start-text);
+    background: var(--nx-start-bg);
+}
+
+.nx-start-expect-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.nx-start-expect h2 {
+    max-width: 600px;
+    margin: 15px 0;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.1;
+    letter-spacing: -.04em;
+}
+
+.nx-start-expect p {
+    max-width: 600px;
+    margin: 0;
+    color: var(--nx-start-muted);
+    line-height: 1.8;
+}
+
+.nx-start-checks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.nx-start-checks div {
+    padding: 18px;
+    border: 1px solid var(--nx-start-border);
+    border-radius: 13px;
+    color: #dbe5f0;
+    background: rgba(255,255,255,.025);
+}
+
+.nx-start-checks span {
+    margin-right: 8px;
+    color: var(--nx-start-accent);
+    font-weight: 900;
+}
+
+.nx-start-cta {
+    padding: 90px 0;
+    color: var(--nx-start-text);
+    background:
+        radial-gradient(circle at 50% 0%, rgba(59,130,246,.18), transparent 42%),
+        var(--nx-start-bg);
+}
+
+.nx-start-cta-box {
+    padding: 65px 40px;
+    text-align: center;
+    border: 1px solid rgba(96,165,250,.20);
+    border-radius: 25px;
+    background: linear-gradient(
+        135deg,
+        rgba(59,130,246,.10),
+        rgba(255,255,255,.025)
+    );
+}
+
+.nx-start-cta-box > span {
+    color: var(--nx-start-accent);
+    font-size: .78rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.nx-start-cta-box h2 {
+    max-width: 750px;
+    margin: 15px auto;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    letter-spacing: -.04em;
+}
+
+.nx-start-cta-box p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: var(--nx-start-muted);
+    line-height: 1.75;
+}
+
+@media (max-width: 1000px) {
+    .nx-start-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nx-start-expect-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+}
+
+@media (max-width: 700px) {
+    .nx-start-container {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .nx-start-hero {
+        padding: 125px 0 75px;
+    }
+
+    .nx-start-process,
+    .nx-start-benefits,
+    .nx-start-expect {
+        padding: 72px 0;
+    }
+
+    .nx-start-actions {
+        flex-direction: column;
+    }
+
+    .nx-start-btn {
+        width: 100%;
+    }
+
+    .nx-start-timeline::before {
+        display: none;
+    }
+
+    .nx-start-step {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding-bottom: 25px;
+    }
+
+    .nx-start-step-number {
+        width: 62px;
+        height: 62px;
+        border-radius: 17px;
+    }
+
+    .nx-start-step-content {
+        padding: 24px;
+    }
+
+    .nx-start-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nx-start-checks {
+        grid-template-columns: 1fr;
+    }
+
+    .nx-start-cta-box {
+        padding: 45px 22px;
+    }
+
+    /* =========================================================
+   LYVARYN — CÓMO EMPEZAR
+   MOBILE PREMIUM FINAL
+   Desktop completamente intacto
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    /* =====================================================
+       CONTENEDOR GENERAL
+       ===================================================== */
+
+    .nx-start-container {
+        width: calc(100% - 28px) !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+    }
+
+
+    /* =====================================================
+       PORTADA
+       Más elegante y compacta
+       ===================================================== */
+
+    .nx-start-hero {
+        min-height: 0 !important;
+
+        padding: 76px 0 52px !important;
+
+        background:
+            radial-gradient(
+                circle at 88% 18%,
+                rgba(59,130,246,.20),
+                transparent 38%
+            ),
+            radial-gradient(
+                circle at 8% 92%,
+                rgba(37,99,235,.08),
+                transparent 32%
+            ),
+            var(--nx-start-bg) !important;
+    }
+
+    .nx-start-hero::before {
+        width: 390px !important;
+        height: 390px !important;
+
+        right: -245px !important;
+        top: 70px !important;
+
+        border-color: rgba(96,165,250,.09) !important;
+    }
+
+    .nx-start-eyebrow {
+        display: inline-block !important;
+
+        margin-bottom: 4px !important;
+
+        font-size: .55rem !important;
+
+        font-weight: 850 !important;
+
+        letter-spacing: .13em !important;
+    }
+
+    .nx-start-hero h1 {
+        max-width: 325px !important;
+
+        margin: 10px 0 15px !important;
+
+        font-size: 2rem !important;
+
+        line-height: 1.04 !important;
+
+        font-weight: 700 !important;
+
+        letter-spacing: -.045em !important;
+    }
+
+    .nx-start-hero p {
+        max-width: 325px !important;
+
+        margin: 0 !important;
+
+        font-size: .68rem !important;
+
+        line-height: 1.58 !important;
+
+        color: var(--nx-start-muted) !important;
+    }
+
+
+    /* =====================================================
+       BOTONES DE PORTADA
+       ===================================================== */
+
+    .nx-start-actions {
+        display: grid !important;
+
+        grid-template-columns: 1fr 1fr !important;
+
+        gap: 7px !important;
+
+        margin-top: 20px !important;
+
+        max-width: 325px !important;
+    }
+
+    .nx-start-btn {
+        width: 100% !important;
+
+        min-height: 38px !important;
+
+        padding: 0 8px !important;
+
+        border-radius: 9px !important;
+
+        font-size: .57rem !important;
+
+        font-weight: 800 !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* =====================================================
+       SECCIÓN PROCESO
+       ===================================================== */
+
+    .nx-start-process {
+        padding: 50px 0 48px !important;
+    }
+
+    .nx-start-heading {
+        max-width: 315px !important;
+
+        margin: 0 auto 28px !important;
+    }
+
+    .nx-start-heading > span {
+        font-size: .55rem !important;
+
+        font-weight: 850 !important;
+
+        letter-spacing: .12em !important;
+    }
+
+    .nx-start-heading h2 {
+        margin: 8px 0 9px !important;
+
+        font-size: 1.45rem !important;
+
+        line-height: 1.08 !important;
+
+        font-weight: 700 !important;
+
+        letter-spacing: -.035em !important;
+    }
+
+    .nx-start-heading p {
+        font-size: .63rem !important;
+
+        line-height: 1.52 !important;
+    }
+
+
+    /* =====================================================
+       LÍNEA DEL PROCESO
+       ===================================================== */
+
+    .nx-start-timeline {
+        max-width: 330px !important;
+
+        margin: 0 auto !important;
+    }
+
+    .nx-start-timeline::before {
+        display: block !important;
+
+        left: 19px !important;
+
+        top: 26px !important;
+
+        bottom: 26px !important;
+
+        width: 1px !important;
+
+        background: linear-gradient(
+            to bottom,
+            rgba(96,165,250,.03),
+            rgba(96,165,250,.28),
+            rgba(96,165,250,.03)
+        ) !important;
+    }
+
+
+    /* =====================================================
+       CADA PASO
+       ===================================================== */
+
+    .nx-start-step {
+        display: grid !important;
+
+        grid-template-columns: 40px 1fr !important;
+
+        gap: 10px !important;
+
+        padding: 5px 0 15px !important;
+    }
+
+    .nx-start-step:last-child {
+        padding-bottom: 0 !important;
+    }
+
+
+    /* =====================================================
+       NÚMERO
+       ===================================================== */
+
+    .nx-start-step-number {
+        width: 40px !important;
+        height: 40px !important;
+
+        border-radius: 11px !important;
+
+        font-size: .52rem !important;
+
+        font-weight: 850 !important;
+
+        letter-spacing: .05em !important;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(59,130,246,.16),
+                rgba(15,29,49,.96)
+            ) !important;
+
+        box-shadow:
+            0 8px 20px rgba(0,0,0,.16),
+            inset 0 1px 0 rgba(255,255,255,.035) !important;
+    }
+
+
+    /* =====================================================
+       TARJETAS DE LOS 6 PASOS
+       ===================================================== */
+
+    .nx-start-step-content {
+        position: relative !important;
+
+        padding: 14px 14px 13px !important;
+
+        border: 1px solid rgba(148,163,184,.13) !important;
+
+        border-radius: 12px !important;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(255,255,255,.040),
+                rgba(255,255,255,.018)
+            ) !important;
+
+        box-shadow:
+            0 8px 24px rgba(0,0,0,.10),
+            inset 0 1px 0 rgba(255,255,255,.025) !important;
+    }
+
+    .nx-start-step-tag {
+        display: block !important;
+
+        margin-bottom: 4px !important;
+
+        font-size: .45rem !important;
+
+        font-weight: 850 !important;
+
+        letter-spacing: .10em !important;
+    }
+
+    .nx-start-step-content h3 {
+        margin: 5px 0 7px !important;
+
+        font-size: .91rem !important;
+
+        line-height: 1.12 !important;
+
+        font-weight: 700 !important;
+
+        letter-spacing: -.02em !important;
+    }
+
+    .nx-start-step-content p {
+        margin: 0 !important;
+
+        font-size: .58rem !important;
+
+        line-height: 1.48 !important;
+    }
+
+    .nx-start-step-content ul {
+        display: grid !important;
+
+        gap: 4px !important;
+
+        margin: 10px 0 0 !important;
+
+        padding: 0 !important;
+    }
+
+    .nx-start-step-content li {
+        font-size: .53rem !important;
+
+        line-height: 1.3 !important;
+
+        color: #d8e4f2 !important;
+    }
+
+    .nx-start-step-content li::before {
+        margin-right: 5px !important;
+    }
+
+
+    /* =====================================================
+       BLOQUE "QUÉ PUEDES ESPERAR"
+       ===================================================== */
+
+    .nx-start-expect {
+        padding: 48px 0 50px !important;
+    }
+
+    .nx-start-expect-grid {
+        display: block !important;
+
+        max-width: 330px !important;
+
+        margin: 0 auto !important;
+    }
+
+    .nx-start-expect .nx-start-eyebrow {
+        font-size: .55rem !important;
+
+        font-weight: 850 !important;
+
+        letter-spacing: .11em !important;
+    }
+
+    .nx-start-expect h2 {
+        max-width: 310px !important;
+
+        margin: 9px 0 10px !important;
+
+        font-size: 1.48rem !important;
+
+        line-height: 1.08 !important;
+
+        font-weight: 700 !important;
+
+        letter-spacing: -.035em !important;
+    }
+
+    .nx-start-expect p {
+        max-width: 320px !important;
+
+        font-size: .62rem !important;
+
+        line-height: 1.52 !important;
+    }
+
+
+    /* =====================================================
+       CHECKS
+       ===================================================== */
+
+    .nx-start-checks {
+        display: grid !important;
+
+        grid-template-columns: 1fr 1fr !important;
+
+        gap: 6px !important;
+
+        margin-top: 19px !important;
+    }
+
+    .nx-start-checks div {
+        min-height: 43px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        padding: 9px 9px !important;
+
+        border-radius: 9px !important;
+
+        font-size: .51rem !important;
+
+        line-height: 1.25 !important;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(255,255,255,.035),
+                rgba(255,255,255,.015)
+            ) !important;
+
+        box-shadow:
+            inset 0 1px 0 rgba(255,255,255,.025) !important;
+    }
+
+    .nx-start-checks span {
+        flex-shrink: 0 !important;
+
+        margin-right: 5px !important;
+
+        font-size: .65rem !important;
+    }
+
+
+    /* =====================================================
+       CTA FINAL
+       ===================================================== */
+
+    .nx-start-cta {
+        padding: 38px 0 52px !important;
+
+        background:
+            radial-gradient(
+                circle at 50% 15%,
+                rgba(59,130,246,.18),
+                transparent 55%
+            ),
+            var(--nx-start-bg) !important;
+    }
+
+    .nx-start-cta-box {
+        max-width: 330px !important;
+
+        margin: 0 auto !important;
+
+        padding: 31px 17px 28px !important;
+
+        border-radius: 17px !important;
+
+        border-color: rgba(96,165,250,.18) !important;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(59,130,246,.10),
+                rgba(255,255,255,.025)
+            ) !important;
+
+        box-shadow:
+            0 18px 45px rgba(0,0,0,.18),
+            inset 0 1px 0 rgba(255,255,255,.025) !important;
+    }
+
+    .nx-start-cta-box > span {
+        font-size: .52rem !important;
+
+        font-weight: 850 !important;
+
+        letter-spacing: .10em !important;
+    }
+
+    .nx-start-cta-box h2 {
+        max-width: 285px !important;
+
+        margin: 9px auto 9px !important;
+
+        font-size: 1.38rem !important;
+
+        line-height: 1.08 !important;
+
+        font-weight: 700 !important;
+
+        letter-spacing: -.035em !important;
+    }
+
+    .nx-start-cta-box p {
+        max-width: 285px !important;
+
+        margin: 0 auto 17px !important;
+
+        font-size: .61rem !important;
+
+        line-height: 1.5 !important;
+    }
+
+    .nx-start-cta-box .nx-start-btn {
+        width: 100% !important;
+
+        min-height: 39px !important;
+
+        font-size: .57rem !important;
+    }
+
+    /* =====================================================
+   4 TARJETAS — IMPLEMENTACIÓN ACOMPAÑADA
+   MOBILE COMPACT PREMIUM
+   ===================================================== */
+
+.nx-start-benefits-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+
+    max-width: 340px !important;
+    margin: 0 auto !important;
+}
+
+
+.nx-start-benefit-card {
+    min-width: 0 !important;
+
+    padding: 13px 11px !important;
+
+    min-height: 145px !important;
+
+    border-radius: 12px !important;
+
+    border: 1px solid rgba(148,163,184,.13) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.040),
+            rgba(255,255,255,.015)
+        ) !important;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.10),
+        inset 0 1px 0 rgba(255,255,255,.025) !important;
+}
+
+
+/* Número */
+
+.nx-start-benefit-card .nx-start-icon {
+    width: 32px !important;
+    height: 32px !important;
+
+    margin-bottom: 12px !important;
+
+    border-radius: 9px !important;
+
+    font-size: .55rem !important;
+
+    font-weight: 850 !important;
+
+    background: rgba(59,130,246,.13) !important;
+}
+
+
+/* Título */
+
+.nx-start-benefit-card h3 {
+    margin: 0 0 6px !important;
+
+    font-size: .72rem !important;
+
+    line-height: 1.15 !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: -.01em !important;
+}
+
+
+/* Descripción */
+
+.nx-start-benefit-card p {
+    margin: 0 !important;
+
+    font-size: .50rem !important;
+
+    line-height: 1.42 !important;
+
+    color: var(--nx-start-muted) !important;
+}
+}
+}
+
+/* =========================================================
+   LYVARYN — CÓMO EMPEZAR — TEMA CLARO
+   HERO
+   ========================================================= */
+
+html.light-theme .nx-start-hero,
+body.light-theme .nx-start-hero {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(59, 130, 246, .12),
+            transparent 35%
+        ),
+        #f5f7fb !important;
+}
+
+html.light-theme .nx-start-hero h1,
+body.light-theme .nx-start-hero h1 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-start-hero p,
+body.light-theme .nx-start-hero p {
+    color: #64748b !important;
+}
+
+html.light-theme .nx-start-eyebrow,
+body.light-theme .nx-start-eyebrow {
+    color: #2563eb !important;
+}
+
+/* =========================================================
+   LYVARYN — CÓMO EMPEZAR — TEMA CLARO
+   PROCESO
+   ========================================================= */
+
+html.light-theme .nx-start-process,
+body.light-theme .nx-start-process {
+    background: #eef3f9 !important;
+}
+
+html.light-theme .nx-start-heading h2,
+body.light-theme .nx-start-heading h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-start-heading p,
+body.light-theme .nx-start-heading p {
+    color: #475569 !important;
+}
+
+html.light-theme .nx-start-heading span,
+body.light-theme .nx-start-heading span {
+    color: #2563eb !important;
+}
+
+/* TARJETAS DE CADA PASO */
+
+html.light-theme .nx-start-step-content,
+body.light-theme .nx-start-step-content {
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, .10) !important;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, .06) !important;
+}
+
+/* NÚMEROS */
+
+html.light-theme .nx-start-step-number,
+body.light-theme .nx-start-step-number {
+    color: #ffffff !important;
+    background: linear-gradient(
+        135deg,
+        #7dd3fc,
+        #38bdf8
+    ) !important;
+    border-color: #bae6fd !important;
+    box-shadow: 0 8px 22px rgba(14, 165, 233, .25) !important;
+}
+
+/* ETIQUETA DEL PASO */
+
+html.light-theme .nx-start-step-tag,
+body.light-theme .nx-start-step-tag {
+    color: #0284c7 !important;
+}
+
+/* TÍTULO */
+
+html.light-theme .nx-start-step-content h3,
+body.light-theme .nx-start-step-content h3 {
+    color: #111827 !important;
+}
+
+/* DESCRIPCIÓN */
+
+html.light-theme .nx-start-step-content p,
+body.light-theme .nx-start-step-content p {
+    color: #475569 !important;
+}
+
+/* LISTA DE BENEFICIOS */
+
+html.light-theme .nx-start-step-content li,
+body.light-theme .nx-start-step-content li {
+    color: #334155 !important;
+}
+
+html.light-theme .nx-start-step-content li::before,
+body.light-theme .nx-start-step-content li::before {
+    color: #0ea5e9 !important;
+}
+
+/* =========================================================
+   CÓMO EMPEZAR — BENEFICIOS — TEMA CLARO
+   ========================================================= */
+
+html.light-theme .nx-start-benefits,
+body.light-theme .nx-start-benefits {
+    background: #f5f7fb !important;
+    color: #111827 !important;
+}
+
+/* ENCABEZADO */
+
+html.light-theme .nx-start-benefits .nx-start-heading > span,
+body.light-theme .nx-start-benefits .nx-start-heading > span {
+    color: #2563eb !important;
+}
+
+html.light-theme .nx-start-benefits .nx-start-heading h2,
+body.light-theme .nx-start-benefits .nx-start-heading h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-start-benefits .nx-start-heading p,
+body.light-theme .nx-start-benefits .nx-start-heading p {
+    color: #475569 !important;
+}
+
+/* TARJETAS */
+
+html.light-theme .nx-start-benefit-card,
+body.light-theme .nx-start-benefit-card {
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, .10) !important;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, .06) !important;
+}
+
+html.light-theme .nx-start-benefit-card:hover,
+body.light-theme .nx-start-benefit-card:hover {
+    border-color: rgba(37, 99, 235, .25) !important;
+    box-shadow: 0 16px 35px rgba(15, 23, 42, .08) !important;
+}
+
+/* NÚMEROS 01 — 04 */
+
+html.light-theme .nx-start-icon,
+body.light-theme .nx-start-icon {
+    color: #0284c7 !important;
+    background: rgba(14, 165, 233, .12) !important;
+    border: 1px solid rgba(14, 165, 233, .18) !important;
+}
+
+/* TÍTULOS */
+
+html.light-theme .nx-start-benefit-card h3,
+body.light-theme .nx-start-benefit-card h3 {
+    color: #111827 !important;
+}
+
+/* DESCRIPCIONES */
+
+html.light-theme .nx-start-benefit-card p,
+body.light-theme .nx-start-benefit-card p {
+    color: #475569 !important;
+}
+
+/* =========================================================
+   CÓMO EMPEZAR — QUÉ PUEDES ESPERAR — TEMA CLARO
+   ========================================================= */
+
+html.light-theme .nx-start-expect,
+body.light-theme .nx-start-expect {
+    background: #eef3f9 !important;
+    color: #111827 !important;
+}
+
+html.light-theme .nx-start-expect .nx-start-eyebrow,
+body.light-theme .nx-start-expect .nx-start-eyebrow {
+    color: #2563eb !important;
+}
+
+html.light-theme .nx-start-expect h2,
+body.light-theme .nx-start-expect h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-start-expect p,
+body.light-theme .nx-start-expect p {
+    color: #475569 !important;
+}
+
+html.light-theme .nx-start-checks div,
+body.light-theme .nx-start-checks div {
+    color: #334155 !important;
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, .10) !important;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, .06) !important;
+}
+
+html.light-theme .nx-start-checks span,
+body.light-theme .nx-start-checks span {
+    color: #2563eb !important;
+}
+
+/* =========================================================
+   CÓMO EMPEZAR — CTA FINAL — TEMA CLARO
+   ========================================================= */
+
+html.light-theme .nx-start-cta,
+body.light-theme .nx-start-cta {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(59, 130, 246, .12),
+            transparent 45%
+        ),
+        #f5f7fb !important;
+}
+
+html.light-theme .nx-start-cta-box,
+body.light-theme .nx-start-cta-box {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(59, 130, 246, .08),
+            rgba(255, 255, 255, .95)
+        ) !important;
+
+    border-color: rgba(37, 99, 235, .18) !important;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, .07) !important;
+}
+
+html.light-theme .nx-start-cta-box > span,
+body.light-theme .nx-start-cta-box > span {
+    color: #2563eb !important;
+}
+
+html.light-theme .nx-start-cta-box h2,
+body.light-theme .nx-start-cta-box h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-start-cta-box p,
+body.light-theme .nx-start-cta-box p {
+    color: #475569 !important;
+}
+
+/* BOTÓN SECUNDARIO — TEMA CLARO */
+
+html.light-theme .nx-start-btn-secondary,
+body.light-theme .nx-start-btn-secondary {
+    color: #334155 !important;
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, .12) !important;
+}
+
+html.light-theme .nx-start-btn-secondary:hover,
+body.light-theme .nx-start-btn-secondary:hover {
+    color: #2563eb !important;
+    background: #f8fafc !important;
+    border-color: rgba(37, 99, 235, .25) !important;
+}

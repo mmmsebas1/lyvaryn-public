@@ -1,0 +1,1107 @@
+/* =========================================================
+   Nexora AI — Standalone Pricing Page
+   ========================================================= */
+
+:root {
+    --nx-bg: #07111f;
+    --nx-bg-soft: #0b1728;
+    --nx-card: #0f1d31;
+    --nx-card-hover: #12233b;
+    --nx-border: rgba(148, 163, 184, .16);
+    --nx-text: #f8fafc;
+    --nx-muted: #9fb0c4;
+    --nx-primary: #3b82f6;
+    --nx-primary-dark: #2563eb;
+    --nx-accent: #60a5fa;
+    --nx-white: #ffffff;
+    --nx-radius: 20px;
+    --nx-shadow: 0 20px 60px rgba(0, 0, 0, .25);
+}
+
+.nx-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.nx-pricing-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0 95px;
+    background:
+        radial-gradient(circle at 80% 15%, rgba(59, 130, 246, .18), transparent 34%),
+        radial-gradient(circle at 10% 80%, rgba(37, 99, 235, .10), transparent 30%),
+        var(--nx-bg);
+    color: var(--nx-text);
+}
+
+.nx-pricing-hero::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    right: -180px;
+    top: 80px;
+    border: 1px solid rgba(96, 165, 250, .12);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.nx-pricing-hero .nx-container {
+    position: relative;
+    z-index: 1;
+}
+
+.nx-eyebrow,
+.nx-section-heading > span,
+.nx-plan-label {
+    display: inline-block;
+    color: var(--nx-accent);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.nx-pricing-hero h1 {
+    max-width: 850px;
+    margin: 18px 0;
+    font-size: clamp(2.4rem, 6vw, 4.8rem);
+    line-height: 1.04;
+    letter-spacing: -.045em;
+}
+
+.nx-pricing-hero p {
+    max-width: 720px;
+    margin: 0;
+    color: var(--nx-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.nx-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 34px;
+}
+
+.nx-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 750;
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.nx-btn:hover {
+    transform: translateY(-2px);
+}
+
+.nx-btn-primary {
+    color: #fff;
+    background: linear-gradient(135deg, var(--nx-primary), var(--nx-primary-dark));
+    box-shadow: 0 12px 30px rgba(37, 99, 235, .25);
+}
+
+.nx-btn-secondary {
+    color: var(--nx-text);
+    border: 1px solid var(--nx-border);
+    background: rgba(255, 255, 255, .035);
+}
+
+.nx-pricing-section,
+.nx-process-section,
+.nx-comparison-section,
+.nx-faq-section {
+    padding: 100px 0;
+    background: var(--nx-bg);
+    color: var(--nx-text);
+}
+
+.nx-process-section,
+.nx-faq-section {
+    background: var(--nx-bg-soft);
+}
+
+.nx-section-heading {
+    max-width: 760px;
+    margin: 0 auto 52px;
+    text-align: center;
+}
+
+.nx-section-heading h2 {
+    margin: 12px 0 15px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -.035em;
+}
+
+.nx-section-heading p {
+    margin: 0;
+    color: var(--nx-muted);
+    line-height: 1.75;
+}
+
+.nx-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+.nx-plan-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+    border: 1px solid var(--nx-border);
+    border-radius: var(--nx-radius);
+    background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015));
+    box-shadow: var(--nx-shadow);
+    overflow: hidden;
+}
+
+.nx-plan-card:hover {
+    background: var(--nx-card-hover);
+}
+
+.nx-plan-featured {
+    border-color: rgba(59, 130, 246, .55);
+    background:
+        linear-gradient(180deg, rgba(59, 130, 246, .13), rgba(255,255,255,.025));
+    transform: translateY(-10px);
+}
+
+.nx-popular {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding: 7px 11px;
+    border-radius: 999px;
+    color: #dbeafe;
+    background: rgba(59, 130, 246, .16);
+    border: 1px solid rgba(96, 165, 250, .22);
+    font-size: .72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.nx-plan-top h3 {
+    margin: 10px 0 9px;
+    font-size: 2rem;
+}
+
+.nx-plan-top p {
+    min-height: 72px;
+    margin: 0;
+    color: var(--nx-muted);
+    line-height: 1.65;
+}
+
+.nx-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin: 28px 0 22px;
+}
+
+.nx-price strong {
+    font-size: 3.5rem;
+    line-height: 1;
+    letter-spacing: -.05em;
+}
+
+.nx-price span {
+    color: var(--nx-muted);
+}
+
+.nx-enterprise-price {
+    margin: 31px 0 27px;
+    font-size: 2.35rem;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.nx-plan-divider {
+    height: 1px;
+    margin-bottom: 24px;
+    background: var(--nx-border);
+}
+
+.nx-plan-card h4 {
+    margin: 0 0 16px;
+    font-size: .95rem;
+}
+
+.nx-feature-list {
+    display: grid;
+    gap: 13px;
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.nx-feature-list li {
+    position: relative;
+    padding-left: 25px;
+    color: #d6e0ec;
+    line-height: 1.45;
+}
+
+.nx-feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--nx-accent);
+    font-weight: 900;
+}
+
+.nx-plan-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    margin-top: auto;
+    border: 1px solid rgba(148, 163, 184, .2);
+    border-radius: 12px;
+    color: var(--nx-text);
+    background: rgba(255, 255, 255, .04);
+    text-decoration: none;
+    font-weight: 800;
+    transition: .2s ease;
+}
+
+.nx-plan-btn:hover {
+    color: #fff;
+    border-color: rgba(96, 165, 250, .45);
+    background: rgba(59, 130, 246, .13);
+}
+
+.nx-plan-btn-primary {
+    color: #fff;
+    border-color: transparent;
+    background: linear-gradient(135deg, var(--nx-primary), var(--nx-primary-dark));
+}
+
+.nx-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.nx-process-card {
+    padding: 28px;
+    border: 1px solid var(--nx-border);
+    border-radius: 17px;
+    background: rgba(255, 255, 255, .025);
+}
+
+.nx-process-number {
+    margin-bottom: 25px;
+    color: var(--nx-accent);
+    font-size: .85rem;
+    font-weight: 900;
+    letter-spacing: .15em;
+}
+
+.nx-process-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+}
+
+.nx-process-card p {
+    margin: 0;
+    color: var(--nx-muted);
+    line-height: 1.7;
+}
+
+.nx-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--nx-border);
+    border-radius: var(--nx-radius);
+    box-shadow: var(--nx-shadow);
+}
+
+.nx-comparison-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    background: var(--nx-card);
+}
+
+.nx-comparison-table th,
+.nx-comparison-table td {
+    padding: 19px 22px;
+    text-align: center;
+    border-bottom: 1px solid var(--nx-border);
+}
+
+.nx-comparison-table th:first-child,
+.nx-comparison-table td:first-child {
+    text-align: left;
+}
+
+.nx-comparison-table th {
+    color: #fff;
+    background: rgba(59, 130, 246, .09);
+    font-size: .86rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+
+.nx-comparison-table td {
+    color: var(--nx-muted);
+}
+
+.nx-comparison-table td:not(:first-child) {
+    color: #dbeafe;
+    font-weight: 750;
+}
+
+.nx-comparison-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.nx-faq-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 13px;
+}
+
+.nx-faq-grid details {
+    padding: 22px 24px;
+    border: 1px solid var(--nx-border);
+    border-radius: 15px;
+    background: rgba(255,255,255,.025);
+}
+
+.nx-faq-grid summary {
+    cursor: pointer;
+    color: var(--nx-text);
+    font-weight: 750;
+}
+
+.nx-faq-grid p {
+    max-width: 760px;
+    margin: 16px 0 0;
+    color: var(--nx-muted);
+    line-height: 1.7;
+}
+
+.nx-final-cta {
+    padding: 90px 0;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(59,130,246,.18), transparent 42%),
+        var(--nx-bg);
+}
+
+.nx-cta-box {
+    padding: 65px 40px;
+    text-align: center;
+    border: 1px solid rgba(96,165,250,.2);
+    border-radius: 25px;
+    background:
+        linear-gradient(135deg, rgba(59,130,246,.10), rgba(255,255,255,.025));
+}
+
+.nx-cta-box > span {
+    color: var(--nx-accent);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: .78rem;
+    letter-spacing: .12em;
+}
+
+.nx-cta-box h2 {
+    max-width: 720px;
+    margin: 15px auto;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    letter-spacing: -.04em;
+}
+
+.nx-cta-box p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: var(--nx-muted);
+    line-height: 1.75;
+}
+
+@media (max-width: 1050px) {
+    .nx-pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .nx-plan-featured {
+        transform: none;
+    }
+
+    .nx-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================================
+   LYVARYN — PRICING MOBILE FINAL
+   Desktop intacto
+   Mobile adaptado proporcionalmente
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    /* =====================================================
+       CONTENEDOR
+       ===================================================== */
+
+    .nx-container {
+        width: min(100% - 28px, 1180px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .nx-pricing-hero {
+        padding: 58px 0 46px !important;
+    }
+
+    .nx-pricing-hero::after {
+        width: 300px !important;
+        height: 300px !important;
+        right: -175px !important;
+        top: 105px !important;
+    }
+
+    .nx-eyebrow {
+        font-size: .60rem !important;
+        letter-spacing: .13em !important;
+    }
+
+    .nx-pricing-hero h1 {
+        max-width: 340px !important;
+
+        margin: 15px auto 13px !important;
+
+        font-size: 2.02rem !important;
+        line-height: 1.06 !important;
+
+        letter-spacing: -.045em !important;
+    }
+
+    .nx-pricing-hero p {
+        max-width: 335px !important;
+
+        margin: 0 auto !important;
+
+        font-size: .70rem !important;
+        line-height: 1.55 !important;
+    }
+
+    .nx-hero-actions {
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 8px !important;
+
+        max-width: 340px !important;
+
+        margin: 22px auto 0 !important;
+    }
+
+    .nx-btn {
+        width: 100% !important;
+
+        min-height: 40px !important;
+
+        padding: 0 15px !important;
+
+        border-radius: 10px !important;
+
+        font-size: .68rem !important;
+    }
+
+
+    /* =====================================================
+       SECCIONES
+       ===================================================== */
+
+    .nx-pricing-section,
+    .nx-process-section,
+    .nx-comparison-section,
+    .nx-faq-section {
+        padding: 48px 0 !important;
+    }
+
+    .nx-section-heading {
+        max-width: 340px !important;
+
+        margin: 0 auto 26px !important;
+
+        text-align: center !important;
+    }
+
+    .nx-section-heading > span {
+        font-size: .60rem !important;
+        letter-spacing: .10em !important;
+    }
+
+    .nx-section-heading h2 {
+        margin: 8px 0 9px !important;
+
+        font-size: 1.55rem !important;
+        line-height: 1.09 !important;
+
+        letter-spacing: -.035em !important;
+    }
+
+    .nx-section-heading p {
+        font-size: .66rem !important;
+        line-height: 1.48 !important;
+    }
+
+
+    /* =====================================================
+       PLANES
+       1 COLUMNA
+       MISMA TARJETA DESKTOP, COMPACTADA
+       ===================================================== */
+
+    .nx-pricing-grid {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 18px !important;
+
+        width: 100% !important;
+
+        max-width: 360px !important;
+
+        margin: 0 auto !important;
+    }
+
+    .nx-plan-card {
+        position: relative !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        width: 100% !important;
+
+        min-height: 0 !important;
+
+        padding: 24px 20px !important;
+
+        border-radius: 18px !important;
+
+        overflow: hidden !important;
+    }
+
+    .nx-plan-featured {
+        transform: none !important;
+    }
+
+
+    /* =====================================================
+       ETIQUETAS DEL PLAN
+       ===================================================== */
+
+    .nx-plan-label {
+        font-size: .58rem !important;
+
+        letter-spacing: .10em !important;
+    }
+
+    .nx-plan-top h3 {
+        margin: 7px 0 7px !important;
+
+        font-size: 1.55rem !important;
+        line-height: 1.05 !important;
+    }
+
+    .nx-plan-top p {
+        min-height: auto !important;
+
+        margin: 0 !important;
+
+        font-size: .66rem !important;
+        line-height: 1.48 !important;
+    }
+
+
+    /* =====================================================
+       "MÁS COMPLETO"
+       ===================================================== */
+
+    .nx-popular {
+        top: 14px !important;
+        right: 14px !important;
+
+        padding: 5px 8px !important;
+
+        font-size: .48rem !important;
+
+        letter-spacing: .055em !important;
+    }
+
+
+    /* =====================================================
+       PRECIO
+       ===================================================== */
+
+    .nx-price {
+        gap: 6px !important;
+
+        margin: 21px 0 17px !important;
+    }
+
+    .nx-price strong {
+        font-size: 2.75rem !important;
+        line-height: 1 !important;
+    }
+
+    .nx-price span {
+        font-size: .62rem !important;
+    }
+
+    .nx-enterprise-price {
+        margin: 24px 0 20px !important;
+
+        font-size: 1.75rem !important;
+        line-height: 1.05 !important;
+    }
+
+
+    /* =====================================================
+       DIVISOR
+       ===================================================== */
+
+    .nx-plan-divider {
+        height: 1px !important;
+
+        margin: 0 0 17px !important;
+    }
+
+
+    /* =====================================================
+       INCLUYE
+       ===================================================== */
+
+    .nx-plan-card h4 {
+        margin: 0 0 10px !important;
+
+        font-size: .70rem !important;
+    }
+
+    .nx-feature-list {
+        display: grid !important;
+
+        gap: 8px !important;
+
+        margin: 0 0 20px !important;
+
+        padding: 0 !important;
+    }
+
+    .nx-feature-list li {
+        position: relative !important;
+
+        padding-left: 19px !important;
+
+        font-size: .65rem !important;
+        line-height: 1.32 !important;
+    }
+
+    .nx-feature-list li::before {
+        left: 0 !important;
+        top: 0 !important;
+
+        font-size: .68rem !important;
+    }
+
+
+    /* =====================================================
+       BOTÓN DEL PLAN
+       ===================================================== */
+
+    .nx-plan-btn {
+        width: 100% !important;
+
+        min-height: 41px !important;
+
+        margin-top: auto !important;
+
+        padding: 0 13px !important;
+
+        border-radius: 9px !important;
+
+        font-size: .66rem !important;
+    }
+
+
+    /* =====================================================
+       CÓMO FUNCIONA
+       ===================================================== */
+
+    .nx-process-grid {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+
+        max-width: 360px !important;
+
+        margin: 0 auto !important;
+    }
+
+    .nx-process-card {
+        padding: 19px 18px !important;
+
+        border-radius: 14px !important;
+    }
+
+    .nx-process-number {
+        margin-bottom: 18px !important;
+
+        font-size: .62rem !important;
+        letter-spacing: .13em !important;
+    }
+
+    .nx-process-card h3 {
+        margin: 0 0 8px !important;
+
+        font-size: .82rem !important;
+        line-height: 1.18 !important;
+    }
+
+    .nx-process-card p {
+        margin: 0 !important;
+
+        font-size: .63rem !important;
+        line-height: 1.5 !important;
+    }
+
+
+    /* =====================================================
+       COMPARACIÓN
+       TABLA COMPLETA DENTRO DEL CELULAR
+       ===================================================== */
+
+    .nx-table-wrapper {
+        width: 100% !important;
+
+        overflow: hidden !important;
+
+        border-radius: 14px !important;
+    }
+
+    .nx-comparison-table {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        table-layout: fixed !important;
+
+        border-collapse: collapse !important;
+    }
+
+    .nx-comparison-table th,
+    .nx-comparison-table td {
+        padding: 10px 5px !important;
+
+        font-size: .50rem !important;
+
+        line-height: 1.2 !important;
+
+        word-break: normal !important;
+    }
+
+    .nx-comparison-table th {
+        font-size: .48rem !important;
+
+        letter-spacing: .025em !important;
+    }
+
+    .nx-comparison-table th:first-child,
+    .nx-comparison-table td:first-child {
+        width: 43% !important;
+
+        text-align: left !important;
+
+        padding-left: 10px !important;
+    }
+
+    .nx-comparison-table th:not(:first-child),
+    .nx-comparison-table td:not(:first-child) {
+        width: 19% !important;
+
+        text-align: center !important;
+    }
+
+
+    /* =====================================================
+       FAQ
+       ===================================================== */
+
+    .nx-faq-grid {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 9px !important;
+
+        max-width: 360px !important;
+
+        margin: 0 auto !important;
+    }
+
+    .nx-faq-grid details {
+        padding: 16px 15px !important;
+
+        border-radius: 12px !important;
+    }
+
+    .nx-faq-grid summary {
+        font-size: .65rem !important;
+
+        line-height: 1.35 !important;
+    }
+
+    .nx-faq-grid p {
+        max-width: none !important;
+
+        margin: 11px 0 0 !important;
+
+        font-size: .62rem !important;
+
+        line-height: 1.5 !important;
+    }
+
+
+    /* =====================================================
+       CTA FINAL
+       ===================================================== */
+
+    .nx-final-cta {
+        padding: 42px 0 60px !important;
+    }
+
+    .nx-cta-box {
+        padding: 38px 18px !important;
+
+        border-radius: 19px !important;
+    }
+
+    .nx-cta-box > span {
+        font-size: .58rem !important;
+
+        letter-spacing: .10em !important;
+    }
+
+    .nx-cta-box h2 {
+        max-width: 310px !important;
+
+        margin: 12px auto !important;
+
+        font-size: 1.48rem !important;
+
+        line-height: 1.10 !important;
+    }
+
+    .nx-cta-box p {
+        max-width: 300px !important;
+
+        margin: 0 auto 20px !important;
+
+        font-size: .65rem !important;
+
+        line-height: 1.48 !important;
+    }
+
+    .nx-cta-box .nx-btn {
+        max-width: 300px !important;
+
+        margin: 0 auto !important;
+    }
+}
+
+/* =========================================================
+   LYVARYN — PRICING PAGE — TEMA CLARO
+   HOVER DE LAS TARJETAS
+   ========================================================= */
+
+html.light-theme .nx-plan-card:hover,
+body.light-theme .nx-plan-card:hover {
+    background: #ffffff !important;
+}
+
+html.light-theme .nx-feature-list li,
+body.light-theme .nx-feature-list li {
+    color: #475569 !important;
+}
+
+html.light-theme .nx-feature-list li::before,
+body.light-theme .nx-feature-list li::before {
+    color: #2563eb !important;
+}
+
+/* =========================================================
+   LYVARYN — CÓMO FUNCIONA — TEMA CLARO
+   ========================================================= */
+
+html.light-theme .nx-process-section,
+body.light-theme .nx-process-section {
+    background: #eef3f9 !important;
+    color: #111827 !important;
+}
+
+html.light-theme .nx-process-section .nx-section-heading h2,
+body.light-theme .nx-process-section .nx-section-heading h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-process-section .nx-section-heading p,
+body.light-theme .nx-process-section .nx-section-heading p {
+    color: #64748b !important;
+}
+
+html.light-theme .nx-process-card,
+body.light-theme .nx-process-card {
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, .10) !important;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, .06) !important;
+}
+
+html.light-theme .nx-process-number,
+body.light-theme .nx-process-number {
+    color: #2563eb !important;
+}
+
+html.light-theme .nx-process-card h3,
+body.light-theme .nx-process-card h3 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-process-card p,
+body.light-theme .nx-process-card p {
+    color: #64748b !important;
+}
+
+/* =========================================================
+   LYVARYN — COMPARACIÓN — TEMA CLARO
+   ========================================================= */
+
+html.light-theme .nx-comparison-table,
+body.light-theme .nx-comparison-table {
+    background: #ffffff !important;
+}
+
+html.light-theme .nx-comparison-table th,
+body.light-theme .nx-comparison-table th {
+    color: #111827 !important;
+    background: #eaf2ff !important;
+    border-bottom-color: rgba(15, 23, 42, .10) !important;
+}
+
+html.light-theme .nx-comparison-table td,
+body.light-theme .nx-comparison-table td {
+    color: #475569 !important;
+    background: #ffffff !important;
+    border-bottom-color: rgba(15, 23, 42, .08) !important;
+}
+
+html.light-theme .nx-comparison-table td:not(:first-child),
+body.light-theme .nx-comparison-table td:not(:first-child) {
+    color: #2563eb !important;
+}
+
+/* =========================================================
+   LYVARYN — PREGUNTAS FRECUENTES — TEMA CLARO
+   ========================================================= */
+
+html.light-theme .nx-faq-section,
+body.light-theme .nx-faq-section {
+    background: #eef3f9 !important;
+    color: #111827 !important;
+}
+
+html.light-theme .nx-faq-section .nx-section-heading h2,
+body.light-theme .nx-faq-section .nx-section-heading h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-faq-section .nx-section-heading p,
+body.light-theme .nx-faq-section .nx-section-heading p {
+    color: #64748b !important;
+}
+
+html.light-theme .nx-faq-grid details,
+body.light-theme .nx-faq-grid details {
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, .10) !important;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, .05) !important;
+}
+
+html.light-theme .nx-faq-grid summary,
+body.light-theme .nx-faq-grid summary {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-faq-grid p,
+body.light-theme .nx-faq-grid p {
+    color: #64748b !important;
+}
+
+/* =========================================================
+   LYVARYN — CTA FINAL — TEMA CLARO
+   ========================================================= */
+
+html.light-theme .nx-final-cta,
+body.light-theme .nx-final-cta {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(59, 130, 246, .12),
+            transparent 42%
+        ),
+        #f5f7fb !important;
+}
+
+html.light-theme .nx-cta-box,
+body.light-theme .nx-cta-box {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(59, 130, 246, .08),
+            rgba(255, 255, 255, .95)
+        ) !important;
+    border-color: rgba(37, 99, 235, .16) !important;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, .06) !important;
+}
+
+html.light-theme .nx-cta-box > span,
+body.light-theme .nx-cta-box > span {
+    color: #2563eb !important;
+}
+
+html.light-theme .nx-cta-box h2,
+body.light-theme .nx-cta-box h2 {
+    color: #111827 !important;
+}
+
+html.light-theme .nx-cta-box p,
+body.light-theme .nx-cta-box p {
+    color: #64748b !important;
+}

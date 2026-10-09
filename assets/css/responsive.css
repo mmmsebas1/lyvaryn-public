@@ -1,0 +1,307 @@
+/* =========================================================
+   LYVARYN — ESPACIADO UNIFICADO EN MÓVIL
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    /* Todas las secciones mantienen un ritmo vertical uniforme */
+    main > section {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 52px !important;
+        padding-bottom: 52px !important;
+    }
+
+    /* El Hero necesita un poco menos de espacio */
+    main > .hero {
+        padding-top: 18px !important;
+        padding-bottom: 42px !important;
+    }
+
+    /* El bloque que muestra el sistema queda más pegado */
+    .showcase-section,
+    .dashboard-showcase,
+    .platform-showcase,
+    .nx-showcase-section {
+        padding-top: 42px !important;
+        padding-bottom: 48px !important;
+    }
+
+    /* Características */
+    .nx-stats-section,
+    .stats-section {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+    }
+
+    /* Cómo funciona */
+    #como-empezar {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+    }
+
+    /* Precios */
+    .pricing-section,
+    #pricing {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+    }
+
+    /* FAQ */
+    .faq-section {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+    }
+
+    /* CTA final */
+    .nx-cta-section,
+    .cta-section {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+    }
+
+}
+
+/* =========================================================
+   LYVARYN — AJUSTE FINO DE ESPACIADO MÓVIL
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    /* -----------------------------------------
+       DASHBOARD / SHOWCASE
+       ----------------------------------------- */
+
+    .showcase-section,
+    .dashboard-showcase,
+    .platform-showcase,
+    .nx-showcase-section {
+        padding-top: 30px !important;
+        padding-bottom: 34px !important;
+    }
+
+    /* -----------------------------------------
+       BLOQUE "TODO LO QUE TU EMPRESA NECESITA"
+       ----------------------------------------- */
+
+    .nx-stats-section,
+    .stats-section {
+        padding-top: 34px !important;
+        padding-bottom: 34px !important;
+    }
+
+    .nx-stats-header {
+        margin-bottom: 0 !important;
+    }
+
+    .nx-stats-grid {
+        margin-top: 28px !important;
+    }
+
+    /* -----------------------------------------
+       DEMO DEL SISTEMA
+       ----------------------------------------- */
+
+    .demo-section,
+    .nx-demo-section {
+        padding-top: 34px !important;
+        padding-bottom: 38px !important;
+    }
+
+    /* -----------------------------------------
+       CÓMO FUNCIONA
+       ----------------------------------------- */
+
+    #como-empezar {
+        padding-top: 34px !important;
+        padding-bottom: 38px !important;
+    }
+
+    #como-empezar .row {
+        margin-top: 20px !important;
+    }
+
+    /* -----------------------------------------
+       PRECIOS
+       ----------------------------------------- */
+
+    .pricing-section,
+    #pricing {
+        padding-top: 36px !important;
+        padding-bottom: 38px !important;
+    }
+
+    .pricing-section .text-center.mb-5 {
+        margin-bottom: 22px !important;
+    }
+
+    /* -----------------------------------------
+       CARACTERÍSTICAS
+       ----------------------------------------- */
+
+    .features-section,
+    #features {
+        padding-top: 36px !important;
+        padding-bottom: 38px !important;
+    }
+
+    /* -----------------------------------------
+       FAQ
+       ----------------------------------------- */
+
+    .faq-section {
+        padding-top: 34px !important;
+        padding-bottom: 38px !important;
+    }
+
+    .faq-container {
+        margin-top: 28px !important;
+    }
+
+    /* -----------------------------------------
+       CTA FINAL
+       ----------------------------------------- */
+
+    .nx-cta-section,
+    .cta-section {
+        padding-top: 34px !important;
+        padding-bottom: 38px !important;
+    }
+
+}
+
+/* =========================================================
+   LYVARYN — COMPACTAR ESPACIOS GRANDES ESPECÍFICOS
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    /* =========================================
+       MÓDULOS → DEMO DEL SISTEMA
+       ========================================= */
+
+    .nx-stats-section {
+        padding-bottom: 18px !important;
+    }
+
+    .nx-stats-section + section {
+        padding-top: 18px !important;
+    }
+
+
+    /* =========================================
+       DASHBOARD → CÓMO FUNCIONA
+       ========================================= */
+
+    .showcase-section {
+        padding-bottom: 18px !important;
+    }
+
+    .showcase-section + section {
+        padding-top: 18px !important;
+    }
+
+    .dashboard-showcase {
+        padding-bottom: 18px !important;
+    }
+
+    .dashboard-showcase + section {
+        padding-top: 18px !important;
+    }
+
+    .platform-showcase {
+        padding-bottom: 18px !important;
+    }
+
+    .platform-showcase + section {
+        padding-top: 18px !important;
+    }
+
+
+    /* =========================================
+       PRECIOS → CARACTERÍSTICAS
+       ========================================= */
+
+    .pricing-section {
+        padding-bottom: 22px !important;
+    }
+
+    .pricing-section + section {
+        padding-top: 22px !important;
+    }
+
+    #pricing {
+        padding-bottom: 22px !important;
+    }
+
+    #pricing + section {
+        padding-top: 22px !important;
+    }
+
+
+    /* =========================================
+       EVITAR HUECOS ARTIFICIALES POR MÁRGENES
+       ========================================= */
+
+    .nx-stats-grid {
+        margin-bottom: 0 !important;
+    }
+
+    .nx-stats-header {
+        margin-bottom: 0 !important;
+    }
+
+    .faq-container {
+        margin-bottom: 0 !important;
+    }
+
+}
+
+/* =========================================================
+   LYVARYN — FAQ MOBILE — AJUSTE FINAL
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    /* Reducir el espacio entre CARACTERÍSTICAS y FAQ */
+    .nx-stats-section {
+        padding-bottom: 28px !important;
+    }
+
+    .nx-stats-section + .faq-section {
+        padding-top: 28px !important;
+    }
+
+    /* FAQ más compacto */
+    .faq-section {
+        padding-top: 8px !important;
+        padding-bottom: 30px !important;
+    }
+
+    /* Encabezado */
+    .faq-section .section-header {
+        margin-bottom: 20px !important;
+    }
+
+    /* Separación del badge azul */
+    .faq-section .section-badge {
+        margin-bottom: 16px !important;
+    }
+
+    /* Título */
+    .faq-section .section-header h2 {
+        margin-top: 0 !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* Descripción */
+    .faq-section .section-header p {
+        margin-bottom: 0 !important;
+    }
+
+    /* Preguntas */
+    .faq-section .faq-container {
+        margin-top: 20px !important;
+    }
+
+}

@@ -1,0 +1,3553 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="IjQ4ZWUwN2M2MThiZjM1MWQwM2JmNTUyOTY5OWExYWE1OGU0ZGUwYjYi.aslMDw.KAkhLNTNdIGK_Fvme-4rn_3m0dc">
+
+    <script>
+(function () {
+    try {
+
+        const theme =
+            localStorage.getItem("lyvaryn-theme");
+
+        if (theme === "light") {
+
+            document.documentElement.classList.add(
+                "light-theme"
+            );
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "LYVARYN: no se pudo recuperar el tema.",
+            error
+        );
+
+    }
+})();
+</script>
+
+    <title>
+LYVARYN
+</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fuente -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="assets/css/variables.css">
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link rel="stylesheet"
+        href="assets/css/navbar.css">
+
+    <link rel="stylesheet"
+        href="assets/css/hero.css">
+
+    <link rel="stylesheet"
+        href="assets/css/dashboard-preview.css">
+
+    <link rel="stylesheet"
+        href="assets/css/buttons.css">
+
+    <link rel="stylesheet"
+        href="assets/css/animations.css">
+
+    <link rel="stylesheet"
+        href="assets/css/responsive.css">
+
+    <link rel="stylesheet"
+        href="assets/css/widgets.css">
+
+    <link rel="stylesheet"
+        href="assets/css/features.css">
+
+    <link rel="stylesheet"
+        href="assets/css/showcase.css">
+
+    <link rel="stylesheet"
+        href="assets/css/how.css">
+    
+    <link rel="stylesheet"
+        href="assets/css/pricing.css">
+
+    <link rel="stylesheet"
+        href="assets/css/integrations.css">
+
+    <link rel="stylesheet"
+        href="assets/css/pricing-page.css">
+
+    <link rel="stylesheet"
+        href="assets/css/como-empezar.css">
+
+    <link rel="stylesheet"
+        href="assets/css/contacto.css">
+
+    <link rel="stylesheet"
+        href="assets/css/legal.css">
+
+    <link rel="stylesheet"
+        href="assets/css/stats.css">
+        
+    <link rel="stylesheet"
+        href="assets/css/faq.css">
+
+    <link rel="stylesheet"
+        href="assets/css/cta.css">
+
+    <link rel="stylesheet"
+        href="assets/css/auth.css">
+
+    <link rel="stylesheet"
+        href="assets/css/platform-showcase.css">
+
+    <link rel="stylesheet"
+        href="assets/css/demo.css">
+
+    <link rel="stylesheet"
+        href="assets/css/solicitar-demo.css">
+
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/landing-upgrade.css">
+
+
+    <style>
+/* =========================================================
+   LYVARYN COOKIE CONSENT
+========================================================= */
+
+.nx-cookie-banner {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9998;
+    display: block;
+}
+
+.nx-cookie-banner[hidden],
+.nx-cookie-modal[hidden] {
+    display: none !important;
+}
+
+.nx-cookie-banner-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 22px;
+    padding: 20px 22px;
+
+    border: 1px solid rgba(148,163,184,.14);
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15,23,42,.97),
+            rgba(3,7,18,.97)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.45),
+        0 8px 30px rgba(0,0,0,.20);
+
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+
+.nx-cookie-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    border-radius: 13px;
+
+    background: rgba(37,99,235,.12);
+    border: 1px solid rgba(96,165,250,.16);
+
+    color: #60a5fa;
+    font-size: 1.15rem;
+}
+
+.nx-cookie-content {
+    min-width: 0;
+}
+
+.nx-cookie-content h2 {
+    margin: 0 0 6px;
+
+    color: #f8fafc;
+    font-size: .98rem;
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.nx-cookie-content p {
+    margin: 0;
+
+    max-width: 690px;
+
+    color: #94a3b8;
+    font-size: .76rem;
+    line-height: 1.6;
+}
+
+.nx-cookie-policy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 8px;
+
+    color: #60a5fa;
+    font-size: .7rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nx-cookie-policy-link:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+.nx-cookie-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nx-cookie-btn {
+    min-height: 40px;
+    padding: 0 15px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: .72rem;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.nx-cookie-btn:hover {
+    transform: translateY(-1px);
+}
+
+.nx-cookie-btn-primary {
+    border: 1px solid rgba(96,165,250,.20);
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+
+    color: #fff;
+
+    box-shadow:
+        0 8px 22px rgba(37,99,235,.20);
+}
+
+.nx-cookie-btn-primary:hover {
+    box-shadow:
+        0 11px 27px rgba(37,99,235,.30);
+}
+
+.nx-cookie-btn-secondary {
+    border: 1px solid rgba(148,163,184,.14);
+    background: rgba(148,163,184,.06);
+    color: #cbd5e1;
+}
+
+.nx-cookie-btn-secondary:hover {
+    background: rgba(148,163,184,.11);
+}
+
+.nx-cookie-btn-outline {
+    border: 1px solid rgba(96,165,250,.18);
+    background: rgba(37,99,235,.05);
+    color: #93c5fd;
+}
+
+.nx-cookie-btn-outline:hover {
+    background: rgba(37,99,235,.10);
+}
+
+
+/* =========================================================
+   COOKIE MODAL
+========================================================= */
+
+.nx-cookie-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+}
+
+.nx-cookie-modal-backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.70);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.nx-cookie-modal-card {
+    position: relative;
+    width: min(680px, 100%);
+    max-height: min(760px, calc(100vh - 48px));
+
+    overflow-y: auto;
+
+    padding: 28px;
+
+    border: 1px solid rgba(148,163,184,.13);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15,23,42,.99),
+            rgba(3,7,18,.99)
+        );
+
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.55);
+}
+
+.nx-cookie-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nx-cookie-modal-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #60a5fa;
+    font-size: .68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.nx-cookie-modal-header h2 {
+    margin: 8px 0 0;
+
+    color: #f8fafc;
+    font-size: 1.45rem;
+    font-weight: 850;
+    letter-spacing: -.035em;
+}
+
+.nx-cookie-close {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(148,163,184,.12);
+    border-radius: 10px;
+
+    background: rgba(148,163,184,.05);
+    color: #94a3b8;
+
+    cursor: pointer;
+}
+
+.nx-cookie-close:hover {
+    background: rgba(148,163,184,.10);
+    color: #f8fafc;
+}
+
+.nx-cookie-modal-description {
+    margin: 16px 0 22px;
+
+    color: #94a3b8;
+    font-size: .78rem;
+    line-height: 1.7;
+}
+
+.nx-cookie-options {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.nx-cookie-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 15px 16px;
+
+    border: 1px solid rgba(148,163,184,.09);
+    border-radius: 13px;
+
+    background: rgba(15,23,42,.48);
+}
+
+.nx-cookie-option-info {
+    min-width: 0;
+}
+
+.nx-cookie-option-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #e2e8f0;
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+.nx-cookie-option-title i {
+    color: #60a5fa;
+}
+
+.nx-cookie-option-info p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+    font-size: .68rem;
+    line-height: 1.55;
+}
+
+.nx-cookie-switch {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.nx-cookie-switch input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nx-cookie-switch label {
+    width: 43px;
+    height: 24px;
+
+    display: block;
+
+    border-radius: 999px;
+
+    background: #1e293b;
+
+    border: 1px solid rgba(148,163,184,.14);
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.nx-cookie-switch label span {
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #94a3b8;
+
+    transition: .2s ease;
+}
+
+.nx-cookie-switch input:checked + label {
+    background: #2563eb;
+    border-color: #3b82f6;
+}
+
+.nx-cookie-switch input:checked + label span {
+    transform: translateX(19px);
+    background: #fff;
+}
+
+.nx-cookie-switch-disabled label {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.nx-cookie-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-top: 22px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(148,163,184,.08);
+}
+
+.nx-cookie-modal-policy {
+    color: #60a5fa;
+    font-size: .72rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nx-cookie-modal-policy:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .nx-cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .nx-cookie-banner-inner {
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+
+        padding: 16px;
+
+        border-radius: 16px;
+    }
+
+    .nx-cookie-icon {
+        width: 38px;
+        height: 38px;
+
+        border-radius: 10px;
+
+        font-size: .95rem;
+    }
+
+    .nx-cookie-content h2 {
+        font-size: .84rem;
+    }
+
+    .nx-cookie-content p {
+        font-size: .68rem;
+        line-height: 1.55;
+    }
+
+    .nx-cookie-policy-link {
+        font-size: .64rem;
+    }
+
+    .nx-cookie-actions {
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        width: 100%;
+    }
+
+    .nx-cookie-btn {
+        width: 100%;
+        min-height: 37px;
+
+        padding: 0 7px;
+
+        font-size: .64rem;
+    }
+
+    .nx-cookie-modal {
+        padding: 12px;
+    }
+
+    .nx-cookie-modal-card {
+        max-height: calc(100vh - 24px);
+
+        padding: 21px 17px;
+
+        border-radius: 17px;
+    }
+
+    .nx-cookie-modal-header h2 {
+        font-size: 1.18rem;
+    }
+
+    .nx-cookie-modal-description {
+        font-size: .7rem;
+    }
+
+    .nx-cookie-option {
+        align-items: flex-start;
+        padding: 13px;
+    }
+
+    .nx-cookie-option-title {
+        font-size: .72rem;
+    }
+
+    .nx-cookie-option-info p {
+        font-size: .63rem;
+    }
+
+    .nx-cookie-modal-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .nx-cookie-modal-footer .nx-cookie-btn {
+        min-height: 40px;
+    }
+
+    .nx-cookie-modal-policy {
+        text-align: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- =========================================================
+     LYVARYN COOKIE CONSENT
+========================================================= -->
+
+<div
+    id="lyvarynCookieBanner"
+    class="nx-cookie-banner"
+    role="dialog"
+    aria-labelledby="nxCookieTitle"
+    aria-describedby="nxCookieDescription"
+    aria-modal="false"
+    hidden
+>
+    <div class="nx-cookie-banner-inner">
+
+        <div class="nx-cookie-icon">
+            <i class="bi bi-shield-check"></i>
+        </div>
+
+        <div class="nx-cookie-content">
+
+            <h2 id="nxCookieTitle">
+                Tu privacidad importa
+            </h2>
+
+            <p id="nxCookieDescription">
+                Utilizamos cookies necesarias para el funcionamiento del sitio
+                y, con tu autorización, cookies adicionales para preferencias
+                y medición. Puedes aceptar todas, rechazar las no necesarias
+                o configurar tus preferencias.
+            </p>
+
+            <a
+                href="politica-cookies.html"
+                class="nx-cookie-policy-link"
+            >
+                Leer Política de Cookies
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+
+        <div class="nx-cookie-actions">
+
+            <button
+                type="button"
+                id="nxCookieReject"
+                class="nx-cookie-btn nx-cookie-btn-secondary"
+            >
+                Rechazar
+            </button>
+
+            <button
+                type="button"
+                id="nxCookieConfigure"
+                class="nx-cookie-btn nx-cookie-btn-outline"
+            >
+                Configurar
+            </button>
+
+            <button
+                type="button"
+                id="nxCookieAccept"
+                class="nx-cookie-btn nx-cookie-btn-primary"
+            >
+                Aceptar todas
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- =========================================================
+     LYVARYN COOKIE PREFERENCES
+========================================================= -->
+
+<div
+    id="lyvarynCookieModal"
+    class="nx-cookie-modal"
+    role="dialog"
+    aria-labelledby="nxCookieModalTitle"
+    aria-modal="true"
+    hidden
+>
+    <div class="nx-cookie-modal-backdrop"></div>
+
+    <div class="nx-cookie-modal-card">
+
+        <div class="nx-cookie-modal-header">
+
+            <div>
+                <span class="nx-cookie-modal-eyebrow">
+                    <i class="bi bi-sliders"></i>
+                    Preferencias de privacidad
+                </span>
+
+                <h2 id="nxCookieModalTitle">
+                    Configurar cookies
+                </h2>
+            </div>
+
+            <button
+                type="button"
+                id="nxCookieClose"
+                class="nx-cookie-close"
+                aria-label="Cerrar preferencias"
+            >
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+        <p class="nx-cookie-modal-description">
+            Puedes decidir qué categorías de cookies permites.
+            Las cookies necesarias no pueden desactivarse porque son
+            necesarias para determinadas funciones del sitio.
+        </p>
+
+        <div class="nx-cookie-options">
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-shield-lock"></i>
+                        Necesarias
+                    </div>
+
+                    <p>
+                        Necesarias para funciones técnicas, seguridad y
+                        funcionamiento básico del sitio.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch nx-cookie-switch-disabled">
+                    <input
+                        type="checkbox"
+                        id="nxCookieNecessary"
+                        checked
+                        disabled
+                    >
+
+                    <label for="nxCookieNecessary">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-sliders"></i>
+                        Preferencias
+                    </div>
+
+                    <p>
+                        Permiten recordar determinadas preferencias de
+                        navegación cuando corresponda.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookiePreferences"
+                    >
+
+                    <label for="nxCookiePreferences">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-bar-chart-line"></i>
+                        Analíticas
+                    </div>
+
+                    <p>
+                        Permiten medir el uso del sitio para comprender
+                        su funcionamiento y mejorar la experiencia.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookieAnalytics"
+                    >
+
+                    <label for="nxCookieAnalytics">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="nx-cookie-option">
+                <div class="nx-cookie-option-info">
+
+                    <div class="nx-cookie-option-title">
+                        <i class="bi bi-megaphone"></i>
+                        Marketing
+                    </div>
+
+                    <p>
+                        Permiten tecnologías destinadas a determinadas
+                        funciones publicitarias o medición de campañas,
+                        cuando estén disponibles.
+                    </p>
+
+                </div>
+
+                <div class="nx-cookie-switch">
+                    <input
+                        type="checkbox"
+                        id="nxCookieMarketing"
+                    >
+
+                    <label for="nxCookieMarketing">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="nx-cookie-modal-footer">
+
+            <a
+                href="politica-cookies.html"
+                class="nx-cookie-modal-policy"
+            >
+                Ver Política de Cookies
+            </a>
+
+            <button
+                type="button"
+                id="nxCookieSave"
+                class="nx-cookie-btn nx-cookie-btn-primary"
+            >
+                Guardar preferencias
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+
+LYVARYN
+
+</a>
+
+<button
+    type="button"
+    class="theme-toggle mobile-theme-toggle"
+    id="mobileThemeToggle"
+    aria-label="Cambiar tema"
+    title="Cambiar tema"
+>
+    <i class="bi bi-moon-stars-fill"></i>
+</button>
+
+<button
+class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+    <a class="nav-link" href="caracteristicas.html">
+    Características
+</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="precios.html">
+        Precios
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="como-empezar.html">Cómo empezar</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contacto.html">
+        Contacto
+    </a>
+</li>
+
+<li class="nav-item">
+    <button
+        type="button"
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Cambiar tema"
+        title="Cambiar tema"
+    >
+        <i class="bi bi-moon-stars-fill"></i>
+    </button>
+</li>
+
+</ul>
+
+<a
+    class="btn btn-primary ms-4"
+    href="precios.html"
+>
+    Ver planes
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+    
+
+<style>
+/* LYVARYN — hero visual */
+.lyv-hero-visual {
+    position: relative;
+    width: min(100%, 560px);
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+}
+
+.lyv-hero-visual::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(52, 126, 255, .24) 0%, rgba(52, 126, 255, .08) 38%, transparent 70%);
+    filter: blur(8px);
+    z-index: -2;
+    animation: lyvPulse 4.5s ease-in-out infinite;
+}
+
+.lyv-orbit {
+    position: absolute;
+    border: 1px solid rgba(76, 139, 255, .17);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.lyv-orbit.one {
+    width: 355px;
+    height: 355px;
+    animation: lyvRotate 24s linear infinite;
+}
+
+.lyv-orbit.two {
+    width: 465px;
+    height: 465px;
+    border-color: rgba(76, 139, 255, .09);
+    animation: lyvRotateReverse 34s linear infinite;
+}
+
+.lyv-core {
+    width: 205px;
+    height: 205px;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(145deg, rgba(24, 35, 60, .96), rgba(8, 15, 30, .98));
+    border: 1px solid rgba(99, 154, 255, .3);
+    box-shadow: 0 0 0 1px rgba(255,255,255,.025) inset, 0 28px 70px rgba(0,0,0,.35), 0 0 55px rgba(42, 117, 255, .16);
+    transform: rotate(-3deg);
+    animation: lyvFloat 5s ease-in-out infinite;
+}
+
+.lyv-core-mark {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 15px;
+    border-radius: 19px;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(135deg, #2d7cff, #6258ff);
+    box-shadow: 0 12px 32px rgba(45,124,255,.35);
+}
+
+.lyv-core strong {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: .04em;
+}
+
+.lyv-core small {
+    margin-top: 7px;
+    color: #8ea5ca;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.lyv-chip {
+    position: absolute;
+    min-width: 104px;
+    padding: 11px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 14px;
+    color: #dce8ff;
+    background: rgba(13, 24, 45, .86);
+    border: 1px solid rgba(109, 158, 255, .22);
+    box-shadow: 0 16px 38px rgba(0,0,0,.22), 0 0 24px rgba(40,113,255,.08);
+    backdrop-filter: blur(12px);
+    font-size: 13px;
+    font-weight: 700;
+    z-index: 3;
+    animation: lyvFloat 5s ease-in-out infinite;
+}
+
+.lyv-chip i {
+    color: #55a0ff;
+    font-size: 16px;
+}
+
+.lyv-chip.payment {
+    border-color: rgba(83, 157, 255, .28);
+}
+
+.lyv-chip.payment i {
+    color: #75b4ff;
+}
+
+.lyv-chip span {
+    white-space: nowrap;
+}
+
+.lyv-chip.c1 { top: 45px; left: 52px; animation-delay: -.7s; }
+.lyv-chip.c2 { top: 35px; right: 34px; animation-delay: -1.9s; }
+.lyv-chip.c3 { top: 190px; left: 0; animation-delay: -3.1s; }
+.lyv-chip.c4 { top: 205px; right: -2px; animation-delay: -2.4s; }
+.lyv-chip.c5 { bottom: 62px; left: 74px; animation-delay: -1.2s; }
+.lyv-chip.c6 { bottom: 45px; right: 65px; animation-delay: -3.7s; }
+
+.lyv-payment-note {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #7890b8;
+    font-size: 11px;
+    letter-spacing: .04em;
+    white-space: nowrap;
+}
+
+.hero-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-top: 24px;
+    color: #91a7ca;
+    font-size: 12px;
+}
+
+.hero-highlights span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.hero-highlights i { color: #4e91ff; }
+
+/* =========================================================
+   LYVARYN — HERO / TEMA CLARO
+========================================================= */
+
+html.light-theme .hero-title,
+body.light-theme .hero-title {
+    color: #111827;
+}
+
+html.light-theme .hero-text,
+body.light-theme .hero-text {
+    color: #475569;
+}
+
+html.light-theme .hero-highlights,
+body.light-theme .hero-highlights {
+    color: #64748b;
+}
+
+html.light-theme .hero-highlights i,
+body.light-theme .hero-highlights i {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   VISUAL CENTRAL
+========================================================= */
+
+html.light-theme .lyv-hero-visual::before,
+body.light-theme .lyv-hero-visual::before {
+    background:
+        radial-gradient(
+            circle,
+            rgba(59, 130, 246, .16) 0%,
+            rgba(59, 130, 246, .06) 38%,
+            transparent 70%
+        );
+}
+
+
+/* Órbitas */
+
+html.light-theme .lyv-orbit,
+body.light-theme .lyv-orbit {
+    border-color:
+        rgba(37, 99, 235, .13);
+}
+
+html.light-theme .lyv-orbit.two,
+body.light-theme .lyv-orbit.two {
+    border-color:
+        rgba(37, 99, 235, .07);
+}
+
+
+/* =========================================================
+   NÚCLEO LYVARYN
+========================================================= */
+
+html.light-theme .lyv-core,
+body.light-theme .lyv-core {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef4ff
+        );
+
+    border-color:
+        rgba(37, 99, 235, .20);
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,.9) inset,
+        0 28px 70px rgba(15,23,42,.12),
+        0 0 55px rgba(37,99,235,.10);
+}
+
+
+html.light-theme .lyv-core strong,
+body.light-theme .lyv-core strong {
+    color: #111827;
+}
+
+
+html.light-theme .lyv-core small,
+body.light-theme .lyv-core small {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   CHIPS
+========================================================= */
+
+html.light-theme .lyv-chip,
+body.light-theme .lyv-chip {
+    color: #1e293b;
+
+    background:
+        rgba(255, 255, 255, .90);
+
+    border-color:
+        rgba(37, 99, 235, .16);
+
+    box-shadow:
+        0 16px 38px rgba(15,23,42,.10),
+        0 0 24px rgba(37,113,255,.06);
+}
+
+
+html.light-theme .lyv-chip i,
+body.light-theme .lyv-chip i {
+    color: #2563eb;
+}
+
+
+html.light-theme .lyv-chip.payment,
+body.light-theme .lyv-chip.payment {
+    border-color:
+        rgba(37, 99, 235, .22);
+}
+
+
+html.light-theme .lyv-chip.payment i,
+body.light-theme .lyv-chip.payment i {
+    color: #2563eb;
+}
+
+
+/* Texto inferior */
+
+html.light-theme .lyv-payment-note,
+body.light-theme .lyv-payment-note {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   BOTÓN DEMO
+========================================================= */
+
+html.light-theme .hero-demo-btn,
+body.light-theme .hero-demo-btn {
+    color: #1e3a5f;
+
+    background:
+        rgba(255, 255, 255, .72);
+
+    border-color:
+        rgba(37, 99, 235, .20);
+}
+
+html.light-theme .hero-demo-btn:hover,
+body.light-theme .hero-demo-btn:hover {
+    color: #1d4ed8;
+
+    background:
+        #ffffff;
+
+    border-color:
+        rgba(37, 99, 235, .35);
+}
+
+@keyframes lyvFloat {
+    0%, 100% { transform: translateY(0) rotate(-1deg); }
+    50% { transform: translateY(-9px) rotate(1deg); }
+}
+
+@keyframes lyvPulse {
+    0%, 100% { transform: scale(.94); opacity: .72; }
+    50% { transform: scale(1.08); opacity: 1; }
+}
+
+@keyframes lyvRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes lyvRotateReverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+@media (max-width: 991.98px) {
+    .lyv-hero-visual {
+        height: 430px;
+        margin-top: 25px;
+    }
+    .lyv-orbit.one { width: 300px; height: 300px; }
+    .lyv-orbit.two { width: 390px; height: 390px; }
+    .lyv-chip.c1 { left: 25px; }
+    .lyv-chip.c2 { right: 10px; }
+    .lyv-chip.c5 { left: 40px; }
+    .lyv-chip.c6 { right: 35px; }
+}
+
+@media (max-width: 575.98px) {
+    .lyv-hero-visual {
+        height: 390px;
+        transform: scale(.9);
+        transform-origin: center top;
+        margin-bottom: -25px;
+    }
+    .lyv-orbit.one { width: 265px; height: 265px; }
+    .lyv-orbit.two { width: 345px; height: 345px; }
+    .lyv-core { width: 175px; height: 175px; }
+    .lyv-core-mark { width: 52px; height: 52px; margin-bottom: 11px; }
+    .lyv-core strong { font-size: 22px; }
+    .lyv-chip { min-width: 90px; padding: 9px 10px; font-size: 11px; }
+    .lyv-chip.c1 { top: 35px; left: 5px; }
+    .lyv-chip.c2 { top: 28px; right: 0; }
+    .lyv-chip.c3 { top: 155px; left: -12px; }
+    .lyv-chip.c4 { top: 165px; right: -12px; }
+    .lyv-chip.c5 { bottom: 55px; left: 20px; }
+    .lyv-chip.c6 { bottom: 42px; right: 18px; }
+    .hero-highlights { gap: 8px 13px; font-size: 11px; }
+    .lyv-payment-note { font-size: 10px; }
+}
+</style>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<span class="badge bg-primary px-3 py-2 mb-4">
+
+Web • Software • IA • Integraciones
+
+</span>
+
+<h1 class="hero-title">
+
+Tecnología que se adapta
+
+<span>a tu negocio</span>
+
+</h1>
+
+<p class="hero-text">
+
+Software empresarial y sitios web personalizados, diseñados para tu marca, tus procesos y las necesidades reales de tu negocio.
+
+</p>
+
+<div class="hero-buttons">
+
+    <a href="#pricing" class="btn btn-primary btn-lg me-3">
+        Ver planes
+    </a>
+
+    <a href="#demo" class="btn btn-outline-light btn-lg hero-demo-btn">
+        Ver demo
+    </a>
+
+</div>
+
+<div class="hero-highlights">
+    <span><i class="bi bi-palette2"></i> Diseño personalizado</span>
+    <span><i class="bi bi-phone"></i> Adaptado a cualquier dispositivo</span>
+    <span><i class="bi bi-credit-card"></i> Pagos e integraciones</span>
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="lyv-hero-visual" aria-label="Integraciones y soluciones de LYVARYN">
+    <div class="lyv-orbit one"></div>
+    <div class="lyv-orbit two"></div>
+
+    <div class="lyv-chip c1">
+        <i class="bi bi-globe2"></i><span>Web</span>
+    </div>
+    <div class="lyv-chip payment c2">
+        <i class="bi bi-credit-card-2-front"></i><span>VISA</span>
+    </div>
+    <div class="lyv-chip c3">
+        <i class="bi bi-cpu"></i><span>IA</span>
+    </div>
+    <div class="lyv-chip payment c4">
+        <i class="bi bi-wallet2"></i><span>PayPal</span>
+    </div>
+    <div class="lyv-chip c5">
+        <i class="bi bi-whatsapp"></i><span>WhatsApp</span>
+    </div>
+    <div class="lyv-chip payment c6">
+        <i class="bi bi-phone"></i><span>Apple Pay</span>
+    </div>
+
+    <div class="lyv-core">
+        <div class="lyv-core-mark">L</div>
+        <strong>LYVARYN</strong>
+        <small>Soluciones a tu medida</small>
+    </div>
+
+    <div class="lyv-payment-note">Integraciones según las necesidades de cada proyecto</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="features" id="features">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Soluciones digitales para tu negocio
+        </h2>
+
+        <p class="section-subtitle">
+            Creamos herramientas digitales adaptadas a la identidad,
+            procesos y necesidades de cada empresa.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Sitios web -->
+            <div class="col-lg-4">
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-globe2"></i>
+                    </div>
+
+                    <h3>Sitios web personalizados</h3>
+
+                    <p>
+                        Diseñamos sitios web profesionales adaptados a tu
+                        marca, colores, estilo y objetivos comerciales.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!-- Sistemas -->
+            <div class="col-lg-4">
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-window-stack"></i>
+                    </div>
+
+                    <h3>Sistemas empresariales</h3>
+
+                    <p>
+                        Desarrollamos soluciones para gestionar ventas,
+                        inventario, clientes, reservas, reportes y procesos.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!-- IA -->
+            <div class="col-lg-4">
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+
+                    <h3>Inteligencia Artificial</h3>
+
+                    <p>
+                        Incorporamos IA y automatizaciones para ayudarte
+                        a optimizar tareas y mejorar la operación de tu negocio.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!-- Pagos -->
+            <div class="col-lg-4">
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-credit-card-2-front"></i>
+                    </div>
+
+                    <h3>Pagos e integraciones</h3>
+
+                    <p>
+                        Dependiendo del proyecto, integramos métodos de pago
+                        y servicios externos que tu negocio necesite.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!-- Responsive -->
+            <div class="col-lg-4">
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+
+                    <h3>Adaptado a cualquier dispositivo</h3>
+
+                    <p>
+                        Diseñamos soluciones que funcionan correctamente
+                        en computadoras, tablets y teléfonos celulares.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!-- Automatización -->
+            <div class="col-lg-4">
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-chat-dots"></i>
+                    </div>
+
+                    <h3>Automatización y WhatsApp</h3>
+
+                    <p>
+                        Conecta tus canales de comunicación y automatiza
+                        procesos para atender mejor a tus clientes.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="showcase nx-showcase" id="demo">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+    <span class="badge bg-primary px-3 py-2 mb-3">
+        ASÍ PUEDE VERSE TU SOLUCIÓN
+    </span>
+
+    <h2 class="display-4 fw-bold">
+        Una solución diseñada para tu negocio
+    </h2>
+
+    <p class="text-secondary fs-5">
+        Desde sistemas empresariales hasta herramientas personalizadas,
+        construimos soluciones digitales adaptadas a la forma en que trabaja tu negocio.
+    </p>
+
+</div>
+
+
+        <!-- DASHBOARD -->
+        <div class="nx-dashboard">
+
+            <!-- SIDEBAR -->
+            <aside class="nx-sidebar">
+
+                <div class="nx-sidebar-brand">
+                    <strong>LYVARYN</strong>
+                    <span>AI</span>
+                </div>
+
+                <nav class="nx-sidebar-menu">
+
+                    <a href="#" class="active">
+                        <i class="bi bi-grid-1x2-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <span>Ventas</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-box-seam"></i>
+                        <span>Inventario</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-people"></i>
+                        <span>Clientes</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <span>Reportes</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-stars"></i>
+                        <span>IA</span>
+                    </a>
+
+                </nav>
+
+
+                <div class="nx-sidebar-help">
+
+                    <div class="nx-help-icon">
+                        <i class="bi bi-question-circle"></i>
+                    </div>
+
+                    <strong>¿Necesitas ayuda?</strong>
+
+                    <p>
+                        Nuestro asistente IA está listo para ayudarte.
+                    </p>
+
+                    <button type="button">
+                        <i class="bi bi-chat-dots"></i>
+                        Pregúntale ahora
+                    </button>
+
+                </div>
+
+            </aside>
+
+
+            <!-- MAIN -->
+            <main class="nx-dashboard-main">
+
+
+                <!-- HEADER -->
+                <div class="nx-dashboard-header">
+
+                    <div>
+                        <h3>
+                            Resumen de tu negocio
+                        </h3>
+
+                        <p>
+                            Todo lo que necesitas, en un solo lugar.
+                        </p>
+                    </div>
+
+                    <div class="nx-dashboard-date">
+
+                        <i class="bi bi-calendar3"></i>
+
+                        <span>
+                            22 de septiembre, 2026
+                        </span>
+
+                        <i class="bi bi-chevron-down"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- KPI CARDS -->
+                <div class="nx-kpi-grid">
+
+
+                    <!-- VENTAS -->
+                    <div class="nx-kpi-card">
+
+                        <div class="nx-kpi-icon nx-kpi-sales">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+
+                        <div class="nx-kpi-info">
+
+                            <span>
+                                Ventas de hoy
+                            </span>
+
+                            <strong>
+                                ₡385.000
+                            </strong>
+
+                            <small class="nx-positive">
+                                <i class="bi bi-arrow-up"></i>
+                                12% vs. ayer
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CLIENTES -->
+                    <div class="nx-kpi-card">
+
+                        <div class="nx-kpi-icon nx-kpi-clients">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+
+                        <div class="nx-kpi-info">
+
+                            <span>
+                                Clientes activos
+                            </span>
+
+                            <strong>
+                                126
+                            </strong>
+
+                            <small class="nx-positive">
+                                <i class="bi bi-arrow-up"></i>
+                                8% este mes
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCTOS -->
+                    <div class="nx-kpi-card">
+
+                        <div class="nx-kpi-icon nx-kpi-products">
+                            <i class="bi bi-box-seam-fill"></i>
+                        </div>
+
+                        <div class="nx-kpi-info">
+
+                            <span>
+                                Productos
+                            </span>
+
+                            <strong>
+                                542
+                            </strong>
+
+                            <small>
+                                En inventario
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ORDENES -->
+                    <div class="nx-kpi-card">
+
+                        <div class="nx-kpi-icon nx-kpi-orders">
+                            <i class="bi bi-cart-check-fill"></i>
+                        </div>
+
+                        <div class="nx-kpi-info">
+
+                            <span>
+                                Órdenes
+                            </span>
+
+                            <strong>
+                                28
+                            </strong>
+
+                            <small class="nx-positive">
+                                <i class="bi bi-arrow-up"></i>
+                                27% vs. ayer
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CHART + PRODUCTS -->
+                <div class="nx-dashboard-middle">
+
+
+                    <!-- CHART -->
+                    <div class="nx-dashboard-card nx-chart-card">
+
+                        <div class="nx-card-header">
+
+                            <div class="nx-card-title">
+
+                                <div class="nx-card-icon blue">
+                                    <i class="bi bi-bar-chart-line-fill"></i>
+                                </div>
+
+                                <div>
+                                    <h4>
+                                        Ventas
+                                    </h4>
+
+                                    <p>
+                                        Evolución de tus ventas en los últimos 7 días
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <button class="nx-period-button">
+                                Últimos 7 días
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="nx-chart-container">
+
+                            <div class="nx-chart-y-axis">
+
+                                <span>₡600K</span>
+                                <span>₡450K</span>
+                                <span>₡300K</span>
+                                <span>₡150K</span>
+                                <span>₡0</span>
+
+                            </div>
+
+
+                            <div class="nx-chart-area">
+
+                                <div class="nx-chart-lines">
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+
+                                <svg
+                                    class="nx-sales-chart"
+                                    viewBox="0 0 700 250"
+                                    preserveAspectRatio="none"
+                                    aria-label="Gráfico de ventas de LYVARYN"
+                                >
+
+                                    <defs>
+
+                                        <linearGradient
+                                            id="nxSalesGradient"
+                                            x1="0"
+                                            y1="0"
+                                            x2="0"
+                                            y2="1"
+                                        >
+
+                                            <stop
+                                                offset="0%"
+                                                stop-color="#3b82f6"
+                                                stop-opacity=".35"
+                                            />
+
+                                            <stop
+                                                offset="100%"
+                                                stop-color="#3b82f6"
+                                                stop-opacity="0"
+                                            />
+
+                                        </linearGradient>
+
+                                    </defs>
+
+
+                                    <path
+                                        class="nx-sales-fill"
+                                        d="
+                                            M0 175
+                                            C45 160 70 155 110 130
+                                            C150 105 175 115 215 90
+                                            C255 65 280 72 320 103
+                                            C355 130 390 105 425 72
+                                            C460 42 490 55 520 90
+                                            C555 125 585 110 620 80
+                                            C650 55 675 45 700 25
+                                            L700 250
+                                            L0 250
+                                            Z
+                                        "
+                                    ></path>
+
+
+                                    <path
+                                        class="nx-sales-line"
+                                        d="
+                                            M0 175
+                                            C45 160 70 155 110 130
+                                            C150 105 175 115 215 90
+                                            C255 65 280 72 320 103
+                                            C355 130 390 105 425 72
+                                            C460 42 490 55 520 90
+                                            C555 125 585 110 620 80
+                                            C650 55 675 45 700 25
+                                        "
+                                    ></path>
+
+
+                                    <circle
+                                        cx="700"
+                                        cy="25"
+                                        r="7"
+                                    ></circle>
+
+                                </svg>
+
+
+                                <div class="nx-chart-tooltip">
+
+                                    <span>
+                                        22 sep, 2026
+                                    </span>
+
+                                    <strong>
+                                        ₡385.000
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="nx-chart-dates">
+
+                                    <span>16 sep</span>
+                                    <span>17 sep</span>
+                                    <span>18 sep</span>
+                                    <span>19 sep</span>
+                                    <span>20 sep</span>
+                                    <span>21 sep</span>
+                                    <span>22 sep</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCTOS -->
+                    <div class="nx-dashboard-card nx-products-card">
+
+                        <div class="nx-card-header">
+
+                            <div class="nx-card-title">
+
+                                <div class="nx-card-icon orange">
+                                    <i class="bi bi-trophy-fill"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4>
+                                        Productos más vendidos
+                                    </h4>
+
+                                    <p>
+                                        Top 5 de esta semana
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="nx-products-list">
+
+
+                            <div class="nx-product-row">
+
+                                <div class="nx-product-image coffee">
+                                    ☕
+                                </div>
+
+                                <div class="nx-product-name">
+                                    Café Premium
+                                </div>
+
+                                <strong>
+                                    124
+                                </strong>
+
+                            </div>
+
+
+                            <div class="nx-product-row">
+
+                                <div class="nx-product-image cookie">
+                                    🍪
+                                </div>
+
+                                <div class="nx-product-name">
+                                    Galletas Artesanales
+                                </div>
+
+                                <strong>
+                                    98
+                                </strong>
+
+                            </div>
+
+
+                            <div class="nx-product-row">
+
+                                <div class="nx-product-image water">
+                                    💧
+                                </div>
+
+                                <div class="nx-product-name">
+                                    Agua Natural
+                                </div>
+
+                                <strong>
+                                    76
+                                </strong>
+
+                            </div>
+
+
+                            <div class="nx-product-row">
+
+                                <div class="nx-product-image sandwich">
+                                    🥪
+                                </div>
+
+                                <div class="nx-product-name">
+                                    Sandwich de Pollo
+                                </div>
+
+                                <strong>
+                                    64
+                                </strong>
+
+                            </div>
+
+
+                            <div class="nx-product-row">
+
+                                <div class="nx-product-image juice">
+                                    🧃
+                                </div>
+
+                                <div class="nx-product-name">
+                                    Jugo de Naranja
+                                </div>
+
+                                <strong>
+                                    52
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTTOM -->
+                <div class="nx-dashboard-bottom">
+
+
+                    <!-- ÚLTIMAS VENTAS -->
+                    <div class="nx-dashboard-card nx-transactions-card">
+
+                        <div class="nx-card-header">
+
+                            <div class="nx-card-title">
+
+                                <div class="nx-card-icon blue">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4>
+                                        Últimas ventas
+                                    </h4>
+
+                                    <p>
+                                        Transacciones recientes
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <a href="#">
+                                Ver todas
+                            </a>
+
+                        </div>
+
+
+                        <div class="nx-transactions-table">
+
+                            <div class="nx-transaction-row nx-transaction-head">
+
+                                <span>Cliente</span>
+                                <span>Producto</span>
+                                <span>Monto</span>
+                                <span>Estado</span>
+                                <span>Hora</span>
+
+                            </div>
+
+
+                            <div class="nx-transaction-row">
+
+                                <span>
+                                    Juan Pérez
+                                </span>
+
+                                <span>
+                                    Café Premium
+                                </span>
+
+                                <strong>
+                                    ₡12.500
+                                </strong>
+
+                                <span>
+                                    <b class="nx-status">
+                                        Completada
+                                    </b>
+                                </span>
+
+                                <span>
+                                    10:24
+                                </span>
+
+                            </div>
+
+
+                            <div class="nx-transaction-row">
+
+                                <span>
+                                    María Gómez
+                                </span>
+
+                                <span>
+                                    Sandwich de Pollo
+                                </span>
+
+                                <strong>
+                                    ₡8.200
+                                </strong>
+
+                                <span>
+                                    <b class="nx-status">
+                                        Completada
+                                    </b>
+                                </span>
+
+                                <span>
+                                    09:18
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ASISTENTE IA -->
+                    <div class="nx-dashboard-card nx-ai-card">
+
+                        <div class="nx-card-header">
+
+                            <div class="nx-card-title">
+
+                                <div class="nx-card-icon purple">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4>
+                                        Asistente IA
+                                    </h4>
+
+                                    <p>
+                                        Tu ayuda inteligente 24/7
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="nx-ai-content">
+
+                            <div class="nx-ai-message">
+
+                                ¿Qué te gustaría hacer hoy?
+
+                            </div>
+
+
+                            <div class="nx-ai-actions">
+
+                                <button type="button">
+                                    Generar reporte
+                                </button>
+
+                                <button type="button">
+                                    Analizar ventas
+                                </button>
+
+                                <button type="button">
+                                    Ver inventario
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="nx-ai-robot">
+
+                            <div class="nx-robot-screen">
+
+                                <span>⌣</span>
+                                <span>⌣</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="nx-how-section" id="como-funciona">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="nx-how-header text-center">
+
+            <span class="nx-how-badge">
+    Nuestro proceso
+</span>
+
+<h2 class="nx-how-title">
+    ¿Cómo creamos tu solución?
+</h2>
+
+<p class="nx-how-subtitle">
+    Trabajamos contigo para convertir las necesidades de tu negocio
+    en una solución digital funcional y personalizada.
+</p>
+
+        </div>
+
+
+        <!-- PROCESS -->
+        <div class="nx-how-process">
+
+
+            <!-- STEP 01 -->
+            <article class="nx-how-step">
+
+    <div class="nx-how-icon-box">
+
+        <span class="nx-how-number">
+            01
+        </span>
+
+        <div class="nx-how-icon">
+            <i class="bi bi-chat-dots"></i>
+        </div>
+
+    </div>
+
+    <h3>
+        Cuéntanos tu idea
+    </h3>
+
+    <p>
+        Conocemos tu negocio, tus objetivos y las necesidades
+        que quieres resolver.
+    </p>
+
+    <div class="nx-how-benefit">
+        <i class="bi bi-check-circle-fill"></i>
+        <span>
+            Entendemos tu negocio
+        </span>
+    </div>
+
+</article>
+
+
+            <!-- CONNECTOR -->
+            <div class="nx-how-connector">
+
+                <span></span>
+
+            </div>
+
+
+            <!-- STEP 02 -->
+            <article class="nx-how-step">
+
+    <div class="nx-how-icon-box">
+
+        <span class="nx-how-number">
+            02
+        </span>
+
+        <div class="nx-how-icon">
+            <i class="bi bi-diagram-3"></i>
+        </div>
+
+    </div>
+
+    <h3>
+        Definimos la solución
+    </h3>
+
+    <p>
+        Analizamos lo que necesitas y definimos las funcionalidades,
+        integraciones y estructura del proyecto.
+    </p>
+
+    <div class="nx-how-benefit">
+        <i class="bi bi-check-circle-fill"></i>
+        <span>
+            Solución a tu medida
+        </span>
+    </div>
+
+</article>
+
+
+            <!-- CONNECTOR -->
+            <div class="nx-how-connector">
+
+                <span></span>
+
+            </div>
+
+
+            <!-- STEP 03 -->
+            <article class="nx-how-step">
+
+    <div class="nx-how-icon-box">
+
+        <span class="nx-how-number">
+            03
+        </span>
+
+        <div class="nx-how-icon">
+            <i class="bi bi-code-slash"></i>
+        </div>
+
+    </div>
+
+    <h3>
+        Diseñamos y desarrollamos
+    </h3>
+
+    <p>
+        Creamos la solución con tu identidad visual, tecnología
+        y herramientas necesarias para tu proyecto.
+    </p>
+
+    <div class="nx-how-benefit">
+        <i class="bi bi-check-circle-fill"></i>
+        <span>
+            Diseño y tecnología
+        </span>
+    </div>
+
+</article>
+
+
+            <!-- CONNECTOR -->
+            <div class="nx-how-connector">
+
+                <span></span>
+
+            </div>
+
+
+            <!-- STEP 04 -->
+            <article class="nx-how-step">
+
+    <div class="nx-how-icon-box">
+
+        <span class="nx-how-number">
+            04
+        </span>
+
+        <div class="nx-how-icon">
+            <i class="bi bi-rocket-takeoff-fill"></i>
+        </div>
+
+    </div>
+
+    <h3>
+        Lanzamos tu solución
+    </h3>
+
+    <p>
+        Ponemos tu proyecto en funcionamiento y dejamos todo
+        preparado para que puedas comenzar a utilizarlo.
+    </p>
+
+    <div class="nx-how-benefit">
+        <i class="bi bi-check-circle-fill"></i>
+        <span>
+            Listo para comenzar
+        </span>
+    </div>
+
+</article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="onboarding-guide" id="como-empezar">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+                Lo que obtienes
+            </span>
+
+            <h2 class="section-title mt-3">
+                ¿Qué incluye tu solución?
+            </h2>
+
+            <p class="section-subtitle">
+                Cada proyecto se construye de acuerdo con las necesidades,
+                identidad y objetivos de tu negocio.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- 01 -->
+            <div class="col-md-6 col-lg-3">
+
+                <article class="guide-card">
+
+                    <span>01</span>
+
+                    <i class="bi bi-palette2"></i>
+
+                    <h3>
+                        Diseño personalizado
+                    </h3>
+
+                    <p>
+                        Adaptamos la identidad visual, colores, estructura
+                        y experiencia de tu solución a la imagen de tu negocio.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- 02 -->
+            <div class="col-md-6 col-lg-3">
+
+                <article class="guide-card">
+
+                    <span>02</span>
+
+                    <i class="bi bi-grid-1x2"></i>
+
+                    <h3>
+                        Funcionalidades
+                    </h3>
+
+                    <p>
+                        Incorporamos las herramientas y funciones que
+                        realmente necesita tu negocio para operar mejor.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- 03 -->
+            <div class="col-md-6 col-lg-3">
+
+                <article class="guide-card">
+
+                    <span>03</span>
+
+                    <i class="bi bi-plug"></i>
+
+                    <h3>
+                        Integraciones
+                    </h3>
+
+                    <p>
+                        Conectamos pagos, WhatsApp, servicios externos
+                        y otras herramientas según las necesidades del proyecto.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- 04 -->
+            <div class="col-md-6 col-lg-3">
+
+                <article class="guide-card">
+
+                    <span>04</span>
+
+                    <i class="bi bi-phone"></i>
+
+                    <h3>
+                        Adaptación y soporte
+                    </h3>
+
+                    <p>
+                        Preparamos la solución para computadora, tablet
+                        y celular, con acompañamiento durante su implementación.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="pricing-section py-5" id="pricing">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="section-badge">
+    Planes y soluciones
+</span>
+
+<h2 class="section-title mt-3">
+    Una solución que se adapta a tu negocio
+</h2>
+
+<p class="section-subtitle">
+    Elige el plan que mejor se adapte a tus necesidades
+    o hablemos de una solución personalizada para tu empresa.
+</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Starter -->
+            <div class="col-lg-4">
+                <div class="pricing-card h-100">
+                    <h3>Starter</h3>
+                    <div class="price">$29</div>
+                    <span class="price-text">USD / mes</span>
+                    <p class="mt-3">
+                        Para pequeños negocios que necesitan centralizar su operación.
+                    </p>
+                    <ul>
+                        <li>✔ 1 usuario</li>
+                        <li>✔ Clientes</li>
+                        <li>✔ Inventario</li>
+                        <li>✔ Ventas</li>
+                        <li>✔ Dashboard</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-primary w-100 mt-3">
+                        Solicitar LYVARYN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pro -->
+            <div class="col-lg-4">
+                <div class="pricing-card featured h-100">
+                    <div class="popular">MÁS POPULAR</div>
+                    <h3>Pro</h3>
+                    <div class="price">$60</div>
+                    <span class="price-text">USD / mes</span>
+                    <p class="mt-3">
+                        Para empresas que necesitan más control, automatización y herramientas avanzadas.
+                    </p>
+                    <ul>
+                        <li>✔ Todo Starter</li>
+                        <li>✔ IA integrada</li>
+                        <li>✔ WhatsApp</li>
+                        <li>✔ Reportes</li>
+                        <li>✔ Facturación</li>
+                        <li>✔ Soporte prioritario</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-primary w-100 mt-3">
+                        Solicitar LYVARYN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="col-lg-4">
+                <div class="pricing-card h-100">
+                    <h3>Enterprise</h3>
+                    <div class="price">Personalizado</div>
+                    <span class="price-text">Solución a la medida</span>
+                    <p class="mt-3">
+                        Para empresas con operaciones complejas, múltiples usuarios o necesidades especiales.
+                    </p>
+                    <ul>
+                        <li>✔ Usuarios ilimitados</li>
+                        <li>✔ Multi sucursal</li>
+                        <li>✔ API</li>
+                        <li>✔ Integraciones</li>
+                        <li>✔ Soporte dedicado</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-outline-light w-100 mt-3">
+                        Solicitar propuesta
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="mb-0">
+                <strong>¿No sabes qué plan necesitas?</strong>
+                Hablemos de tu negocio y te ayudamos a definir la implementación adecuada.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+document.getElementById('enterpriseForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const f = new FormData(e.currentTarget);
+
+    const text =
+        `Solicitud LYVARYN%0A%0A` +
+        `Nombre: ${encodeURIComponent(f.get('name'))}%0A` +
+        `Correo: ${encodeURIComponent(f.get('email'))}%0A` +
+        `Empresa: ${encodeURIComponent(f.get('company'))}%0A` +
+        `Teléfono: ${encodeURIComponent(f.get('phone') || 'No indicado')}%0A` +
+        `Plan: ${encodeURIComponent(f.get('plan'))}%0A` +
+        `Tipo de negocio: ${encodeURIComponent(f.get('business_type') || 'No indicado')}%0A%0A` +
+        `Necesidades: ${encodeURIComponent(f.get('message'))}`;
+
+    window.open(
+        `https://wa.me/50662027095?text=${text}`,
+        '_blank',
+        'noopener'
+    );
+});
+</script>
+
+<section class="lyv-integrations-section" id="integraciones">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="lyv-integrations-header text-center">
+
+            <span class="lyv-integrations-badge">
+                <i class="bi bi-link-45deg"></i>
+                Integraciones y conexiones
+            </span>
+
+            <h2>
+                Conectamos tu plataforma con las
+                <span>herramientas que tu negocio necesita</span>
+            </h2>
+
+            <p>
+                En cada implementación podemos integrar y configurar
+                las plataformas y servicios que utilizas para que todo
+                funcione en un solo lugar.
+            </p>
+
+        </div>
+
+
+        <!-- CARRUSEL -->
+        <div class="lyv-integrations-carousel">
+
+            <div class="lyv-integrations-track">
+
+                <!-- WHATSAPP -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/whatsapp"
+                            alt="WhatsApp"
+                        >
+                    </div>
+                    <span>WhatsApp</span>
+                </div>
+
+
+                <!-- FACEBOOK -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/facebook"
+                            alt="Facebook"
+                        >
+                    </div>
+                    <span>Facebook</span>
+                </div>
+
+
+                <!-- INSTAGRAM -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/instagram"
+                            alt="Instagram"
+                        >
+                    </div>
+                    <span>Instagram</span>
+                </div>
+
+
+                <!-- GMAIL -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/gmail"
+                            alt="Gmail"
+                        >
+                    </div>
+                    <span>Gmail</span>
+                </div>
+
+
+                <!-- OUTLOOK -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://icons.iconarchive.com/icons/simpleicons-team/simple/128/microsoft-outlook-icon.png"
+                            alt="Outlook"
+                        >
+                    </div>
+                    <span>Outlook</span>
+                </div>
+
+
+                <!-- PAYPAL -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/paypal"
+                            alt="PayPal"
+                        >
+                    </div>
+                    <span>PayPal</span>
+                </div>
+
+
+                <!-- APPLE PAY -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/applepay"
+                            alt="Apple Pay"
+                        >
+                    </div>
+                    <span>Apple Pay</span>
+                </div>
+
+
+                <!-- VISA -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/visa"
+                            alt="Visa"
+                        >
+                    </div>
+                    <span>Visa</span>
+                </div>
+
+
+                <!-- MASTERCARD -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/mastercard"
+                            alt="Mastercard"
+                        >
+                    </div>
+                    <span>Mastercard</span>
+                </div>
+
+
+                <!-- SHOPIFY -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img
+                            src="https://cdn.simpleicons.org/shopify"
+                            alt="Shopify"
+                        >
+                    </div>
+                    <span>Shopify</span>
+                </div>
+
+
+                <!-- MERCADO LIBRE -->
+<div class="lyv-integration-item">
+    <div class="lyv-integration-logo">
+        <img
+            src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/mercado-libre/default.svg"
+            alt="Mercado Libre"
+        >
+    </div>
+    <span>Mercado Libre</span>
+</div>
+
+
+                <!-- MÁS -->
+                <div class="lyv-integration-item lyv-integration-more">
+
+                    <div class="lyv-integration-logo">
+                        <i class="bi bi-three-dots"></i>
+                    </div>
+
+                    <span>Y más</span>
+
+                </div>
+
+
+                <!-- DUPLICADOS PARA EL LOOP -->
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img src="https://cdn.simpleicons.org/whatsapp" alt="WhatsApp">
+                    </div>
+                    <span>WhatsApp</span>
+                </div>
+
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img src="https://cdn.simpleicons.org/instagram" alt="Instagram">
+                    </div>
+                    <span>Instagram</span>
+                </div>
+
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img src="https://cdn.simpleicons.org/paypal" alt="PayPal">
+                    </div>
+                    <span>PayPal</span>
+                </div>
+
+                <div class="lyv-integration-item">
+                    <div class="lyv-integration-logo">
+                        <img src="https://cdn.simpleicons.org/applepay" alt="Apple Pay">
+                    </div>
+                    <span>Apple Pay</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BENEFICIOS -->
+        <div class="lyv-integrations-benefits">
+
+            <div class="lyv-integration-benefit">
+                <div class="lyv-integration-benefit-icon">
+                    <i class="bi bi-gear-wide-connected"></i>
+                </div>
+
+                <div>
+                    <strong>Integraciones personalizadas</strong>
+                    <span>Nos adaptamos a tus herramientas</span>
+                </div>
+            </div>
+
+
+            <div class="lyv-integration-benefit">
+                <div class="lyv-integration-benefit-icon">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+
+                <div>
+                    <strong>Configuración incluida</strong>
+                    <span>Todo listo para usar</span>
+                </div>
+            </div>
+
+
+            <div class="lyv-integration-benefit">
+                <div class="lyv-integration-benefit-icon">
+                    <i class="bi bi-globe2"></i>
+                </div>
+
+                <div>
+                    <strong>Local o internacional</strong>
+                    <span>Conecta desde Costa Rica o cualquier lugar</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats-section nx-stats-section">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="section-header nx-stats-header">
+
+            <span class="section-badge nx-stats-badge">
+                ¿Por qué LYVARYN?
+            </span>
+
+            <h2>
+                Todo lo que necesitas para
+                <span>hacer crecer tu negocio</span>
+            </h2>
+
+            <p>
+                Tecnología moderna, Inteligencia Artificial y herramientas
+                profesionales en una sola plataforma.
+            </p>
+
+        </div>
+
+
+        <!-- CARDS -->
+        <div class="stats-grid nx-stats-grid">
+
+
+            <!-- IA -->
+            <article class="stat-card nx-stat-card">
+
+                <div class="nx-stat-top">
+
+                    <div class="icon nx-stat-icon nx-icon-ai">
+                        <i class="bi bi-cpu-fill"></i>
+                    </div>
+
+                    <div class="nx-stat-arrow">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="nx-stat-content">
+
+                    <h3>
+                        IA Integrada
+                    </h3>
+
+                    <p>
+                        GPT 5.5 para automatizar tareas y responder tus preguntas.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- NUBE -->
+            <article class="stat-card nx-stat-card">
+
+                <div class="nx-stat-top">
+
+                    <div class="icon nx-stat-icon nx-icon-cloud">
+                        <i class="bi bi-cloud-fill"></i>
+                    </div>
+
+                    <div class="nx-stat-arrow">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="nx-stat-content">
+
+                    <h3>
+                        100% Nube
+                    </h3>
+
+                    <p>
+                        Disponible 24/7 desde cualquier lugar.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- RENDIMIENTO -->
+            <article class="stat-card nx-stat-card">
+
+                <div class="nx-stat-top">
+
+                    <div class="icon nx-stat-icon nx-icon-performance">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+
+                    <div class="nx-stat-arrow">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="nx-stat-content">
+
+                    <h3>
+                        Alto rendimiento
+                    </h3>
+
+                    <p>
+                        Respuesta inmediata y sin interrupciones.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- RESPONSIVE -->
+            <article class="stat-card nx-stat-card">
+
+                <div class="nx-stat-top">
+
+                    <div class="icon nx-stat-icon nx-icon-responsive">
+                        <i class="bi bi-display-fill"></i>
+                    </div>
+
+                    <div class="nx-stat-arrow">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="nx-stat-content">
+
+                    <h3>
+                        Responsive
+                    </h3>
+
+                    <p>
+                        Funciona en PC, tablet y móvil.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- SEGURIDAD -->
+            <article class="stat-card nx-stat-card">
+
+                <div class="nx-stat-top">
+
+                    <div class="icon nx-stat-icon nx-icon-security">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+
+                    <div class="nx-stat-arrow">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="nx-stat-content">
+
+                    <h3>
+                        Seguridad
+                    </h3>
+
+                    <p>
+                        Protección de datos y copias automáticas.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- REPORTES -->
+            <article class="stat-card nx-stat-card">
+
+                <div class="nx-stat-top">
+
+                    <div class="icon nx-stat-icon nx-icon-reports">
+                        <i class="bi bi-bar-chart-fill"></i>
+                    </div>
+
+                    <div class="nx-stat-arrow">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="nx-stat-content">
+
+                    <h3>
+                        Reportes
+                    </h3>
+
+                    <p>
+                        Estadísticas en tiempo real para mejores decisiones.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- WHATSAPP -->
+            <article class="stat-card nx-stat-card">
+
+                <div class="nx-stat-top">
+
+                    <div class="icon nx-stat-icon nx-icon-whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+
+                    <div class="nx-stat-arrow">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="nx-stat-content">
+
+                    <h3>
+                        WhatsApp
+                    </h3>
+
+                    <p>
+                        Comunicación integrada con tus clientes.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ESCALABLE -->
+            <article class="stat-card nx-stat-card">
+
+                <div class="nx-stat-top">
+
+                    <div class="icon nx-stat-icon nx-icon-scalable">
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+                    </div>
+
+                    <div class="nx-stat-arrow">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="nx-stat-content">
+
+                    <h3>
+                        Escalable
+                    </h3>
+
+                    <p>
+                        Crece junto a tu empresa sin límites.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="faq-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+                Preguntas frecuentes
+            </span>
+
+            <h2>
+                Resolvemos tus dudas
+            </h2>
+
+            <p>
+                Respuestas a las preguntas más comunes antes de comenzar tu proyecto con LYVARYN.
+            </p>
+
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item active">
+
+    <button class="faq-question">
+        <span>¿LYVARYN sirve para cualquier tipo de negocio?</span>
+        <span class="faq-icon">+</span>
+    </button>
+
+    <div class="faq-answer">
+        <p>
+            Sí. Diseñamos soluciones digitales adaptadas a diferentes
+            tipos de negocios, desde pequeñas empresas hasta organizaciones
+            con procesos más complejos.
+        </p>
+    </div>
+
+</div>
+
+            <div class="faq-item">
+
+    <button class="faq-question">
+        <span>¿Pueden adaptar el diseño a mi marca?</span>
+        <span class="faq-icon">+</span>
+    </button>
+
+    <div class="faq-answer">
+        <p>
+            Sí. Podemos adaptar colores, identidad visual, estructura
+            y experiencia de usuario para que la solución represente
+            la imagen de tu negocio.
+        </p>
+    </div>
+
+</div>
+
+            <div class="faq-item">
+
+    <button class="faq-question">
+        <span>¿Pueden crear un sitio web personalizado?</span>
+        <span class="faq-icon">+</span>
+    </button>
+
+    <div class="faq-answer">
+        <p>
+            Sí. Podemos desarrollar sitios web personalizados según
+            los objetivos, contenido, identidad y necesidades de cada proyecto.
+        </p>
+    </div>
+
+</div>
+
+            <div class="faq-item">
+
+    <button class="faq-question">
+        <span>¿Pueden integrar pagos y otros servicios?</span>
+        <span class="faq-icon">+</span>
+    </button>
+
+    <div class="faq-answer">
+        <p>
+            Dependiendo del proyecto y de los servicios disponibles,
+            podemos integrar métodos de pago, WhatsApp, APIs y otras
+            herramientas externas.
+        </p>
+    </div>
+
+</div>
+
+            <div class="faq-item">
+
+    <button class="faq-question">
+        <span>¿Funciona en computadora y celular?</span>
+        <span class="faq-icon">+</span>
+    </button>
+
+    <div class="faq-answer">
+        <p>
+            Sí. Diseñamos nuestras soluciones para adaptarse a
+            computadoras, tablets y teléfonos celulares.
+        </p>
+    </div>
+
+</div>
+
+           <div class="faq-item">
+
+    <button class="faq-question">
+        <span>¿Puedo solicitar una solución personalizada?</span>
+        <span class="faq-icon">+</span>
+    </button>
+
+    <div class="faq-answer">
+        <p>
+            Sí. Si tu proyecto necesita funcionalidades, diseño o
+            integraciones diferentes a las incluidas en los planes,
+            podemos analizar tus necesidades y plantear una solución
+            personalizada.
+        </p>
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="nx-cta-section">
+
+    <div class="container">
+
+        <div class="nx-cta-card">
+
+            <div class="nx-cta-decoration nx-cta-decoration-one"></div>
+            <div class="nx-cta-decoration nx-cta-decoration-two"></div>
+
+            <div class="nx-cta-content">
+
+                <span class="nx-cta-badge">
+                    ¿Tienes un proyecto en mente?
+                </span>
+
+                <h2>
+                    Construyamos algo para
+                    <span>tu negocio</span>
+                </h2>
+
+                <p>
+                    Cuéntanos qué necesitas y trabajemos juntos en una
+                    solución digital diseñada para las necesidades reales
+                    de tu negocio.
+                </p>
+
+                <div class="nx-cta-buttons">
+
+                    <a href="contacto.html"
+                       class="nx-cta-primary">
+
+                        <i class="bi bi-chat-dots-fill"></i>
+                        Hablar con LYVARYN
+
+                    </a>
+
+                    <a href="#pricing"
+                       class="nx-cta-secondary">
+
+                        <i class="bi bi-tags-fill"></i>
+                        Ver planes
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <footer class="site-footer" id="contacto">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+
+            <div class="col-lg-4">
+                <h3>LYVARYN</h3>
+                <p>
+                    Gestión empresarial moderna para negocios
+                    que quieren crecer con claridad.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h4>Contacto</h4>
+
+                <a href="https://wa.me/50662027095"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="bi bi-whatsapp"></i>
+                    +506 6202 7095
+                </a>
+
+                <a href="mailto:aiftechnologycr@gmail.com">
+                    <i class="bi bi-envelope"></i>
+                    aiftechnologycr@gmail.com
+                </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+                <h4>Ubicación</h4>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Costa Rica
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h4>Legal</h4>
+
+                <a href="politica-privacidad.html">
+                    Política de Privacidad
+                </a>
+
+                <a href="terminos-condiciones.html">
+                    Términos y Condiciones
+                </a>
+
+                <a href="politica-cookies.html">
+                    Política de Cookies
+                </a>
+
+                <a href="politica-reembolsos.html">
+                    Política de Reembolsos
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 LYVARYN · Todos los derechos reservados
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/csrf.js"></script>
+
+</body>
+
+</html>

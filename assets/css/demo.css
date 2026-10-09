@@ -1,0 +1,1455 @@
+/* =========================================================
+   NEXORA — DEMO / PRODUCT TOUR
+   ========================================================= */
+
+.nx-demo-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0 100px;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(37, 99, 235, 0.20),
+            transparent 45%
+        ),
+        #050914;
+}
+
+.nx-demo-hero::before {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(37, 99, 235, 0.16);
+    filter: blur(120px);
+    pointer-events: none;
+}
+
+.nx-demo-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nx-demo-badge,
+.nx-demo-mini-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    background: rgba(37, 99, 235, 0.10);
+
+    color: #60a5fa;
+
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+
+    border-radius: 999px;
+}
+
+.nx-demo-badge {
+    padding: 9px 17px;
+    margin-bottom: 25px;
+}
+
+.nx-demo-badge i {
+    font-size: 0.85rem;
+}
+
+.nx-demo-hero h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(3rem, 6vw, 5.4rem);
+    font-weight: 850;
+
+    line-height: 1.02;
+    letter-spacing: -0.055em;
+}
+
+.nx-demo-hero h1 span {
+    display: block;
+
+    background: linear-gradient(
+        90deg,
+        #60a5fa,
+        #3b82f6,
+        #818cf8
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nx-demo-hero p {
+    max-width: 720px;
+    margin: 28px auto 0;
+
+    color: #94a3b8;
+
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.nx-demo-hero-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    margin-top: 36px;
+}
+
+.nx-demo-hero-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-height: 52px;
+    padding: 0 25px;
+
+    border-radius: 12px;
+
+    font-size: 0.94rem;
+    font-weight: 700;
+
+    text-decoration: none !important;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.nx-demo-btn-primary {
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+
+    border: 1px solid #3b82f6;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 12px 32px rgba(37, 99, 235, 0.28);
+}
+
+.nx-demo-btn-primary:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 18px 40px rgba(37, 99, 235, 0.38);
+}
+
+.nx-demo-btn-secondary {
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    color: #e2e8f0 !important;
+}
+
+.nx-demo-btn-secondary:hover {
+    color: #ffffff !important;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border-color: rgba(96, 165, 250, 0.35);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.nx-demo-section-heading {
+    max-width: 760px;
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.nx-demo-mini-badge {
+    padding: 7px 14px;
+    margin-bottom: 20px;
+
+    font-size: 0.72rem;
+}
+
+.nx-demo-section-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+}
+
+.nx-demo-section-heading h2 span {
+    color: #60a5fa;
+}
+
+.nx-demo-section-heading p {
+    max-width: 650px;
+
+    margin: 18px auto 0;
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PLATFORM SECTION
+   ========================================================= */
+
+.nx-demo-platform {
+    position: relative;
+
+    padding: 120px 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(30, 64, 175, 0.08),
+            transparent 45%
+        ),
+        #060b16;
+}
+
+
+/* =========================================================
+   APP WINDOW
+   ========================================================= */
+
+.nx-demo-app {
+    display: grid;
+
+    grid-template-columns: 220px minmax(0, 1fr);
+
+    min-height: 680px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 22px;
+
+    background: #09111f;
+
+    box-shadow:
+        0 35px 90px rgba(0, 0, 0, 0.42),
+        0 0 0 1px rgba(59, 130, 246, 0.025);
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.nx-demo-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    padding: 22px 14px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #08101d,
+            #060c17
+        );
+
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.nx-demo-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0 9px 24px;
+}
+
+.nx-demo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+
+    color: #ffffff;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    box-shadow:
+        0 7px 20px rgba(37, 99, 235, 0.28);
+}
+
+.nx-demo-brand strong {
+    display: block;
+
+    color: #f8fafc;
+
+    font-size: 0.85rem;
+}
+
+.nx-demo-brand small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #64748b;
+
+    font-size: 0.57rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   MENU
+   ========================================================= */
+
+.nx-demo-menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.nx-demo-menu-label {
+    margin: 16px 9px 6px;
+
+    color: #475569;
+
+    font-size: 0.58rem;
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+}
+
+.nx-demo-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    min-height: 35px;
+
+    padding: 0 10px;
+
+    border-radius: 8px;
+
+    color: #64748b;
+
+    font-size: 0.73rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.nx-demo-menu a i {
+    width: 17px;
+
+    font-size: 0.82rem;
+
+    text-align: center;
+}
+
+.nx-demo-menu a:hover {
+    background: rgba(255, 255, 255, 0.04);
+
+    color: #cbd5e1;
+}
+
+.nx-demo-menu a.active {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(37, 99, 235, 0.22),
+            rgba(37, 99, 235, 0.08)
+        );
+
+    color: #60a5fa;
+
+    box-shadow:
+        inset 2px 0 0 #3b82f6;
+}
+
+
+/* =========================================================
+   SIDEBAR USER
+   ========================================================= */
+
+.nx-demo-sidebar-user {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: auto;
+
+    padding: 12px 9px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nx-demo-user-avatar,
+.nx-demo-top-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #6366f1
+    );
+
+    color: #ffffff;
+
+    font-weight: 700;
+}
+
+.nx-demo-user-avatar {
+    width: 30px;
+    height: 30px;
+
+    font-size: 0.68rem;
+}
+
+.nx-demo-sidebar-user strong {
+    display: block;
+
+    color: #cbd5e1;
+
+    font-size: 0.65rem;
+}
+
+.nx-demo-sidebar-user small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #475569;
+
+    font-size: 0.57rem;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.nx-demo-main {
+    min-width: 0;
+
+    padding: 24px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(37, 99, 235, 0.05),
+            transparent 40%
+        ),
+        #0a1322;
+}
+
+.nx-demo-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+.nx-demo-topbar span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #64748b;
+
+    font-size: 0.62rem;
+}
+
+.nx-demo-topbar strong {
+    color: #f8fafc;
+
+    font-size: 0.9rem;
+}
+
+.nx-demo-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nx-demo-top-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    color: #64748b;
+
+    cursor: default;
+}
+
+.nx-demo-top-avatar {
+    width: 32px;
+    height: 32px;
+
+    font-size: 0.7rem;
+}
+
+
+/* =========================================================
+   KPIS
+   ========================================================= */
+
+.nx-demo-kpis {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 14px;
+}
+
+.nx-demo-kpi {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 0;
+
+    padding: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.065);
+
+    border-radius: 13px;
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.nx-demo-kpi-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 37px;
+    height: 37px;
+
+    border-radius: 10px;
+
+    font-size: 0.9rem;
+}
+
+.nx-demo-kpi-icon.blue {
+    color: #60a5fa;
+    background: rgba(59, 130, 246, 0.12);
+}
+
+.nx-demo-kpi-icon.cyan {
+    color: #22d3ee;
+    background: rgba(34, 211, 238, 0.11);
+}
+
+.nx-demo-kpi-icon.purple {
+    color: #a78bfa;
+    background: rgba(139, 92, 246, 0.12);
+}
+
+.nx-demo-kpi-icon.green {
+    color: #34d399;
+    background: rgba(16, 185, 129, 0.11);
+}
+
+.nx-demo-kpi small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #64748b;
+
+    font-size: 0.6rem;
+}
+
+.nx-demo-kpi strong {
+    display: block;
+
+    color: #f8fafc;
+
+    font-size: 1rem;
+}
+
+.nx-demo-kpi span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #34d399;
+
+    font-size: 0.57rem;
+}
+
+
+/* =========================================================
+   CONTENT GRID
+   ========================================================= */
+
+.nx-demo-content-grid {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.8fr);
+
+    gap: 14px;
+}
+
+.nx-demo-chart,
+.nx-demo-activity {
+    min-width: 0;
+
+    padding: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.065);
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.nx-demo-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.nx-demo-card-heading small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #475569;
+
+    font-size: 0.56rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+}
+
+.nx-demo-card-heading strong {
+    color: #e2e8f0;
+
+    font-size: 0.78rem;
+}
+
+.nx-demo-card-heading > span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #64748b;
+
+    font-size: 0.6rem;
+}
+
+
+/* =========================================================
+   CHART
+   ========================================================= */
+
+.nx-demo-chart-area {
+    display: flex;
+
+    height: 235px;
+}
+
+.nx-chart-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 8px 10px 27px 0;
+
+    color: #475569;
+
+    font-size: 0.55rem;
+}
+
+.nx-chart {
+    position: relative;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+.nx-chart-grid {
+    position: absolute;
+    inset: 0 0 26px;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(148, 163, 184, 0.07) 0,
+            rgba(148, 163, 184, 0.07) 1px,
+            transparent 1px,
+            transparent 25%
+        );
+}
+
+.nx-chart svg {
+    position: absolute;
+
+    inset: 0 0 26px;
+
+    width: 100%;
+    height: calc(100% - 26px);
+}
+
+.nx-chart::after {
+    content: "Ene      Feb      Mar      Abr      May      Jun";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    color: #475569;
+
+    font-size: 0.52rem;
+
+    word-spacing: 18px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ACTIVITY
+   ========================================================= */
+
+.nx-demo-activity-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.nx-demo-activity-list > div {
+    display: grid;
+
+    grid-template-columns: 30px minmax(0, 1fr) auto;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+.activity-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 8px;
+
+    font-size: 0.7rem;
+}
+
+.activity-icon.green {
+    color: #34d399;
+    background: rgba(16, 185, 129, 0.10);
+}
+
+.activity-icon.blue {
+    color: #60a5fa;
+    background: rgba(59, 130, 246, 0.10);
+}
+
+.activity-icon.purple {
+    color: #a78bfa;
+    background: rgba(139, 92, 246, 0.10);
+}
+
+.nx-demo-activity-list strong {
+    display: block;
+
+    color: #cbd5e1;
+
+    font-size: 0.64rem;
+}
+
+.nx-demo-activity-list small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #475569;
+
+    font-size: 0.55rem;
+}
+
+.nx-demo-activity-list b {
+    color: #64748b;
+
+    font-size: 0.55rem;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   AI
+   ========================================================= */
+
+.nx-demo-ai {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-top: 14px;
+
+    padding: 16px 18px;
+
+    border: 1px solid rgba(139, 92, 246, 0.18);
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(139, 92, 246, 0.09),
+            rgba(59, 130, 246, 0.035)
+        );
+}
+
+.nx-demo-ai-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: rgba(139, 92, 246, 0.15);
+
+    color: #a78bfa;
+}
+
+.nx-demo-ai > div:nth-child(2) {
+    min-width: 0;
+    flex: 1;
+}
+
+.nx-demo-ai span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #a78bfa;
+
+    font-size: 0.55rem;
+    font-weight: 800;
+
+    letter-spacing: 0.07em;
+}
+
+.nx-demo-ai strong {
+    color: #cbd5e1;
+
+    font-size: 0.69rem;
+}
+
+.nx-demo-ai button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #a78bfa;
+
+    font-size: 0.63rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   MODULES
+   ========================================================= */
+
+.nx-demo-modules {
+    padding: 120px 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(37, 99, 235, 0.07),
+            transparent 42%
+        ),
+        #050914;
+}
+
+.nx-demo-module-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.nx-demo-module {
+    position: relative;
+
+    min-height: 270px;
+
+    padding: 26px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.80),
+            rgba(8, 15, 28, 0.80)
+        );
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.nx-demo-module::after {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    top: -90px;
+    right: -90px;
+
+    border-radius: 50%;
+
+    background: rgba(59, 130, 246, 0.08);
+
+    filter: blur(40px);
+
+    pointer-events: none;
+}
+
+.nx-demo-module:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(59, 130, 246, 0.25);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.24);
+}
+
+.nx-demo-module-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    margin-bottom: 24px;
+
+    border-radius: 12px;
+
+    font-size: 1.05rem;
+}
+
+.nx-demo-module-icon.blue {
+    color: #60a5fa;
+    background: rgba(59, 130, 246, 0.13);
+}
+
+.nx-demo-module-icon.purple {
+    color: #a78bfa;
+    background: rgba(139, 92, 246, 0.13);
+}
+
+.nx-demo-module-icon.green {
+    color: #34d399;
+    background: rgba(16, 185, 129, 0.13);
+}
+
+.nx-demo-module-icon.orange {
+    color: #fb923c;
+    background: rgba(249, 115, 22, 0.13);
+}
+
+.nx-demo-module-icon.cyan {
+    color: #22d3ee;
+    background: rgba(6, 182, 212, 0.13);
+}
+
+.nx-demo-module-icon.pink {
+    color: #f472b6;
+    background: rgba(236, 72, 153, 0.13);
+}
+
+.nx-demo-module-icon.indigo {
+    color: #818cf8;
+    background: rgba(99, 102, 241, 0.13);
+}
+
+.nx-demo-module-icon.red {
+    color: #f87171;
+    background: rgba(239, 68, 68, 0.13);
+}
+
+.nx-demo-module-icon.teal {
+    color: #2dd4bf;
+    background: rgba(20, 184, 166, 0.13);
+}
+
+.nx-demo-module-icon.violet {
+    color: #c084fc;
+    background: rgba(168, 85, 247, 0.14);
+}
+
+.nx-demo-module-number {
+    position: absolute;
+
+    top: 26px;
+    right: 26px;
+
+    color: #334155;
+
+    font-size: 0.65rem;
+    font-weight: 800;
+
+    letter-spacing: 0.06em;
+}
+
+.nx-demo-module h3 {
+    margin: 0 0 10px;
+
+    color: #f8fafc;
+
+    font-size: 1.12rem;
+    font-weight: 750;
+}
+
+.nx-demo-module p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.nx-demo-module-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: 20px;
+}
+
+.nx-demo-module-tags span {
+    padding: 5px 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    color: #64748b;
+
+    font-size: 0.57rem;
+    font-weight: 600;
+}
+
+.nx-demo-module-ai {
+    border-color: rgba(139, 92, 246, 0.18);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(76, 29, 149, 0.16),
+            rgba(15, 23, 42, 0.80)
+        );
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.nx-demo-final {
+    padding: 100px 0 130px;
+
+    background: #050914;
+}
+
+.nx-demo-final-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 70px 35px;
+
+    border: 1px solid rgba(59, 130, 246, 0.16);
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(37, 99, 235, 0.18),
+            transparent 48%
+        ),
+        #09111f;
+}
+
+.nx-demo-final-card > span {
+    display: block;
+
+    margin-bottom: 16px;
+
+    color: #60a5fa;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+}
+
+.nx-demo-final-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 15px;
+
+    background: rgba(59, 130, 246, 0.13);
+
+    color: #60a5fa;
+
+    font-size: 1.2rem;
+}
+
+.nx-demo-final-card h2 {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.035em;
+}
+
+.nx-demo-final-card h2 strong {
+    color: #60a5fa;
+}
+
+.nx-demo-final-card p {
+    max-width: 600px;
+
+    margin: 18px auto 30px;
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+}
+
+.nx-demo-final-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-height: 51px;
+
+    padding: 0 25px;
+
+    border: 1px solid #3b82f6;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+
+    color: #ffffff !important;
+
+    font-size: 0.92rem;
+    font-weight: 700;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 12px 32px rgba(37, 99, 235, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.nx-demo-final-button:hover {
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 18px 40px rgba(37, 99, 235, 0.36);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .nx-demo-app {
+        grid-template-columns: 190px minmax(0, 1fr);
+    }
+
+    .nx-demo-main {
+        padding: 18px;
+    }
+
+    .nx-demo-kpis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nx-demo-module-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .nx-demo-hero {
+        padding: 120px 0 80px;
+    }
+
+    .nx-demo-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .nx-demo-hero p {
+        font-size: 0.96rem;
+    }
+
+    .nx-demo-hero-actions {
+        flex-direction: column;
+    }
+
+    .nx-demo-hero-actions a {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .nx-demo-platform,
+    .nx-demo-modules {
+        padding: 85px 0;
+    }
+
+    .nx-demo-section-heading {
+        margin-bottom: 38px;
+    }
+
+    .nx-demo-app {
+        display: block;
+
+        min-height: auto;
+
+        border-radius: 18px;
+    }
+
+    .nx-demo-sidebar {
+        display: none;
+    }
+
+    .nx-demo-main {
+        padding: 15px;
+    }
+
+    .nx-demo-kpis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nx-demo-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nx-demo-chart {
+        min-height: 300px;
+    }
+
+    .nx-demo-ai {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .nx-demo-ai button {
+        margin-left: 52px;
+    }
+
+    .nx-demo-module-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nx-demo-module {
+        min-height: auto;
+    }
+
+    .nx-demo-final {
+        padding: 75px 0 100px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .nx-demo-hero {
+        padding: 105px 0 70px;
+    }
+
+    .nx-demo-hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .nx-demo-badge {
+        font-size: 0.68rem;
+    }
+
+    .nx-demo-kpis {
+        grid-template-columns: 1fr;
+    }
+
+    .nx-demo-kpi {
+        padding: 14px;
+    }
+
+    .nx-demo-main {
+        padding: 12px;
+    }
+
+    .nx-demo-topbar strong {
+        font-size: 0.78rem;
+    }
+
+    .nx-demo-chart-area {
+        height: 200px;
+    }
+
+    .nx-demo-activity-list > div {
+        grid-template-columns: 30px minmax(0, 1fr);
+    }
+
+    .nx-demo-activity-list b {
+        display: none;
+    }
+
+    .nx-demo-final-card {
+        padding: 50px 20px;
+    }
+
+    .nx-demo-final-card h2 {
+        font-size: 1.85rem;
+    }
+}

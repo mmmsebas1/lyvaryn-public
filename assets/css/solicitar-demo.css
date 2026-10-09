@@ -1,0 +1,751 @@
+/* =========================================================
+   NEXORA — SOLICITAR DEMO
+   ========================================================= */
+
+.nx-request-demo {
+    position: relative;
+    overflow: hidden;
+
+    padding: 145px 0 120px;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(37, 99, 235, 0.12),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(99, 102, 241, 0.08),
+            transparent 30%
+        ),
+        #050914;
+}
+
+.nx-request-demo::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -280px;
+    right: -180px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.08);
+
+    filter: blur(100px);
+
+    pointer-events: none;
+}
+
+.nx-request-demo-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   INFORMATION
+   ========================================================= */
+
+.nx-request-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px 10px 35px 0;
+}
+
+.nx-request-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 24px;
+    padding: 8px 15px;
+
+    border: 1px solid rgba(59, 130, 246, 0.25);
+
+    border-radius: 999px;
+
+    background: rgba(37, 99, 235, 0.10);
+
+    color: #60a5fa;
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+}
+
+.nx-request-badge i {
+    font-size: 0.8rem;
+}
+
+.nx-request-info h1 {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(2.8rem, 5vw, 4.4rem);
+
+    font-weight: 850;
+
+    line-height: 1.04;
+
+    letter-spacing: -0.055em;
+}
+
+.nx-request-info h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #3b82f6,
+            #818cf8
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.nx-request-lead {
+    max-width: 620px;
+
+    margin: 27px 0 42px;
+
+    color: #94a3b8;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   STEPS
+   ========================================================= */
+
+.nx-request-steps {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.nx-request-step {
+    display: grid;
+
+    grid-template-columns: 43px minmax(0, 1fr);
+
+    gap: 15px;
+
+    align-items: start;
+}
+
+.nx-request-step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid rgba(59, 130, 246, 0.20);
+
+    border-radius: 12px;
+
+    background: rgba(37, 99, 235, 0.09);
+
+    color: #60a5fa;
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+}
+
+.nx-request-step h3 {
+    margin: 2px 0 6px;
+
+    color: #e2e8f0;
+
+    font-size: 0.92rem;
+
+    font-weight: 750;
+}
+
+.nx-request-step p {
+    max-width: 510px;
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 0.78rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SECURITY NOTE
+   ========================================================= */
+
+.nx-request-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    max-width: 570px;
+
+    margin-top: 42px;
+    padding: 15px 17px;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.nx-request-note > i {
+    margin-top: 2px;
+
+    color: #34d399;
+
+    font-size: 1rem;
+}
+
+.nx-request-note strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #cbd5e1;
+
+    font-size: 0.72rem;
+}
+
+.nx-request-note p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 0.64rem;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   FORM CARD
+   ========================================================= */
+
+.nx-request-form-card {
+    position: relative;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    height: fit-content;
+    align-self: center;
+
+    padding: 37px;
+
+    border: 1px solid rgba(255, 255, 255, 0.085);
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.96),
+            rgba(8, 15, 28, 0.98)
+        );
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.nx-request-form-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    top: -150px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.10);
+
+    filter: blur(70px);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FORM HEADER
+   ========================================================= */
+
+.nx-request-form-header {
+    position: relative;
+    z-index: 2;
+
+    margin-bottom: 22px;
+}
+
+.nx-request-form-header > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #60a5fa;
+
+    font-size: 0.66rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+}
+
+.nx-request-form-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 1.65rem;
+
+    font-weight: 800;
+
+    letter-spacing: -0.025em;
+}
+
+.nx-request-form-header p {
+    margin: 8px 0 0;
+
+    color: #64748b;
+
+    font-size: 0.76rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.nx-request-form {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.nx-request-form-row {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+.nx-request-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.nx-request-field label {
+    color: #94a3b8;
+
+    font-size: 0.66rem;
+
+    font-weight: 700;
+}
+
+.nx-request-input,
+.nx-request-textarea {
+    display: flex;
+    align-items: center;
+
+    min-height: 48px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.nx-request-input:focus-within,
+.nx-request-textarea:focus-within {
+    border-color: rgba(59, 130, 246, 0.55);
+
+    background: rgba(59, 130, 246, 0.035);
+
+    box-shadow:
+        0 0 0 3px rgba(59, 130, 246, 0.08);
+}
+
+.nx-request-input > i,
+.nx-request-textarea > i {
+    flex-shrink: 0;
+
+    margin-left: 14px;
+
+    color: #475569;
+
+    font-size: 0.82rem;
+}
+
+.nx-request-input input,
+.nx-request-input select,
+.nx-request-textarea textarea {
+    width: 100%;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #e2e8f0;
+
+    font-family: inherit;
+
+    font-size: 0.76rem;
+}
+
+.nx-request-input input,
+.nx-request-input select {
+    height: 46px;
+
+    padding: 0 13px;
+}
+
+.nx-request-input input::placeholder,
+.nx-request-textarea textarea::placeholder {
+    color: #475569;
+}
+
+.nx-request-input select {
+    cursor: pointer;
+
+    appearance: none;
+}
+
+.nx-request-input select option {
+    background: #0b1423;
+
+    color: #e2e8f0;
+}
+
+.nx-request-textarea {
+    align-items: flex-start;
+
+    min-height: 125px;
+}
+
+.nx-request-textarea > i {
+    margin-top: 16px;
+}
+
+.nx-request-textarea textarea {
+    min-height: 120px;
+
+    padding: 14px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SUBMIT
+   ========================================================= */
+
+.nx-request-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    width: 100%;
+
+    min-height: 52px;
+
+    margin-top: 5px;
+
+    border: 1px solid #3b82f6;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #2563eb
+        );
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 0.84rem;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.22);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+.nx-request-submit:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 17px 38px rgba(37, 99, 235, 0.34);
+
+    filter: brightness(1.05);
+}
+
+.nx-request-submit i:last-child {
+    margin-left: 3px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.nx-request-form-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 0.57rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+.nx-request-form-footer i {
+    margin-top: 1px;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .nx-request-demo {
+        padding: 125px 0 90px;
+    }
+
+    .nx-request-demo-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        max-width: 760px;
+
+        margin: 0 auto;
+    }
+
+    .nx-request-info {
+        padding-top: 0;
+
+        text-align: center;
+    }
+
+    .nx-request-info h1 {
+        margin: 0 auto;
+    }
+
+    .nx-request-lead {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nx-request-steps {
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        text-align: left;
+    }
+
+    .nx-request-note {
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .nx-request-demo {
+        padding: 105px 0 75px;
+    }
+
+    .nx-request-info h1 {
+        font-size: 2.45rem;
+    }
+
+    .nx-request-lead {
+        font-size: 0.9rem;
+    }
+
+    .nx-request-form-card {
+        padding: 24px 18px;
+
+        border-radius: 18px;
+    }
+
+    .nx-request-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .nx-request-form-header h2 {
+        font-size: 1.45rem;
+    }
+
+    .nx-request-step {
+        grid-template-columns: 38px minmax(0, 1fr);
+
+        gap: 12px;
+    }
+
+    .nx-request-step-number {
+        width: 38px;
+        height: 38px;
+    }
+
+    .nx-request-note {
+        padding: 13px;
+    }
+}
+
+/* =========================================================
+   FORMULARIO — CONSENTIMIENTOS
+   ========================================================= */
+
+.nx-form-consent {
+    margin-top: 14px;
+}
+
+.nx-consent-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    color: #94a3b8;
+    font-size: 0.78rem;
+    line-height: 1.55;
+}
+
+.nx-consent-check input[type="checkbox"] {
+    flex: 0 0 auto;
+    width: 17px;
+    height: 17px;
+    margin-top: 2px;
+    accent-color: #3b82f6;
+    cursor: pointer;
+}
+
+.nx-consent-check span {
+    display: block;
+}
+
+.nx-consent-check a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nx-consent-check a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+.nx-consent-check small {
+    color: #64748b;
+    font-size: 0.72rem;
+}
+
+@media (max-width: 575.98px) {
+
+    .nx-form-consent {
+        margin-top: 12px;
+    }
+
+    .nx-consent-check {
+        gap: 9px;
+        font-size: 0.72rem;
+        line-height: 1.5;
+    }
+
+    .nx-consent-check input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+}
